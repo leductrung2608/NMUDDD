@@ -1,0 +1,138 @@
+[
+    {
+        "merged": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_signin_bg.xml.flat",
+        "source": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\src\\main\\res\\drawable-v24\\signin_bg.xml"
+    },
+    {
+        "merged": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_logo_app.png.flat",
+        "source": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\src\\main\\res\\drawable-v24\\logo_app.png"
+    },
+    {
+        "merged": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\build\\intermediates\\res\\merged\\debug\\raw_makeup.json.flat",
+        "source": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\src\\main\\res\\raw\\makeup.json"
+    },
+    {
+        "merged": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_bg.jpg.flat",
+        "source": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\src\\main\\res\\drawable-v24\\bg.jpg"
+    },
+    {
+        "merged": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_login.xml.flat",
+        "source": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_facebook.png.flat",
+        "source": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\src\\main\\res\\drawable-v24\\facebook.png"
+    },
+    {
+        "merged": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\build\\intermediates\\res\\merged\\debug\\layout_signin_tab.xml.flat",
+        "source": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\src\\main\\res\\layout\\signin_tab.xml"
+    },
+    {
+        "merged": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_app_name.png.flat",
+        "source": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\src\\main\\res\\drawable-v24\\app_name.png"
+    },
+    {
+        "merged": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_gg.png.flat",
+        "source": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\src\\main\\res\\drawable-v24\\gg.png"
+    },
+    {
+        "merged": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\build\\intermediates\\res\\merged\\debug\\layout_signup_tab.xml.flat",
+        "source": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\src\\main\\res\\layout\\signup_tab.xml"
+    },
+    {
+        "merged": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_button_bg.xml.flat",
+        "source": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\src\\main\\res\\drawable-v24\\button_bg.xml"
+    },
+    {
+        "merged": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\build\\intermediates\\res\\merged\\debug\\raw_lip.json.flat",
+        "source": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\src\\main\\res\\raw\\lip.json"
+    },
+    {
+        "merged": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_edittext.xml.flat",
+        "source": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\src\\main\\res\\drawable-v24\\edittext.xml"
+    },
+    {
+        "merged": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_introduce.xml.flat",
+        "source": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\src\\main\\res\\layout\\activity_introduce.xml"
+    },
+    {
+        "merged": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "D:\\Mobile\\NMUDDD\\App_Comestic\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_foreground.png"
+    }
+]

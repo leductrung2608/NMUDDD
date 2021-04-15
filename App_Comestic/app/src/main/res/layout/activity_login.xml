@@ -79,6 +79,7 @@
             android:layout_width="391dp"
             android:layout_height="43dp"
             android:layout_marginTop="16dp"
+            app:tabSelectedTextColor="#ff9292"
             app:layout_constraintBottom_toTopOf="@+id/viewPager"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.533"
