@@ -41,15 +41,16 @@ dependencies {
 
     implementation 'com.airbnb.android:lottie:3.4.1'
     implementation 'com.google.android.material:material:1.2.0'
-    compile 'com.google.firebase:firebase-core:16.0.0'
+    implementation 'com.google.firebase:firebase-core:16.0.0'
     implementation 'com.google.firebase:firebase-auth:20.0.4'
     implementation'com.google.android.gms:play-services-auth:17.0.0'
     implementation platform('com.google.firebase:firebase-bom:27.1.0')
 
-    // Declare the dependency for the Firebase Authentication library
-    // When using the BoM, you don't specify versions in Firebase library dependencies
     implementation 'com.google.firebase:firebase-auth'
-
+    implementation 'com.firebaseui:firebase-ui-auth:4.3.1'
     // Also declare the dependency for the Google Play services library and specify its version
     implementation 'com.google.android.gms:play-services-auth:19.0.0'
+    implementation 'com.facebook.android:facebook-android-sdk:[5,6)'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
 }

@@ -21,6 +21,21 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.981">
 
+        <TextView
+            android:id="@+id/resetPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:clickable="true"
+            android:text="Forgot password?"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toTopOf="@+id/reset"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.864"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/resetpass"
+            app:layout_constraintVertical_bias="0.0" />
+
         <EditText
             android:id="@+id/email"
             android:layout_width="0dp"
@@ -41,7 +56,7 @@
             app:layout_constraintWidth_percent=".8" />
 
         <EditText
-            android:id="@+id/pass"
+            android:id="@+id/resetpass"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:background="@drawable/edittext"
@@ -57,37 +72,32 @@
             app:layout_constraintVertical_bias="0.337"
             app:layout_constraintWidth_percent=".8" />
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
+        <com.google.android.gms.common.SignInButton
             android:id="@+id/gg"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="64dp"
-            android:backgroundTint="@color/white"
-            android:clickable="true"
-            android:src="@drawable/gg"
-            app:fabSize="normal"
+            android:layout_width="200dp"
+            android:layout_height="41dp"
+            android:background="#F4EBEB"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.315"
+            app:layout_constraintHorizontal_bias="0.514"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv"
+            app:layout_constraintVertical_bias="0.113" />
 
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
+        <com.facebook.login.widget.LoginButton
             android:id="@+id/fb"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="64dp"
-            android:backgroundTint="@color/white"
-            android:clickable="true"
-            android:src="@drawable/facebook"
-            app:fabSize="normal"
+            android:layout_width="200dp"
+            android:layout_height="31dp"
+            android:layout_marginBottom="16dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.647"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintHorizontal_bias="0.514"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv"
+            app:layout_constraintVertical_bias="0.545" />
 
         <Button
-            android:id="@+id/signin"
+            android:id="@+id/reset"
             android:layout_width="181dp"
             android:layout_height="51dp"
             android:background="@drawable/button_bg"
@@ -98,7 +108,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.502"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/pass"
+            app:layout_constraintTop_toBottomOf="@+id/resetpass"
             app:layout_constraintVertical_bias="0.23"
             app:layout_constraintWidth_percent=".8" />
 
@@ -106,26 +116,15 @@
             android:id="@+id/tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:clickable="true"
             android:text="Not registered yet? SIGN UP"
             android:textSize="18sp"
             android:textStyle="italic"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/signin"
+            app:layout_constraintTop_toBottomOf="@+id/reset"
             app:layout_constraintVertical_bias="0.088" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:text="Forgot password?"
-            android:textStyle="italic"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.864"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/pass" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

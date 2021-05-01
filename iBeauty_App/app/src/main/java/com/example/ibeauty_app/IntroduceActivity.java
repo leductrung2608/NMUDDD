@@ -54,7 +54,7 @@ public class IntroduceActivity extends AppCompatActivity {
 
     }
 
-    private void transparentStatusAndNavigation()
+    public void transparentStatusAndNavigation()
     {
         //make full transparent statusBar
         if (Build.VERSION.SDK_INT >= 19 && Build.VERSION.SDK_INT < 21) {
@@ -76,7 +76,7 @@ public class IntroduceActivity extends AppCompatActivity {
         }
 
     }
-    private void setWindowFlag(final int bits, boolean on) {
+    public void setWindowFlag(final int bits, boolean on) {
         Window win = getWindow();
         WindowManager.LayoutParams winParams = win.getAttributes();
         if (on) {

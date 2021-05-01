@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
+import android.text.method.PasswordTransformationMethod;
 import android.util.Patterns;
 import android.view.View;
 import android.view.Window;
@@ -37,9 +38,9 @@ public class SignUpActivity extends AppCompatActivity {
         transparentStatusAndNavigation();
         setContentView(R.layout.activity_signup);
 
-        SignUpbtt = findViewById(R.id.signin);
+        SignUpbtt = findViewById(R.id.reset);
         memail = findViewById(R.id.email);
-        mpass = findViewById(R.id.pass);
+        mpass = findViewById(R.id.resetpass);
         change = findViewById(R.id.already);
 
         memail.setTranslationX(800);
@@ -53,6 +54,8 @@ public class SignUpActivity extends AppCompatActivity {
         memail.animate().translationX(0).alpha(1).setDuration(800).setStartDelay(300).start();
         mpass.animate().translationX(0).alpha(1).setDuration(800).setStartDelay(500).start();
         SignUpbtt.animate().translationX(0).alpha(1).setDuration(800).setStartDelay(700).start();
+
+        mpass.setTransformationMethod(new PasswordTransformationMethod());
 
         mfirebaseAuth = FirebaseAuth.getInstance();
 
