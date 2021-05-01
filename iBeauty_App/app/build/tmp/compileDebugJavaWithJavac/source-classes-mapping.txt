@@ -1,0 +1,22 @@
+com/example/ibeauty_app/SignUpActivity.java
+ com.example.ibeauty_app.SignUpActivity
+ com.example.ibeauty_app.SignUpActivity$1
+ com.example.ibeauty_app.SignUpActivity$2
+ com.example.ibeauty_app.SignUpActivity$3
+ com.example.ibeauty_app.SignUpActivity$4
+com/example/ibeauty_app/ShoppingBag.java
+ com.example.ibeauty_app.ShoppingBag
+com/example/ibeauty_app/BuildConfig.java
+ com.example.ibeauty_app.BuildConfig
+com/example/ibeauty_app/SignInActivity.java
+ com.example.ibeauty_app.SignInActivity
+ com.example.ibeauty_app.SignInActivity$1
+ com.example.ibeauty_app.SignInActivity$2
+ com.example.ibeauty_app.SignInActivity$3
+ com.example.ibeauty_app.SignInActivity$4
+com/example/ibeauty_app/IntroduceActivity.java
+ com.example.ibeauty_app.IntroduceActivity
+ com.example.ibeauty_app.IntroduceActivity$1
+com/example/ibeauty_app/MainActivity.java
+ com.example.ibeauty_app.MainActivity
+ com.example.ibeauty_app.MainActivity$1

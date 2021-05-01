@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">338293141326-iahfm93f2aaatt478e1qvprjb733dal1.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">338293141326</string>
+    <string name="google_api_key" translatable="false">AIzaSyB7k4FiGv05pSovXGya7NP1ktKs2Um_9XM</string>
+    <string name="google_app_id" translatable="false">1:338293141326:android:41c5d07db558e78146b81f</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyB7k4FiGv05pSovXGya7NP1ktKs2Um_9XM</string>
+    <string name="google_storage_bucket" translatable="false">ibeauty-app.appspot.com</string>
+    <string name="project_id" translatable="false">ibeauty-app</string>
+</resources>
