@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">iBeauty</string>
+
+    <string name="register">REGISTER</string>
+    <string name="login_email_hint">Username</string>
+    <string name="login_password_hint">Password</string>
+    <string name="signup_login_hint" translatable="false">Already have an account? Sign In</string>
+    <string name="login_signup_hint" translatable="false">Dont have an account? Sign Up</string>
+    <string name="login_name_hint">Username</string>
+    <string name="login_mobile_number_hint">Mobile Number</string>
+
+    <string name="title_activity_profile">Profile</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">Sign In</string>
+
+    <string name="slide_1_title">Welcome to iBeauty!</string>
+    <string name="slide_1_desc">Beauty with perfection!</string>
+
+    <string name="slide_2_title">Skin care</string>
+    <string name="slide_2_desc">Care for your Skin, care for your beauty!</string>
+
+    <string name="slide_3_title">Make up</string>
+    <string name="slide_3_desc">Best and clear makeup!</string>
+
+    <string name="slide_4_title">Hair care</string>
+    <string name="slide_4_desc">The Brighter hair, The Brighter You!</string>
+
+    <string name="play_again_desc">To see the welcome slider again</string>
+    <string name="play_again">Play Again</string>
+
+    <string name="facebook_app_id">1192882527837347</string>
+    <string name="fb_login_protocol_scheme">fb1192882527837347</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+</resources>
