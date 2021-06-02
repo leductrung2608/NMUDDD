@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".login.RegisterActivity"
+    tools:context=".login.Register"
     android:background="@color/register_bk_color"
     android:focusableInTouchMode="true"
     android:gravity="center"
@@ -132,10 +132,24 @@
                         <EditText
                             android:id="@+id/editTextAddress"
                             style="@style/modifiedEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="47dp"
                             android:hint="Password"
                             android:maxLines="1"
                             android:textColor="#dd5d79" />
+
                     </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <at.markushi.ui.CircleButton
+                        android:id="@+id/btt_address"
+                        android:layout_width="45dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:onClick="onAddressClick"
+                        android:src="@drawable/location"
+                        app:cb_color="#e995a8"
+                        app:cb_pressedRingWidth="8dip" />
 
                     <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
                         android:id="@+id/cirRegisterButton"
@@ -163,6 +177,7 @@
                         android:textStyle="bold" />
 
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
 
@@ -175,14 +190,15 @@
         android:layout_width="11dp"
         android:layout_height="match_parent"
         android:background="@drawable/ic_side_bg"/>
+
     <ImageView
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_back_img"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
         android:layout_marginRight="11dp"
         android:layout_marginBottom="30dp"
+        android:adjustViewBounds="false"
         android:onClick="onLoginClick"
-        android:adjustViewBounds="false"/>
+        android:src="@drawable/ic_back_img" />
 </RelativeLayout>

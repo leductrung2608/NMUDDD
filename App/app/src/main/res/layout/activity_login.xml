@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".login.LoginActivity"
+    tools:context=".login.Login"
     android:background="@color/login_bk_color"
     android:focusableInTouchMode="true"
     android:gravity="center"
@@ -37,25 +37,26 @@
 
                 <ImageView
                     android:layout_width="154dp"
-                    android:layout_height="154dp"
+                    android:layout_height="79dp"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentRight="true"
+                    android:layout_marginTop="75dp"
                     android:layout_marginRight="0dp"
-                    android:src="@drawable/ic_register_hero" />
+                    android:src="@drawable/logo" />
             </RelativeLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/textInputEmail"
                 style="@style/parent"
                 android:layout_marginTop="30dp"
-                android:hint="Username"
+                android:hint="Email"
                 android:textColorHint="#e39caa"
                 app:hintEnabled="true">
 
                 <EditText
-                    android:id="@+id/editTextEmail"
+                    android:id="@+id/editTextEmail2"
                     style="@style/modifiedEditText"
-                    android:hint="@string/login_email_hint"
+                    android:hint="Email"
                     android:inputType="textEmailAddress"
                     android:maxLines="1"
                     android:textColor="#dd5d79" />
@@ -70,7 +71,7 @@
                         app:hintEnabled="true">
 
                         <EditText
-                            android:id="@+id/editTextPassword"
+                            android:id="@+id/editTextPassword2"
                             style="@style/modifiedEditText"
                             android:hint="@string/login_password_hint"
                             android:inputType="textPassword"
@@ -79,13 +80,7 @@
                     </com.google.android.material.textfield.TextInputLayout>
 
 
-            <TextView
-                style="@style/viewParent"
-                android:layout_gravity="end"
-                android:layout_marginTop="10dp"
-                android:text="Forgot Password?"
-                android:textColor="#e37b92"
-                android:textSize="@dimen/newsMoreTextSize" />x
+            x
 
             <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
                 android:id="@+id/cirLoginButton"
@@ -144,19 +139,25 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:layout_marginTop="20dp">
-                <ImageView
+                android:layout_width="374dp"
+                android:layout_height="59dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+
+                <com.google.android.gms.common.SignInButton
+                    android:id="@+id/gg"
+                    android:layout_width="146dp"
+                    android:layout_height="wrap_content" />
+
+                <com.facebook.login.widget.LoginButton
+                    android:id="@+id/fb"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_facebook"/>
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_google_plus"
-                    android:layout_marginLeft="10dp"/>
+                    android:layout_height="44dp"
+                    android:layout_gravity="center"
+                    android:paddingTop="18dp"
+                    android:paddingBottom="20dp"
+                    android:textSize="8sp" />
+
             </LinearLayout>
 
         </LinearLayout>

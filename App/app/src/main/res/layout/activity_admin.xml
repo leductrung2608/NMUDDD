@@ -6,4 +6,30 @@
     android:layout_height="match_parent"
     tools:context=".Admin">
 
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADMIN"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <at.markushi.ui.CircleButton
+        android:id="@+id/btt_logoutAdmin"
+        android:layout_width="64dip"
+        android:layout_height="64dip"
+        android:layout_gravity="center"
+        android:layout_marginBottom="132dp"
+        android:foregroundGravity="center"
+        android:src="@android:drawable/ic_delete"
+        app:cb_color="#e995a8"
+        app:cb_pressedRingWidth="8dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

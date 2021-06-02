@@ -1,4 +1,4 @@
-package com.example.app;
+package com.example.app.map;
 
 public class Address {
     String address;

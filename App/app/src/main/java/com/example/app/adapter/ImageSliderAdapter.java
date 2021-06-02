@@ -45,6 +45,6 @@ class SlideViewHolder extends SliderViewAdapter.ViewHolder
     public SlideViewHolder(View itemView) {
         super(itemView);
         //goi imageview ben slider_item_layout
-        sliderImageView=itemView.findViewById(R.id.imageView);
+        sliderImageView=itemView.findViewById(R.id.imageProfile);
     }
 }

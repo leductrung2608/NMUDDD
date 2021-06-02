@@ -11,6 +11,7 @@ import android.location.LocationManager;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
@@ -23,7 +24,7 @@ import java.util.Locale;
 
 import de.greenrobot.event.EventBus;
 
-public class CurrentLocationActivity extends AppCompatActivity implements LocationListener {
+public class CurrentLocation extends AppCompatActivity implements LocationListener {
 
     Button button_location;
     TextView textView_location;
@@ -38,9 +39,9 @@ public class CurrentLocationActivity extends AppCompatActivity implements Locati
         textView_location = findViewById(R.id.tv);
 
         //Runtime permissions
-        if (ContextCompat.checkSelfPermission(CurrentLocationActivity.this, Manifest.permission.ACCESS_FINE_LOCATION)
+        if (ContextCompat.checkSelfPermission(CurrentLocation.this, Manifest.permission.ACCESS_FINE_LOCATION)
         != PackageManager.PERMISSION_GRANTED){
-            ActivityCompat.requestPermissions(CurrentLocationActivity.this,new String[]{
+            ActivityCompat.requestPermissions(CurrentLocation.this,new String[]{
                     Manifest.permission.ACCESS_FINE_LOCATION
             },100);
         }
@@ -54,7 +55,7 @@ public class CurrentLocationActivity extends AppCompatActivity implements Locati
 
         try {
             locationManager = (LocationManager) getApplicationContext().getSystemService(LOCATION_SERVICE);
-            locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER,5000,5, CurrentLocationActivity.this);
+            locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER,5000,5, CurrentLocation.this);
 
         }catch (Exception e){
             e.printStackTrace();
@@ -65,9 +66,11 @@ public class CurrentLocationActivity extends AppCompatActivity implements Locati
     @Override
     public void onLocationChanged(Location location) {
         try {
-            Geocoder geocoder = new Geocoder(CurrentLocationActivity.this, Locale.getDefault());
+            Geocoder geocoder = new Geocoder(CurrentLocation.this, Locale.getDefault());
             List<Address> addresses = geocoder.getFromLocation(location.getLatitude(),location.getLongitude(),1);
             address = addresses.get(0).getAddressLine(0);
+
+            Toast.makeText(CurrentLocation.this, address + "hihi", Toast.LENGTH_SHORT).show();
             textView_location.setText(address);
 
             EventBus.getDefault().postSticky(new com.example.app.map.Address(address));

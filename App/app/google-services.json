@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "969741243632",
+    "firebase_url": "https://ibeauty-42589-default-rtdb.firebaseio.com",
+    "project_id": "ibeauty-42589",
+    "storage_bucket": "ibeauty-42589.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:969741243632:android:5fd81232aa441017c51e35",
+        "android_client_info": {
+          "package_name": "com.example.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "969741243632-ng2ijgvi36cl9o8ggd9v7htr7bh6k55g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASb9Ffkr_3tLt6VTTmErjrbCHb5Ej6oT4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "969741243632-ng2ijgvi36cl9o8ggd9v7htr7bh6k55g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:969741243632:android:f9d182f7afb40371c51e35",
+        "android_client_info": {
+          "package_name": "com.example.ibeauty_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "969741243632-s8tdb29lvccto5lmfum303113mqhl3vm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ibeauty_app",
+            "certificate_hash": "a57f47e99f3df335bc3a044ddd1492f7f2806c81"
+          }
+        },
+        {
+          "client_id": "969741243632-ng2ijgvi36cl9o8ggd9v7htr7bh6k55g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASb9Ffkr_3tLt6VTTmErjrbCHb5Ej6oT4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "969741243632-ng2ijgvi36cl9o8ggd9v7htr7bh6k55g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
