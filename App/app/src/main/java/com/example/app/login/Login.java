@@ -6,14 +6,19 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.app.R;
-import com.example.app.login.RegisterActivity;
+
+import at.markushi.ui.CircleButton;
 
 
 public class LoginActivity extends AppCompatActivity {
+    EditText email, pass;
+    CircleButton btt_login;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,7 +28,14 @@ public class LoginActivity extends AppCompatActivity {
         }
         changeStatusBarColor();
         setContentView(R.layout.activity_login);
+
+        email = findViewById(R.id.editTextEmail2);
+        pass = findViewById(R.id.editTextPassword2);
+        btt_login = findViewById(R.id.cirLoginButton);
+
     }
+
+
 
     private void changeStatusBarColor() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
