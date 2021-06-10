@@ -1,0 +1,83 @@
+com/example/ibeauty/value/User.java
+ com.example.ibeauty.value.User
+com/example/ibeauty/adapter/RecyclerViewAdapter.java
+ com.example.ibeauty.adapter.RecyclerViewAdapter
+ com.example.ibeauty.adapter.RecyclerViewAdapter$1
+ com.example.ibeauty.adapter.RecyclerViewAdapter$2
+ com.example.ibeauty.adapter.RecyclerViewAdapter$ViewHolder
+com/example/ibeauty/intro/WelcomeActivity.java
+ com.example.ibeauty.intro.WelcomeActivity
+ com.example.ibeauty.intro.WelcomeActivity$1
+ com.example.ibeauty.intro.WelcomeActivity$2
+ com.example.ibeauty.intro.WelcomeActivity$3
+ com.example.ibeauty.intro.WelcomeActivity$MyViewPagerAdapter
+com/example/ibeauty/ProductDetail_ImageSliderAdapter.java
+ com.example.ibeauty.ProductDetail_ImageSliderAdapter
+ com.example.ibeauty.ProductDetail_SlideViewHolder
+com/example/ibeauty/ProductDetail.java
+ com.example.ibeauty.ProductDetail
+ com.example.ibeauty.ProductDetail$1
+com/example/ibeauty/adapter/ShoppingBag_ListItem_ViewRecyclerAdapter.java
+ com.example.ibeauty.adapter.ShoppingBag_ListItem_ViewRecyclerAdapter
+ com.example.ibeauty.adapter.ShoppingBag_ListItem_ViewRecyclerAdapter$1
+ com.example.ibeauty.adapter.ShoppingBag_ListItem_ViewRecyclerAdapter$ViewHolder
+com/example/ibeauty/ProfileActivity.java
+ com.example.ibeauty.ProfileActivity
+ com.example.ibeauty.ProfileActivity$1
+ com.example.ibeauty.ProfileActivity$2
+ com.example.ibeauty.ProfileActivity$3
+ com.example.ibeauty.ProfileActivity$3$1
+com/example/ibeauty/BuildConfig.java
+ com.example.ibeauty.BuildConfig
+com/example/ibeauty/adapter/RecyclerViewAdapter_discount.java
+ com.example.ibeauty.adapter.RecyclerViewAdapter_discount
+ com.example.ibeauty.adapter.RecyclerViewAdapter_discount$1
+ com.example.ibeauty.adapter.RecyclerViewAdapter_discount$2
+ com.example.ibeauty.adapter.RecyclerViewAdapter_discount$ViewHolder
+com/example/ibeauty/login/SignUpActivity.java
+ com.example.ibeauty.login.SignUpActivity
+ com.example.ibeauty.login.SignUpActivity$1
+ com.example.ibeauty.login.SignUpActivity$2
+ com.example.ibeauty.login.SignUpActivity$2$1
+com/example/ibeauty/ProductDetail_SimilarAdapter.java
+ com.example.ibeauty.ProductDetail_SimilarAdapter
+ com.example.ibeauty.ProductDetail_SimilarAdapter$1
+ com.example.ibeauty.ProductDetail_SimilarAdapter$ViewHolder
+com/example/ibeauty/ShoppingBag.java
+ com.example.ibeauty.ShoppingBag
+ com.example.ibeauty.ShoppingBag$1
+com/example/ibeauty/home/HomeActivity.java
+ com.example.ibeauty.home.HomeActivity
+ com.example.ibeauty.home.HomeActivity$1
+com/example/ibeauty/ImageSliderAdapter.java
+ com.example.ibeauty.ImageSliderAdapter
+ com.example.ibeauty.SlideViewHolder
+com/example/ibeauty/intro/PrefManager.java
+ com.example.ibeauty.intro.PrefManager
+com/example/ibeauty/value/AllProduct.java
+ com.example.ibeauty.value.AllProduct
+com/example/ibeauty/value/ListProduct.java
+ com.example.ibeauty.value.ListProduct
+com/example/ibeauty/adapter/RecyclerViewAdapter_hot.java
+ com.example.ibeauty.adapter.RecyclerViewAdapter_hot
+ com.example.ibeauty.adapter.RecyclerViewAdapter_hot$1
+ com.example.ibeauty.adapter.RecyclerViewAdapter_hot$2
+ com.example.ibeauty.adapter.RecyclerViewAdapter_hot$ViewHolder
+com/example/ibeauty/login/SignInActivity.java
+ com.example.ibeauty.login.SignInActivity
+ com.example.ibeauty.login.SignInActivity$1
+ com.example.ibeauty.login.SignInActivity$2
+ com.example.ibeauty.login.SignInActivity$3
+ com.example.ibeauty.login.SignInActivity$4
+ com.example.ibeauty.login.SignInActivity$5
+ com.example.ibeauty.login.SignInActivity$6
+ com.example.ibeauty.login.SignInActivity$7
+ com.example.ibeauty.login.SignInActivity$8
+com/example/ibeauty/value/ListProductAdapter.java
+ com.example.ibeauty.value.ListProductAdapter
+com/example/ibeauty/ImageSliderModel.java
+ com.example.ibeauty.ImageSliderModel
+com/example/ibeauty/adapter/ProductDetail_Reviews_RecyclerViewAdapter.java
+ com.example.ibeauty.adapter.ProductDetail_Reviews_RecyclerViewAdapter
+ com.example.ibeauty.adapter.ProductDetail_Reviews_RecyclerViewAdapter$1
+ com.example.ibeauty.adapter.ProductDetail_Reviews_RecyclerViewAdapter$ViewHolder

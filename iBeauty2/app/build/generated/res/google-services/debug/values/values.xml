@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">969741243632-ng2ijgvi36cl9o8ggd9v7htr7bh6k55g.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://ibeauty-42589-default-rtdb.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">969741243632</string>
+    <string name="google_api_key" translatable="false">AIzaSyASb9Ffkr_3tLt6VTTmErjrbCHb5Ej6oT4</string>
+    <string name="google_app_id" translatable="false">1:969741243632:android:f9d182f7afb40371c51e35</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyASb9Ffkr_3tLt6VTTmErjrbCHb5Ej6oT4</string>
+    <string name="google_storage_bucket" translatable="false">ibeauty-42589.appspot.com</string>
+    <string name="project_id" translatable="false">ibeauty-42589</string>
+</resources>

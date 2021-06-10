@@ -1,0 +1,422 @@
+[
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_baseline_shopping_bag_24.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable-v24\\ic_baseline_shopping_bag_24.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_edittext.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable\\edittext.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_favourite.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable-v24\\ic_favourite.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_back_to_home_button.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable\\back_to_home_button.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_foundation.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable-v24\\foundation.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_home.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\layout\\activity_home.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_plus.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable\\ic_plus.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\layout_header_navigation.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\layout\\header_navigation.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_login_bk.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable-v24\\login_bk.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_minus.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable-v24\\ic_minus.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\layout_slider_item_layout.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\layout\\slider_item_layout.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_profile_round.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable\\profile_round.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\menu_menu_navigation.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\menu\\menu_navigation.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_app_name.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable\\app_name.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\layout_genre_of_items.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\layout\\genre_of_items.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_n3.jpg.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable-v24\\n3.jpg"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_p5.jpg.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable-v24\\p5.jpg"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\raw_makeup.json.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\raw\\makeup.json"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_account_settings_24.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable-v24\\ic_account_settings_24.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_product_detail.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\layout\\activity_product_detail.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\layout_content_profile.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\layout\\content_profile.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_logo.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable-v24\\logo.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_haircare.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable\\ic_haircare.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_botron.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable-v24\\botron.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_menu.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable-v24\\ic_menu.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_p6.jpg.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable\\p6.jpg"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_lipstick.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable-v24\\lipstick.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\font_open_sans.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\font\\open_sans.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_arrow_forward_black_24dp.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable\\ic_arrow_forward_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_vote_star.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable-v24\\ic_vote_star.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_p102.jpg.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable-v24\\p102.jpg"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_parson.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable-v24\\ic_parson.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_n1.jpg.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable-v24\\n1.jpg"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_p3.jpg.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable\\p3.jpg"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bg_listitem.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable\\bg_listitem.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_baseline_delete_24.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable-v24\\ic_baseline_delete_24.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_m1.jpg.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable-v24\\m1.jpg"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_logo_app.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable\\logo_app.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_welcome.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\layout\\activity_welcome.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_email.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable\\ic_email.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_mobile.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable\\ic_mobile.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_profile_bg.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable\\profile_bg.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\layout_hot_items.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\layout\\hot_items.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_signin_bg.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable\\signin_bg.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_profile_back_button.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable\\profile_back_button.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_n4.jpg.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable-v24\\n4.jpg"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_all_product.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\layout\\activity_all_product.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_mascara.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable-v24\\mascara.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_name.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable\\ic_name.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_sign_in.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\layout\\activity_sign_in.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_naviphoto.jpg.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable-v24\\naviphoto.jpg"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_design_searchbar.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable-v24\\design_searchbar.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_p101.jpg.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable-v24\\p101.jpg"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_back.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable\\ic_back.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\layout_similar_product.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\layout\\similar_product.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\layout_welcome_slide2.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\layout\\welcome_slide2.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_beautycare.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable\\ic_beautycare.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_home.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable-v24\\ic_home.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_profile_bk.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable\\profile_bk.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bg.jpg.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable\\bg.jpg"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\layout_welcome_slide3.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\layout\\welcome_slide3.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_sign_up.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\layout\\activity_sign_up.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\layout_row_item_in_all_product.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\layout\\row_item_in_all_product.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\font_cherry_swash_bold.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\font\\cherry_swash_bold.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_nail.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable-v24\\nail.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_contact.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable-v24\\ic_contact.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_profile.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\layout\\activity_profile.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_p2.jpg.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable\\p2.jpg"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\layout_layout_signin.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\layout\\layout_signin.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_account1_settings_24.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable-v24\\ic_account1_settings_24.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\layout_discount_items.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\layout\\discount_items.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\layout_toolbar.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\layout\\toolbar.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_e1.jpg.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable-v24\\e1.jpg"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\font_lemonada_bold.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\font\\lemonada_bold.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_n2.jpg.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable-v24\\n2.jpg"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_logout.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable-v24\\ic_logout.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_address.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable\\ic_address.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\font_bonbon.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\font\\bonbon.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\raw_lip.json.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\raw\\lip.json"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_shoppingbag.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\layout\\activity_shoppingbag.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\layout_welcome_slide4.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\layout\\welcome_slide4.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_s1.jpg.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable-v24\\s1.jpg"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\layout_welcome_slide1.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\layout\\welcome_slide1.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_makeup.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable\\ic_makeup.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_eyeliner.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable-v24\\eyeliner.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_cart.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable-v24\\cart.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_p1.jpg.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable\\p1.jpg"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bg_menu.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable\\bg_menu.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_login_bk.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable\\login_bk.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_login_button_bk.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable\\login_button_bk.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_cart.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable-v24\\ic_cart.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_n0.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable-v24\\n0.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_shoppingbag_listitem.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\layout\\activity_shoppingbag_listitem.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_brush.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable-v24\\brush.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_person.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\drawable-v24\\ic_person.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\layout_productdetail_reviews.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\layout\\productdetail_reviews.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\build\\intermediates\\res\\merged\\debug\\layout_layout_signup.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\iBeauty2\\app\\src\\main\\res\\layout\\layout_signup.xml"
+    }
+]
