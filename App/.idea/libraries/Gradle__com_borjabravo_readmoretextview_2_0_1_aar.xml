@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.borjabravo:readmoretextview:2.0.1@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a5248738819b74cdb663f7dd8408756d/jetified-readmoretextview-2.0.1/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a5248738819b74cdb663f7dd8408756d/jetified-readmoretextview-2.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a5248738819b74cdb663f7dd8408756d/jetified-readmoretextview-2.0.1/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.borjabravo/readmoretextview/2.0.1/6131c412f017e8c3ae3c7ab58846ec91e09d25d9/readmoretextview-2.0.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.borjabravo/readmoretextview/2.0.1/637e593f0531146401d5693c4b53ab310fd518ee/readmoretextview-2.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

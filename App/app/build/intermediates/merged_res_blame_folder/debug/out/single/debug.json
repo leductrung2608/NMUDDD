@@ -1,0 +1,426 @@
+[
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_shopping.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\drawable\\ic_shopping.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_currentlocation.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\layout\\activity_currentlocation.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_p1.jpg.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\drawable\\p1.jpg"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_spiner.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\drawable\\spiner.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_admin.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\layout\\activity_admin.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_favourite.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\drawable\\ic_favourite.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_facebook.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\drawable\\ic_facebook.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\font_yeseva_one.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\font\\yeseva_one.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_register_hero.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_register_hero.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\anim_stay.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\anim\\stay.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_map.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\layout\\activity_map.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_home.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_login_hero.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_login_hero.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_fb_btt.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\drawable\\fb_btt.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_profile_avatar.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\drawable\\profile_avatar.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\menu_nav_item.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\menu\\nav_item.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\layout_allitem_layout.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\layout\\allitem_layout.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_dotted_line.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\drawable\\ic_dotted_line.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_add_img.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\drawable\\ic_add_img.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_back_img.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\drawable\\ic_back_img.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_home.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\drawable\\ic_home.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_n4.jpg.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\drawable\\n4.jpg"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\anim_slide_in_left.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\anim\\slide_in_left.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_son.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\drawable\\ic_son.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_login_hero.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_login_hero.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_n1.jpg.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\drawable\\n1.jpg"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_trash.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\drawable\\ic_trash.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_email.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\drawable\\ic_email.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_phan.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\drawable\\ic_phan.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_google_plus.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\drawable\\ic_google_plus.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_register_hero.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_register_hero.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_login_hero.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_login_hero.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_shopping_cart.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\drawable\\ic_shopping_cart.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_mat.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\drawable\\ic_mat.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_n2.jpg.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\drawable\\n2.jpg"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_location.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\drawable\\location.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_register_hero.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_register_hero.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_currentlo.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\drawable\\ic_currentlo.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bg_payment.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\drawable\\bg_payment.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\layout_cart_listitem.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\layout\\cart_listitem.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_login_hero.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_login_hero.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_search_bar_bg.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\drawable\\search_bar_bg.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\layout_category_items.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\layout\\category_items.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_register.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_n3.jpg.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\drawable\\n3.jpg"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_logo.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\drawable\\logo.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_address.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\drawable\\ic_address.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_name.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\drawable\\ic_name.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_login_hero.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_login_hero.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_location.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\drawable\\ic_location.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_login_hero.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_login_hero.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_back_arrow.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\drawable\\ic_back_arrow.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_cart.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\layout\\fragment_cart.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_register_hero.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_register_hero.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_profile.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\drawable\\ic_profile.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_phoneno.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\drawable\\ic_phoneno.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\font_adamina.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\font\\adamina.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\font_oswald_light.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\font\\oswald_light.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_vote_star.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\drawable\\ic_vote_star.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_login.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_button_background_pay.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\drawable\\button_background_pay.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_profile_background_btn.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\drawable\\profile_background_btn.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_mas.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\drawable\\ic_mas.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\anim_slide_in_right.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\anim\\slide_in_right.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_n0.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\drawable\\n0.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_login_hero.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_login_hero.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\layout_spinner_item.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\layout\\spinner_item.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_register_hero.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_register_hero.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_minus.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\drawable\\ic_minus.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_button_background.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\drawable\\button_background.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_back.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\drawable\\ic_back.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_right_arrow.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\drawable\\ic_right_arrow.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_register_hero.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_register_hero.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_side_bg.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\drawable\\ic_side_bg.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_mahong.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\drawable\\ic_mahong.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_kemnen.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\drawable\\ic_kemnen.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\font_libre_baskerville.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\font\\libre_baskerville.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_product_detail.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\layout\\activity_product_detail.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_cart.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\drawable\\ic_cart.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_profile.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\layout\\fragment_profile.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_plus.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\drawable\\ic_plus.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_profile_bg_btt.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\drawable\\profile_bg_btt.xml"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_register_hero.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_register_hero.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_profile_top_background.png.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\drawable\\profile_top_background.png"
+    },
+    {
+        "merged": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\build\\intermediates\\res\\merged\\debug\\layout_slider_item.xml.flat",
+        "source": "C:\\D\\University\\SecondYear\\DoAnDiDong\\NMUDDD\\App\\app\\src\\main\\res\\layout\\slider_item.xml"
+    }
+]
