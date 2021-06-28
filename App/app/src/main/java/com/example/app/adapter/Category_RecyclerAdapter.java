@@ -4,60 +4,54 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.app.model.Category;
 import com.example.app.R;
+import com.example.app.model.Category;
+import com.squareup.picasso.Picasso;
 
+import java.util.ArrayList;
 
-import java.util.List;
+public class Category_RecyclerAdapter extends RecyclerView.Adapter<CategoryHolder> {
 
-public class Category_RecyclerAdapter extends RecyclerView.Adapter<Category_RecyclerAdapter.CategoryViewHolder> {
-
+    ArrayList<Category> list;
     Context context;
-    List<Category> categoryList;
 
-    public Category_RecyclerAdapter(Context context, List<Category> categoryList) {
+    public Category_RecyclerAdapter(){}
+    public Category_RecyclerAdapter(ArrayList<Category> list, Context context) {
+        this.list = list;
         this.context = context;
-        this.categoryList = categoryList;
     }
 
-    @NonNull
-    @Override
-    public CategoryViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public CategoryHolder onCreateViewHolder(@NonNull  ViewGroup parent, int viewType) {
 
-        View view = LayoutInflater.from(context).inflate(R.layout.category_items, parent, false);
+        View view = LayoutInflater.from ( context ).inflate ( R.layout.category_items, parent, false );
 
-        return new CategoryViewHolder(view);
+
+
+
+        return new CategoryHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull CategoryViewHolder holder, int position) {
+    public void onBindViewHolder(CategoryHolder holder, int position) {
 
-        holder.categoryImage.setImageResource(categoryList.get(position).getImageurl());
+        Category currentData = list.get ( position );
+
+
+        Picasso.get ().load ( currentData.getImageurl () ).into ( holder.imageView );
+
+
+
 
     }
 
     @Override
     public int getItemCount() {
-        return categoryList.size();
+        return list.size ();
     }
-
-    public  static class CategoryViewHolder extends RecyclerView.ViewHolder{
-
-        ImageView categoryImage;
-
-        public CategoryViewHolder(@NonNull View itemView) {
-            super(itemView);
-
-            categoryImage = itemView.findViewById(R.id.categoryImage);
-
-        }
-    }
-
 }
 
 // lets import all the category images

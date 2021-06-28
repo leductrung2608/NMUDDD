@@ -4,43 +4,82 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentStatePagerAdapter;
+import androidx.viewpager.widget.ViewPager;
 
-import com.ismaeldivita.chipnavigation.ChipNavigationBar;
+import com.aurelhubert.ahbottomnavigation.AHBottomNavigation;
+import com.aurelhubert.ahbottomnavigation.AHBottomNavigationItem;
+import com.aurelhubert.ahbottomnavigation.AHBottomNavigationViewPager;
+import com.example.app.adapter.ViewPagerAdapter;
+import com.example.app.model.Cart;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    private ChipNavigationBar chipNavigationBar;
+    private AHBottomNavigation ahBottomNavigation;
+    private AHBottomNavigationViewPager ahBottomNavigationViewPager;
+    private ViewPagerAdapter viewPagerAdapter;
     private Fragment fragment = null;
+    public static ArrayList<Cart> ListCart;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        chipNavigationBar = findViewById(R.id.chipNavigation);
+        AnhXa();
+        BottomNav();
+    }
 
-        chipNavigationBar.setItemSelected(R.id.home, true);
-        getSupportFragmentManager().beginTransaction().replace(R.id.container, new HomeFragment()).commit();
+    private void AnhXa() {
+        ahBottomNavigation = findViewById(R.id.BotNav);
+        ahBottomNavigationViewPager = findViewById(R.id.BotNavVPager);
+        if(ListCart != null){
 
-        chipNavigationBar.setOnItemSelectedListener(new ChipNavigationBar.OnItemSelectedListener() {
+        }else {
+            ListCart = new ArrayList<>();
+        }
+    }
+
+    public void BottomNav(){
+
+        viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager(), FragmentStatePagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
+        ahBottomNavigationViewPager.setAdapter(viewPagerAdapter);
+        ahBottomNavigationViewPager.setPagingEnabled(true);
+
+        // Create items
+        AHBottomNavigationItem item1 = new AHBottomNavigationItem(R.string.tab_1, R.drawable.ic_home, R.color.colorPrimary);
+        AHBottomNavigationItem item2 = new AHBottomNavigationItem(R.string.tab_2, R.drawable.ic_shopping, R.color.colorPrimary);
+        AHBottomNavigationItem item3 = new AHBottomNavigationItem(R.string.tab_3, R.drawable.ic_profile, R.color.colorPrimary);
+
+        // Add items
+        ahBottomNavigation.addItem(item1);
+        ahBottomNavigation.addItem(item2);
+        ahBottomNavigation.addItem(item3);
+
+        ahBottomNavigation.setOnTabSelectedListener(new AHBottomNavigation.OnTabSelectedListener() {
             @Override
-            public void onItemSelected(int i) {
-                switch (i) {
-                    case R.id.home:
-                        fragment = new HomeFragment();
-                        break;
-                    case R.id.cart:
-                        fragment = new CartFragment();
-                        break;
-                    case R.id.profile:
-                        fragment = new ProfileFragment();
-                        break;
+            public boolean onTabSelected(int position, boolean wasSelected) {
+                ahBottomNavigationViewPager.setCurrentItem(position);
+                return true;
+            }
+        });
 
-                }
+        ahBottomNavigationViewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
 
-                if (fragment != null) {
-                    getSupportFragmentManager().beginTransaction().replace(R.id.container, fragment).commit();
-                }
+            }
+
+            @Override
+            public void onPageSelected(int position) {
+                ahBottomNavigation.setCurrentItem(position);
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+
             }
         });
     }

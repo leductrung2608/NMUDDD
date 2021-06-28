@@ -5,7 +5,10 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
@@ -47,6 +50,7 @@ public class CartFragment extends Fragment {
     TextView tvAddress, tvPhone, tvUsername;
     FirebaseFirestore fStore;
     FirebaseAuth fAuth;
+    Spinner spinner;
 
     public CartFragment() {
         // Required empty public constructor
@@ -68,7 +72,6 @@ public class CartFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
-
     }
 
     private void getBag(RecyclerView recyclerView){

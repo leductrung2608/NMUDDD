@@ -1,323 +1,331 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="@color/login_bk_color"
     tools:context=".ProductDetail">
 
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
+    <ScrollView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content">
-
-        <RelativeLayout
-            android:id="@+id/layout1"
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="320dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-
-            <ImageView
-                android:id="@+id/imageView11"
-                android:layout_width="166dp"
-                android:layout_height="43dp"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="70dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="120dp"
-                app:srcCompat="@drawable/logo" />
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardView"
-                android:layout_width="match_parent"
-                android:layout_height="320dp"
-                android:layout_marginTop="50dp"
-                app:cardBackgroundColor="#f9e1e0">
-
-                <com.smarteist.autoimageslider.SliderView
-                    android:id="@+id/imageSlider"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="#ffff"
-                    app:sliderAnimationDuration="600"
-                    app:sliderAutoCycleDirection="back_and_forth"
-                    app:sliderAutoCycleEnabled="true"
-                    app:sliderIndicatorAnimationDuration="600"
-                    app:sliderIndicatorGravity="center_horizontal|bottom"
-                    app:sliderIndicatorMargin="15dp"
-                    app:sliderIndicatorOrientation="horizontal"
-                    app:sliderIndicatorPadding="3dp"
-                    app:sliderIndicatorRadius="2dp"
-                    app:sliderIndicatorSelectedColor="#5A5A5A"
-                    app:sliderIndicatorUnselectedColor="#FFF">
-
-                </com.smarteist.autoimageslider.SliderView>
-            </androidx.cardview.widget.CardView>
-
-            <!--<androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/image_recycler"
-                android:layout_width="match_parent"
-                android:layout_height="320dp"
-                android:layout_margin="16dp"/>-->
-
-            <Button
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_alignParentEnd="true"
-                android:layout_marginTop="260dp"
-                android:layout_marginEnd="8dp"
-                android:background="@drawable/ic_favourite" />
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/layout2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/layout1">
-
-            <TextView
-                android:id="@+id/item_name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:fontFamily="@font/oswald_light"
-                android:text="Missha  Magic Cushion "
-                android:textColor="#de637e"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                tools:ignore="HardcodedText" />
-
-            <TextView
-                android:id="@+id/special"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/item_name"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="16dp"
-                android:fontFamily="@font/oswald_light"
-                android:text="15gr"
-                android:textColor="#ff8882"
-                android:textSize="16sp"
-                tools:ignore="HardcodedText" />
-
-            <Button
-                android:id="@+id/vote_star"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_alignRight="@id/special"
-                android:layout_alignParentRight="true"
-                android:layout_marginTop="25dp"
-                android:layout_marginRight="46dp"
-                android:background="@drawable/ic_vote_star"
-                tools:ignore="RtlHardcoded" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignEnd="@id/vote_star"
-                android:layout_alignParentEnd="true"
-                android:layout_marginTop="30dp"
-                android:layout_marginEnd="18dp"
-                android:fontFamily="@font/oswald_light"
-                android:text="4.8"
-                android:textSize="20sp"
-                tools:ignore="HardcodedText" />
-
-            <TextView
-                android:id="@+id/cost"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/special"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
-                android:fontFamily="@font/oswald_light"
-                android:text="COST: "
-                android:textColor="#ff8882"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                tools:ignore="HardcodedText" />
-
-            <TextView
-                android:id="@+id/item_old_price"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/special"
-                android:layout_marginStart="4dp"
-                android:layout_marginTop="12dp"
-                android:layout_marginEnd="8dp"
-                android:layout_toEndOf="@id/cost"
-                android:fontFamily="@font/oswald_light"
-                android:text="$ 26"
-                android:textColor="#ff8882"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                tools:ignore="HardcodedText" />
-
-            <TextView
-                android:id="@+id/item_price"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/special"
-                android:layout_marginStart="4dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="16dp"
-                android:layout_toEndOf="@id/item_old_price"
-                android:fontFamily="@font/oswald_light"
-                android:text="$ 23"
-                android:textColor="#ff8882"
-                android:textSize="25sp"
-                android:textStyle="bold"
-                tools:ignore="HardcodedText" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="10dp"
-                android:layout_below="@id/cost"
-                android:background="#E0E0E0" />
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@id/layout3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#FFFFFF"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/layout2">
-
-            <TextView
-                android:id="@+id/description"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="16dp"
-                android:fontFamily="@font/oswald_light"
-                android:text="Product Description"
-                android:textColor="#de637e"
-                android:textSize="20sp"
-                tools:ignore="HardcodedText" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_below="@id/description"
-                android:background="#E0E0E0" />
-
-            <com.borjabravo.readmoretextview.ReadMoreTextView
-                android:id="@+id/text_view_show_more"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/description"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="16dp"
-                android:fontFamily="@font/oswald_light"
-                android:text="- Perfect coverage\n- Covers skin imperfections well\n- Maintain makeup for a long time without worrying about tone down"
-                android:textColor="#ff8882"
-                android:textSize="16sp"
-                app:trimCollapsedText="Show Less"
-                app:trimExpandedText="Show More"
-                app:trimLines="3"
-                app:trimMode="trimModeLine"
-                tools:ignore="HardcodedText" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="10dp"
-                android:layout_below="@id/text_view_show_more"
-                android:layout_marginTop="5dp"
-                android:background="#E0E0E0" />
-
-        </RelativeLayout>
-
-        <ScrollView
-            android:id="@+id/layout4"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:background="#FFFFFF"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/layout3">
+            android:layout_height="wrap_content">
 
             <RelativeLayout
+                android:id="@+id/layout1"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="320dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <ImageView
+                    android:id="@+id/imageView11"
+                    android:layout_width="166dp"
+                    android:layout_height="43dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="120dp"
+                    app:srcCompat="@drawable/logo" />
+
+                <Button
+                    android:id="@+id/btnBack"
+                    android:layout_width="50dp"
+                    android:layout_height="43dp"
+                    android:background="@drawable/ic_back_arrow"/>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="320dp"
+                    android:layout_marginTop="50dp"
+                    app:cardBackgroundColor="#f9e1e0">
+
+                    <ImageView
+                        android:id="@+id/imageSource"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#ffff">
+
+                    </ImageView>
+                </androidx.cardview.widget.CardView>
+
+                <!--<androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/image_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="320dp"
+                    android:layout_margin="16dp"/>-->
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="260dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/ic_favourite" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layout1">
 
                 <TextView
-                    android:id="@+id/reviews"
+                    android:id="@+id/item_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/oswald_light"
+                    android:text="Missha  Magic Cushion "
+                    android:textColor="#de637e"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/special"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/item_name"
+                    android:layout_marginStart="16dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="16dp"
-                    android:text="Product Reviews"
+                    android:fontFamily="@font/oswald_light"
+                    android:text="15gr"
+                    android:textColor="#ff8882"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:id="@+id/vote_star"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignRight="@id/special"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="46dp"
+                    android:background="@drawable/ic_vote_star"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/item_rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@id/vote_star"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="18dp"
+                    android:fontFamily="@font/oswald_light"
+                    android:text="4.8"
                     android:textSize="20sp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/cost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/special"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="@font/oswald_light"
+                    android:text="COST: "
+                    android:textColor="#ff8882"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/item_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/special"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_toEndOf="@id/cost"
+                    android:fontFamily="@font/oswald_light"
+                    android:text="$23"
+                    android:textColor="#ff8882"
+                    android:textSize="25sp"
                     android:textStyle="bold"
                     tools:ignore="HardcodedText" />
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_below="@id/reviews"
-                    android:layout_marginTop="8dp"
+                    android:layout_height="10dp"
+                    android:layout_below="@id/cost"
                     android:background="#E0E0E0" />
-
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/recycle_review"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_below="@id/reviews"
-                    android:layout_margin="16dp" />
 
             </RelativeLayout>
 
-        </ScrollView>
-
-        <RelativeLayout
-            android:id="@+id/layout5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#FFFFFF"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/layout4">
-
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="10dp"
-                android:layout_marginTop="5dp"
-                android:background="#E0E0E0" />
-
-            <TextView
-                android:id="@+id/similar"
+            <RelativeLayout
+                android:id="@id/layout3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:text="Similar Products"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                tools:ignore="HardcodedText" />
+                android:background="#FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layout2">
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/similar_recyclerView"
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/oswald_light"
+                    android:text="Product Description"
+                    android:textColor="#de637e"
+                    android:textSize="20sp"
+                    tools:ignore="HardcodedText" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/description"
+                    android:background="#E0E0E0" />
+
+                <com.borjabravo.readmoretextview.ReadMoreTextView
+                    android:id="@+id/text_view_show_more"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/description"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/oswald_light"
+                    android:text="- Perfect coverage\n- Covers skin imperfections well\n- Maintain makeup for a long time without worrying about tone down"
+                    android:textColor="#ff8882"
+                    android:textSize="16sp"
+                    app:trimCollapsedText="Show Less"
+                    app:trimExpandedText="Show More"
+                    app:trimLines="3"
+                    app:trimMode="trimModeLine"
+                    tools:ignore="HardcodedText" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_below="@id/text_view_show_more"
+                    android:layout_marginTop="5dp"
+                    android:background="#E0E0E0" />
+
+            </RelativeLayout>
+
+            <ScrollView
+                android:id="@+id/layout4"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layout3">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/reviews"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:text="Product Reviews"
+                        android:textSize="20sp"
+                        android:textColor="#ff8882"
+                        android:fontFamily="@font/oswald_light"
+                        tools:ignore="HardcodedText" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/reviews"
+                        android:layout_marginTop="8dp"
+                        android:background="#E0E0E0" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycle_review"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/reviews"
+                        android:layout_margin="16dp" />
+
+                </RelativeLayout>
+
+            </ScrollView>
+
+            <RelativeLayout
+                android:id="@+id/layout5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/similar"
-                android:layout_margin="16dp" />
+                android:background="#FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layout4">
 
-        </RelativeLayout>
-    </androidx.constraintlayout.widget.ConstraintLayout>
 
-</ScrollView>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#E0E0E0" />
+
+                <TextView
+                    android:id="@+id/similar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="Similar Products"
+                    android:textSize="20sp"
+                    android:textColor="#ff8882"
+                    android:fontFamily="@font/oswald_light"
+                    tools:ignore="HardcodedText" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/similar_recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/similar"
+                    android:layout_margin="16dp" />
+
+            </RelativeLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnAddToCart"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_background_pay"
+        android:fontFamily="@font/oswald_light"
+        android:text="ADD TO CART"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+
+    <EditText
+        android:id="@+id/spinner"
+        android:background="@drawable/spiner"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_toLeftOf="@id/btnAddToCart"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" />
+
+</RelativeLayout>

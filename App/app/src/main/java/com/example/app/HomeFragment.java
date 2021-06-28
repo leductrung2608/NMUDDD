@@ -1,5 +1,7 @@
 package com.example.app;
 
+import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,14 +13,30 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.app.adapter.Category_RecyclerAdapter;
-import com.example.app.adapter.ImageSliderAdapter;
 import com.example.app.adapter.Home_AllItem_RecyclerAdapter;
+import com.example.app.adapter.ImageSliderAdapter;
+import com.example.app.model.AllProductModel;
 import com.example.app.model.Category;
 import com.example.app.model.ImageSliderModel;
+import com.example.app.util.CheckConnection;
 import com.smarteist.autoimageslider.SliderView;
+import com.squareup.picasso.Picasso;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
+
+import static com.facebook.FacebookSdk.getApplicationContext;
 
 public class HomeFragment extends Fragment {
 
@@ -31,16 +49,11 @@ public class HomeFragment extends Fragment {
     SliderView sliderView;
     List<ImageSliderModel> imageSliderModelList;
 
-    Category_RecyclerAdapter categoryAdapter;
-    List<Category> categoryList;
-
-    RecyclerView categoryRecyclerView;
-
-    //var discountitem
-    private ArrayList<String> nSaleName = new ArrayList<>();
-    private ArrayList<Integer> nSaleImage = new ArrayList<>();
-    private ArrayList<String> nOldPrice = new ArrayList<>();
-    private ArrayList<String> nSalePrice = new ArrayList<>();
+    RecyclerView categoryRecyclerView,allItemRecyclerView;//recyclerView
+    ArrayList<Category> mangloaisanpham;//arrayList
+    ArrayList<AllProductModel> mangsanpham;
+    Home_AllItem_RecyclerAdapter home_allItem_recyclerAdapter;
+    Home_AllItem_RecyclerAdapter.RecyclerViewClickListener listener;
 
     public HomeFragment() { }
 
@@ -53,8 +66,7 @@ public class HomeFragment extends Fragment {
         return fragment;
     }
 
-    public void setSliderView()
-    {
+    public void setSliderView() {
         imageSliderModelList = new ArrayList<>();
         imageSliderModelList.add(new ImageSliderModel(R.drawable.n0));
         imageSliderModelList.add(new ImageSliderModel(R.drawable.n1));
@@ -65,47 +77,6 @@ public class HomeFragment extends Fragment {
         sliderView.startAutoCycle();
     }
 
-    private void setCategoryRecycler(List<Category> categoryDataList) {
-
-        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, false);
-        categoryRecyclerView.setLayoutManager(layoutManager);
-        categoryAdapter = new Category_RecyclerAdapter(getActivity(),categoryDataList);
-        categoryRecyclerView.setAdapter(categoryAdapter);
-    }
-
-    private void getImagesDiscount(RecyclerView recyclerView){
-        //Log.d(TAG, "initImageBitmaps: preparing bitmaps.");
-        nSaleName.add("Son MAC #314 Mull It Over");
-        nSaleImage.add(R.drawable.p1);
-        nOldPrice.add("$80.00");
-        nSalePrice.add("$60.00");
-
-
-        nSaleName.add("NARS Eyeshadow Palette");
-        nSaleImage.add(R.drawable.n2);
-        nOldPrice.add("$33.00");
-        nSalePrice.add("$20.00");
-
-        nSaleName.add("Warrior Princess Mascara");
-        nSaleImage.add(R.drawable.n3);
-        nOldPrice.add("$10.00");
-        nSalePrice.add("$6.00");
-
-        initRecyclerViewDiscount(recyclerView);
-    }
-
-    private void initRecyclerViewDiscount(RecyclerView recyclerView)
-    {
-        //  Log.d(TAG, "initRecyclerView: init recyclerview");
-
-        GridLayoutManager layoutManager = new GridLayoutManager(getActivity(), 2);
-        recyclerView.setLayoutManager(layoutManager);
-        // ArrayList<Integer> mImageUrls;
-        Home_AllItem_RecyclerAdapter adapter = new Home_AllItem_RecyclerAdapter(getActivity(), nSaleName, nSaleImage,nOldPrice,nSalePrice);
-        recyclerView.setAdapter(adapter);
-    }
-
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -113,33 +84,200 @@ public class HomeFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
-
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.fragment_home, container, false);
+        View view = inflater.inflate ( R.layout.fragment_home, container, false );
 
-        sliderView = view.findViewById(R.id.imageSlider);
-        categoryRecyclerView = view.findViewById(R.id.categoryRecycler);
-        RecyclerView recyclerViewDiscount = view.findViewById(R.id.recycleViewDiscount);
+        sliderView = view.findViewById ( R.id.imageSlider );
 
-        categoryList = new ArrayList<>();
-        categoryList.add(new Category(1, R.drawable.ic_son ));
-        categoryList.add(new Category(2,  R.drawable.ic_mahong));
-        categoryList.add(new Category(2,  R.drawable.ic_mas));
-        categoryList.add(new Category(2,  R.drawable.ic_mat));
-        categoryList.add(new Category(2,  R.drawable.ic_phan));
-        categoryList.add(new Category(2,  R.drawable.ic_kemnen));
+        categoryRecyclerView = view.findViewById ( R.id.categoryRecycler );
+        categoryRecyclerView.setHasFixedSize ( true );
+        categoryRecyclerView.setLayoutManager ( new LinearLayoutManager ( getApplicationContext (),LinearLayoutManager.HORIZONTAL,false ) );
+
+        mangloaisanpham = new ArrayList<Category> ( );
+
+        allItemRecyclerView = view.findViewById ( R.id.recycleViewDiscount );
+        allItemRecyclerView.setHasFixedSize ( true );
+        allItemRecyclerView.setLayoutManager ( new GridLayoutManager ( getApplicationContext (),2 ) );
+
+        mangsanpham = new ArrayList<AllProductModel> (  );
+        home_allItem_recyclerAdapter = new Home_AllItem_RecyclerAdapter(mangsanpham, getApplicationContext(), listener);
+        allItemRecyclerView.setAdapter(home_allItem_recyclerAdapter);
 
         setSliderView();
-        setCategoryRecycler(categoryList);
-        getImagesDiscount(recyclerViewDiscount);
+
+        if(CheckConnection.haveNetworkConnection(getApplicationContext())) {
+            JsonFetch jsonFetch = new JsonFetch ( );
+            jsonFetch.execute ( );
+
+            JsonFetchAllProduct jsonFetchAllProduct = new JsonFetchAllProduct ();
+            jsonFetchAllProduct.execute (  );
+
+            setOnClickListener();
+        }
+        else{
+            CheckConnection.ShowToast_Short(getApplicationContext(), "Please check the internet connection");
+        }
+
 
         return view;
     }
 
+    private void setOnClickListener() {
+        listener = (v, position) -> {
+            Intent intent = new Intent(getApplicationContext(), ProductDetail.class);
+            intent.putExtra("id", mangsanpham.get(position).getIdGoods() );
+            intent.putExtra("name", mangsanpham.get(position).getName());
+            intent.putExtra("price", mangsanpham.get(position).getCurrentPrice());
+            intent.putExtra("status", mangsanpham.get(position).getStatus());
+            intent.putExtra("weight", mangsanpham.get(position).getWeight());
+            intent.putExtra("description", mangsanpham.get(position).getDescription());
+            intent.putExtra("image", mangsanpham.get(position).getImage());
+            intent.putExtra("kind", mangsanpham.get(position).getKind());
+            startActivity(intent);
+        };
+    }
 
+    ////////////////////////////////////////////////////////////////////////////////////////////JSON/////////
+    public class JsonFetch extends AsyncTask<String, String, String> {
+        HttpURLConnection httpURLConnection = null;
+        String mainfile;
+
+        @Override
+        protected String doInBackground(String... strings) {
+
+            try {
+                URL url = new URL ( "https://ibeautycosmetic.000webhostapp.com/getKind.php" );
+                httpURLConnection = (HttpURLConnection) url.openConnection ( );
+                httpURLConnection.connect ( );
+
+                InputStream inputStream = httpURLConnection.getInputStream ( );
+                BufferedReader bufferedReader = new BufferedReader ( new InputStreamReader ( inputStream ) );
+
+                StringBuffer stringBuffer = new StringBuffer ( );
+                String line = "";
+                while ((line = bufferedReader.readLine ( )) != null) {
+
+                    stringBuffer.append ( line );
+
+                }
+
+                mainfile = stringBuffer.toString ( );
+
+                JSONArray parent = new JSONArray ( mainfile );
+                int i = 0;
+                while (i <= parent.length ( )) {
+
+                    JSONObject child = parent.getJSONObject ( i );
+                    int id = child.getInt ( "id" );
+                    String image = child.getString ( "image" );
+
+                    mangloaisanpham.add ( new Category ( image ) );
+
+                    i++;
+                }
+
+
+            } catch (MalformedURLException e) {
+                e.printStackTrace ( );
+            } catch (IOException e) {
+                e.printStackTrace ( );
+            } catch (JSONException e) {
+                e.printStackTrace ( );
+            }
+
+
+            return null;
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute ( s );
+
+            Category_RecyclerAdapter categoryRecyclerAdapter = new Category_RecyclerAdapter( mangloaisanpham,getApplicationContext ( ) );
+
+            categoryRecyclerView.setAdapter ( categoryRecyclerAdapter );
+
+
+        }
+    }
+
+
+    public class JsonFetchAllProduct extends AsyncTask<String, String, String> {
+        HttpURLConnection httpURLConnection = null;
+        String mainfile;
+
+        @Override
+        protected String doInBackground(String... strings) {
+
+            try {
+                URL url = new URL ( "https://ibeautycosmetic.000webhostapp.com/getGoods.php" );
+                httpURLConnection = (HttpURLConnection) url.openConnection ( );
+                httpURLConnection.connect ( );
+
+                InputStream inputStream = httpURLConnection.getInputStream ( );
+                BufferedReader bufferedReader = new BufferedReader ( new InputStreamReader ( inputStream ) );
+
+                StringBuffer stringBuffer = new StringBuffer ( );
+                String line = "";
+                while ((line = bufferedReader.readLine ( )) != null) {
+
+                    stringBuffer.append ( line );
+
+                }
+
+                mainfile = stringBuffer.toString ( );
+
+                JSONArray parent = new JSONArray ( mainfile );
+                int i = 0;
+                while (i <= parent.length ( )) {
+
+                    JSONObject child = parent.getJSONObject ( i );
+                    int id = child.getInt ( "id" );
+                    String name = child.getString ( "name" );
+                    int price = child.getInt ( "currentPrice" );
+                    int status = child.getInt ( "status" );
+                    String weight = child.getString ( "weight" );
+                    String description = child.getString ( "description" );
+                    String image = child.getString ( "image" );
+                    int kind = child.getInt ( "idKind" );
+
+                    mangsanpham.add ( new AllProductModel ( id,name,price,status,weight,description,image,kind ) );
+
+                    i++;
+                }
+
+
+            } catch (MalformedURLException e) {
+                e.printStackTrace ( );
+            } catch (IOException e) {
+                e.printStackTrace ( );
+            } catch (JSONException e) {
+                e.printStackTrace ( );
+            }
+
+
+            return null;
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute ( s );
+
+            Home_AllItem_RecyclerAdapter homeAllItemRecyclerAdapter = new Home_AllItem_RecyclerAdapter( mangsanpham,getApplicationContext(), listener );
+
+            allItemRecyclerView.setAdapter ( homeAllItemRecyclerAdapter );
+
+
+        }
+    }
 
 }
+
+
+
+
+

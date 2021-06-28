@@ -91,9 +91,6 @@ public class Cart_ListItem_RecyclerAdapter extends RecyclerView.Adapter<Cart_Lis
             itemPrice = itemView.findViewById(R.id.item_price);
             itemOldPrice = itemView.findViewById(R.id.item_old_price);
             itemQuantity = itemView.findViewById(R.id.item_quantity);
-
-            @SuppressLint("CutPasteId") TextView textView = itemView.findViewById(R.id.item_old_price);
-            textView.setPaintFlags(textView.getPaintFlags()| Paint.STRIKE_THRU_TEXT_FLAG);
         }
     }
 }

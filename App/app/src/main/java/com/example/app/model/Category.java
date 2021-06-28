@@ -2,30 +2,30 @@ package com.example.app.model;
 
 public class Category {
 
-
-    Integer id;
-    Integer imageurl;
-
-
-    public Category(Integer id, Integer imageurl) {
-        this.id = id;
-        this.imageurl = imageurl;
-    }
-
-    public Integer getId() {
+    //JsonDataList
+    public int getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(int id) {
         this.id = id;
     }
 
-    public Integer getImageurl() {
+    public String getImageurl() {
         return imageurl;
     }
 
-    public void setImageurl(Integer imageurl) {
+    public void setImageurl(String imageurl) {
         this.imageurl = imageurl;
     }
+
+    public Category( String imageurl) {
+        // this.id = id;
+        this.imageurl = imageurl;
+    }
+
+    public int id;
+    public String imageurl;
+
 
 }

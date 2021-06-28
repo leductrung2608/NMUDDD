@@ -48,15 +48,19 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
-        <activity android:name=".MainActivity"> </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.Design.NoActionBar"> </activity>
 
         <meta-data android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id"/>
         <activity
             android:name="com.facebook.FacebookActivity"
             android:configChanges= "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-            android:label="@string/app_name" />
-        <activity android:name="com.facebook.CustomTabActivity"
+            android:label="@string/app_name"/>
+        <activity
+            android:theme="@style/Theme.Design.NoActionBar"
+            android:name="com.facebook.CustomTabActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
