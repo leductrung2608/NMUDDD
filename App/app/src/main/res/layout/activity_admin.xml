@@ -1,35 +1,132 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:id="@+id/drawer_layout_admin"
     android:layout_height="match_parent"
-    tools:context=".Admin">
+    tools:context=".admin.Admin">
 
-    <TextView
-        android:id="@+id/textView20"
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ADMIN"
-        android:textSize="48sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="match_parent"
+        android:layout_gravity="center|start"
+        android:background="#f5c9cf"
+        app:headerLayout="@layout/header_navigation"
+        app:itemIconTint="@color/ic_launcher_background"
+        app:itemShapeFillColor="@color/colorPrimaryDark"
+        app:itemTextColor="#FFFFFF"
+        app:menu="@menu/menu_navigation" />
 
-    <at.markushi.ui.CircleButton
-        android:id="@+id/btt_logoutAdmin"
-        android:layout_width="64dip"
-        android:layout_height="64dip"
-        android:layout_gravity="center"
-        android:layout_marginBottom="132dp"
-        android:foregroundGravity="center"
-        android:src="@android:drawable/ic_delete"
-        app:cb_color="#e995a8"
-        app:cb_pressedRingWidth="8dip"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btt_logoutadmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/ic_launcher_background"
+            android:clickable="true"
+            app:backgroundTint="@color/themeColor"
+            app:borderWidth="1dp"
+            app:layout_constraintBottom_toBottomOf="@+id/allProAdmin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.954"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/searchAdmin"
+            app:layout_constraintVertical_bias="0.852"
+            app:srcCompat="@drawable/ic_logout2" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btt_chatadmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/ic_launcher_background"
+            android:clickable="true"
+            app:backgroundTint="@color/themeColor"
+            app:borderWidth="1dp"
+            app:layout_constraintBottom_toBottomOf="@+id/allProAdmin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.954"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/searchAdmin"
+            app:layout_constraintVertical_bias="0.726"
+            app:srcCompat="@drawable/ic_chat2" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:orientation="horizontal">
+
+                <include
+                    android:id="@+id/toolbar"
+                    layout="@layout/toolbar"
+                    android:layout_width="62dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorPrimary" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="40dp"
+                    app:srcCompat="@drawable/logo" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/searchAdmin"
+            style="@android:style/Widget.Material.Light.SearchView"
+            android:layout_width="369dp"
+            android:layout_height="37dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/search_bar_bg"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="Search"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:textColor="#FFFEFE"
+            android:textColorHint="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/allProAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="625dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/searchAdmin"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

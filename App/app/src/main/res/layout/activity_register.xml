@@ -24,30 +24,44 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="154dp">
+                android:layout_height="142dp">
 
                 <TextView
                     style="@style/viewParent.headerText.NoMode"
                     android:layout_alignParentLeft="true"
-                    android:layout_centerVertical="true"
-                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="151dp"
+                    android:layout_marginBottom="40dp"
                     android:fontFamily="@font/libre_baskerville"
                     android:text="Register"
                     android:textColor="@color/whiteTextColor"
                     android:textStyle="bold" />
 
-                <ImageView
-                    android:layout_width="129dp"
-                    android:layout_height="144dp"
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/lottieAnimationView"
+                    android:layout_width="153dp"
+                    android:layout_height="141dp"
                     android:layout_alignParentTop="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginRight="21dp"
-                    android:src="@drawable/ic_login_hero" />
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="218dp"
+                    android:layout_marginBottom="0dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.496"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/shopping" />
+
             </RelativeLayout>
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 app:cardBackgroundColor="@color/whiteTextColor"
                 app:cardCornerRadius="20dp">
 
@@ -111,7 +125,9 @@
                         style="@style/parent"
                         android:layout_marginTop="@dimen/loginViewsMargin"
                         android:hint="Password"
-                        android:textColorHint="#e39caa">
+                        android:textColorHint="#e39caa"
+                        app:passwordToggleEnabled="true"
+                        app:passwordToggleTint="#e37b92">
 
                         <EditText
                             android:id="@+id/editTextPassword"
@@ -133,9 +149,9 @@
                             android:id="@+id/editTextAddress"
                             style="@style/modifiedEditText"
                             android:layout_width="match_parent"
-                            android:layout_height="47dp"
+                            android:layout_height="58dp"
                             android:hint="Password"
-                            android:maxLines="1"
+                            android:maxLines="3"
                             android:textColor="#dd5d79" />
 
                     </com.google.android.material.textfield.TextInputLayout>
@@ -143,19 +159,22 @@
 
                     <at.markushi.ui.CircleButton
                         android:id="@+id/btt_address"
-                        android:layout_width="45dp"
-                        android:layout_height="wrap_content"
+                        android:layout_width="72dp"
+                        android:layout_height="33dp"
                         android:layout_gravity="right"
                         android:onClick="onAddressClick"
-                        android:src="@drawable/location"
+                        android:src="@drawable/ic_target"
                         app:cb_color="#e995a8"
                         app:cb_pressedRingWidth="8dip" />
 
                     <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
                         android:id="@+id/cirRegisterButton"
                         style="@style/loginButton"
+                        android:layout_width="143dp"
+                        android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:layout_marginTop="@dimen/loginViewsMargin"
+                        android:background="@drawable/button_background_pay"
                         android:fontFamily="@font/oswald_light"
                         android:text="Register"
                         android:textSize="20sp"

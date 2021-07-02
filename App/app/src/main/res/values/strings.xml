@@ -9,5 +9,11 @@
     <string name="facebook_app_id">194715675858187</string>
     <string name="fb_login_protocol_scheme">fb194715675858187</string>
 
+    <string name="tab_1">Home</string>
+    <string name="tab_2">Cart</string>
+    <string name="tab_3">Profile</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
 
 </resources>

@@ -12,6 +12,7 @@ import com.smarteist.autoimageslider.SliderViewAdapter;
 
 import java.util.List;
 
+
 public class ImageSliderAdapter extends SliderViewAdapter<SlideViewHolder> {
     Context context;
     List<ImageSliderModel> imageSliderModelList;

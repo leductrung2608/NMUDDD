@@ -1,112 +1,96 @@
 package com.example.app.adapter;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.bumptech.glide.Glide;
+import com.example.app.MainActivity;
 import com.example.app.ProductDetail;
 import com.example.app.R;
+import com.example.app.model.AllProductModel;
+import com.squareup.picasso.Picasso;
 
+import org.jetbrains.annotations.NotNull;
+
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 
-public class Home_AllItem_RecyclerAdapter extends RecyclerView.Adapter<Home_AllItem_RecyclerAdapter.ViewHolder>  {
+public class Home_AllItem_RecyclerAdapter extends RecyclerView.Adapter<Home_AllItem_RecyclerAdapter.Home_AllItem_Holder> {
 
-    //private static final String TAG = "RecyclerViewAdapter";
 
-    //vars
-    private ArrayList<String> nSaleName = new ArrayList<>();
-    private ArrayList<Integer> nSaleImage = new ArrayList<>();
-    private ArrayList<String> nOldPrice = new ArrayList<>();
-    private ArrayList<String> nSalePrice = new ArrayList<>();
-    private ArrayList<Integer> nProBar = new ArrayList<>();
-    private Context nSaleContext;
+    ArrayList<AllProductModel> list;
+    RecyclerViewClickListener listener;
+    Context context;
 
-    public Home_AllItem_RecyclerAdapter(Context nSaleContext, ArrayList<String> nSaleName, ArrayList<Integer> nSaleImage, ArrayList<String> nOldPrice, ArrayList<String> nSalePrice)
-    {
-        this.nSaleName = nSaleName;
-        this.nSaleImage = nSaleImage;
-        this.nOldPrice = nOldPrice;
-        this.nSalePrice = nSalePrice;
-        //this.nProBar = nProBar;
-        this.nSaleContext = nSaleContext;
+    public Home_AllItem_RecyclerAdapter(ArrayList<AllProductModel> list, Context context, RecyclerViewClickListener listener) {
+        this.list = list;
+        this.context = context;
+        this.listener = listener;
+    }
+
+    public class Home_AllItem_Holder extends RecyclerView.ViewHolder implements View.OnClickListener{
+        // truyen layout
+        ImageView imageView;
+        TextView textViewName;
+        TextView textViewPrice;
+
+        public Home_AllItem_Holder(View itemView) {
+            super ( itemView );
+            imageView = itemView.findViewById ( R.id.sale_image_view );
+            textViewName = itemView.findViewById ( R.id.pro_name );
+            textViewPrice = itemView.findViewById ( R.id.pro_price );
+            itemView.setOnClickListener(this);
+        }
+
+        @Override
+        public void onClick(View v) {
+            listener.onClick(v, getAdapterPosition());
+        }
+    }
+
+    @NotNull
+    @Override
+    public Home_AllItem_Holder onCreateViewHolder( ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from (parent.getContext() ).inflate ( R.layout.allitem_layout,parent,false );
+
+        return new Home_AllItem_Holder (view);
     }
 
     @Override
-    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.allitem_layout, parent, false);
-        return new ViewHolder(view);
-    }
+    public void onBindViewHolder( Home_AllItem_Holder holder, int position) {
 
-    @Override
-    public void onBindViewHolder(ViewHolder holder, @SuppressLint("RecyclerView") final int position) {
-        // Log.d(TAG, "onBindViewHolder: called.");
-
-        Glide.with(nSaleContext)
-                .asBitmap()
-                .load(nSaleImage.get(position))
-                .into(holder.saleImage);
-
-        holder.saleName.setText(nSaleName.get(position));
-
-        holder.oldPrice.setText(nOldPrice.get(position));
-
-        holder.salePrice.setText(nSalePrice.get(position));
-
-        holder.saleImage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                // Log.d(TAG, "onClick: clicked on an image: " + mNames.get(position));
-               // Toast.makeText(nSaleContext, nSaleName.get(position), Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(nSaleContext, ProductDetail.class);
-                //intent.putExtra("title",newsItemList.get(position).getTitle());
-                nSaleContext.startActivity(intent);
-            }
-        });
-
-        holder.relativeLayout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(nSaleContext, ProductDetail.class);
-                //intent.putExtra("title",newsItemList.get(position).getTitle());
-                nSaleContext.startActivity(intent);
-                //  mContext.startActivity(intent);
-            }
-        });
-
+        AllProductModel currentData = list.get ( position );
+        if(currentData.getImage().isEmpty()){
+            holder.imageView.setImageResource(R.drawable.noimage);
+        }else {
+            Picasso.get ().load ( currentData.getImage () )
+                    .placeholder(R.drawable.noimage)
+                    .error(R.drawable.error)
+                    .into(holder.imageView );
+        }
+        holder.textViewName.setText ( currentData.getName () );
+        DecimalFormat decimalFormat = new DecimalFormat ( "###,###,###" );
+        holder.textViewPrice.setText (decimalFormat.format ( currentData.getCurrentPrice () ) +" vnd" );
     }
 
     @Override
     public int getItemCount() {
-        return nSaleImage.size();
+        return list.size ();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder{
-
-        ImageView saleImage;
-        TextView saleName;
-        TextView oldPrice;
-        TextView salePrice;
-        RelativeLayout relativeLayout;
-      //  ProgressBar proBar;
-
-        public ViewHolder(View itemView) {
-            super(itemView);
-            saleImage = itemView.findViewById(R.id.sale_image_view);
-            saleName = itemView.findViewById(R.id.pro_name);
-            oldPrice = itemView.findViewById(R.id.old_price);
-            salePrice = itemView.findViewById(R.id.pro_price);
-            relativeLayout = itemView.findViewById(R.id.relative_discount);
-            //proBar = itemView.findViewById(R.id.progressBar);
-        }
+    public interface RecyclerViewClickListener{
+        void onClick(View v, int position);
     }
+    public void filterList(ArrayList<AllProductModel> filteredList) {
+        list = filteredList;
+        notifyDataSetChanged();
+    }
+
 }

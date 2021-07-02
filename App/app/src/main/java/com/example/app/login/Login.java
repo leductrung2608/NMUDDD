@@ -13,9 +13,9 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.app.Admin;
 import com.example.app.MainActivity;
 import com.example.app.R;
+import com.example.app.admin.Admin;
 import com.facebook.AccessToken;
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
@@ -39,6 +39,8 @@ import com.google.firebase.auth.FacebookAuthProvider;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -152,6 +154,8 @@ public class Login extends AppCompatActivity {
                     boolean isNew = task.getResult().getAdditionalUserInfo().isNewUser();
                     if (isNew){
                         createNewUser(user);
+                        String userId = user.getUid ();
+                        MainActivity.InsertData ( userId );
                     }
 
                     startActivity(new Intent(Login.this, MainActivity.class));
@@ -296,6 +300,8 @@ public class Login extends AppCompatActivity {
                             //check login first time
                             if (isNew){
                                 createNewUser(user);
+                                String userId = user.getUid ();
+                                MainActivity.InsertData ( userId );
                             }
 
                             startActivity(new Intent(getApplicationContext(), MainActivity.class));
@@ -324,6 +330,25 @@ public class Login extends AppCompatActivity {
         userInfo.put("isUser", "1");
 
         df.set(userInfo);
+
+        DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Users").child(fAuth.getUid());
+
+        HashMap<String, String> hashMap = new HashMap<>();
+        hashMap.put("id", fAuth.getUid());
+        hashMap.put("username", user.getDisplayName());
+        hashMap.put("search", user.getDisplayName().toLowerCase());
+        hashMap.put("imageURL", "default");
+        hashMap.put("status", "offline");
+
+        reference.setValue(hashMap).addOnCompleteListener(new OnCompleteListener<Void>() {
+            @Override
+            public void onComplete(@NonNull Task<Void> task) {
+                if (task.isSuccessful()){
+                    Toast.makeText(getApplicationContext(), "add", Toast.LENGTH_SHORT).show();
+
+                }
+            }
+        });
 
     }
 }

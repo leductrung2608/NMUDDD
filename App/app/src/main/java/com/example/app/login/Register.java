@@ -8,17 +8,22 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.EditText;
-import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.app.MainActivity;
 import com.example.app.R;
 import com.example.app.map.Address;
-import com.example.app.map.CurrentLocation;
+import com.example.app.map.PlacePicker;
+import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
@@ -30,6 +35,8 @@ import de.greenrobot.event.EventBus;
 
 
 public class Register extends AppCompatActivity {
+
+    public static String idUser;
 
     EditText username, address, password, email, phoneNo;
     CircularProgressButton btt_register;
@@ -64,7 +71,14 @@ public class Register extends AppCompatActivity {
                         @Override
                         public void onSuccess(AuthResult authResult) {
                             FirebaseUser user = fAuth.getCurrentUser();
-                            Toast.makeText(Register.this, "Account created", Toast.LENGTH_SHORT).show();
+                            String userId = user.getUid ();
+                            MainActivity.InsertData ( userId );
+                            //idUser = userID;
+
+
+                            ////////////////////////////////
+                            //MainActivity.InsertData ( userID );
+                            //Toast.makeText(Register.this, userID, Toast.LENGTH_SHORT).show();
 
                             DocumentReference df = fStore.collection("Users").document(user.getUid());
                             Map<String, Object> userInfo = new HashMap<>();
@@ -77,6 +91,26 @@ public class Register extends AppCompatActivity {
                             userInfo.put("isUser", "1");
 
                             df.set(userInfo);
+
+                            DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Users").child(fAuth.getUid());
+
+                            HashMap<String, String> hashMap = new HashMap<>();
+                            hashMap.put("id", fAuth.getUid());
+                            hashMap.put("username", username.getText().toString());
+                            hashMap.put("search", username.getText().toString().toLowerCase());
+                            hashMap.put("imageURL", "default");
+                            hashMap.put("status", "offline");
+                            hashMap.put("isAdmin", "0");
+
+                            reference.setValue(hashMap).addOnCompleteListener(new OnCompleteListener<Void>() {
+                                @Override
+                                public void onComplete(@NonNull Task<Void> task) {
+                                    if (task.isSuccessful()){
+
+                                    }
+                                }
+                            });
+                            //
 
                             startActivity(new Intent(getApplicationContext(), Login.class));
                             finish();
@@ -140,7 +174,7 @@ public class Register extends AppCompatActivity {
 
     //Auto get address
     public void onAddressClick(View view){
-        startActivity(new Intent(this, CurrentLocation.class));
+        startActivity(new Intent(this, PlacePicker.class));
     }
 
     @Override

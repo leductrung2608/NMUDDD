@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_marginStart="3dp">
+    android:layout_marginStart="10dp">
 
 
         <ImageView
@@ -12,6 +12,10 @@
             android:layout_width="87dp"
             android:layout_height="92dp"
             android:elevation="6dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ic_mas" />
 
 

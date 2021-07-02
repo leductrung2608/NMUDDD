@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_add"
+            android:icon="@drawable/ic_add"
+            android:title="Thêm sản phẩm" />
+    </group>
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_money"
+            android:icon="@drawable/ic_income"
+            android:title="Doanh thu" />
+    </group>
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_unconfirmed"
+            android:icon="@drawable/ic_unconfirm"
+            android:title="Đơn hàng chưa xác nhận" />
+    </group>
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_confirmed"
+            android:icon="@drawable/ic_confirm"
+            android:title="Đơn hàng đã xác nhận" />
+    </group>
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_sigout"
+            android:icon="@drawable/ic_logout"
+            android:title="Đăng xuất" />
+    </group>
+</menu>
+
