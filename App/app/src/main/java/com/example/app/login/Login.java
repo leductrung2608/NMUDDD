@@ -330,9 +330,7 @@ public class Login extends AppCompatActivity {
     }
 
     private void createNewUser(FirebaseUser user){
-        Toast.makeText(Login.this, "Account created", Toast.LENGTH_SHORT).show();
         StorageReference fileRef = storageReference.child("Users/"+ fAuth.getCurrentUser().getUid() + "/profile.jpg");
-        fileRef.putFile(user.getPhotoUrl());
 
         DocumentReference df = fStore.collection("Users").document(user.getUid());
         Map<String, Object> userInfo = new HashMap<>();
@@ -360,7 +358,6 @@ public class Login extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
                 if (task.isSuccessful()){
-                    Toast.makeText(getApplicationContext(), "add", Toast.LENGTH_SHORT).show();
 
                 }
             }

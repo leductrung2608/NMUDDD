@@ -11,8 +11,8 @@
         android:id="@+id/btt_backtoregister"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
         android:onClick="onBackClick"
         app:srcCompat="@drawable/abc_vector_test" />
 
@@ -65,7 +65,7 @@
                     android:gravity="center|center_vertical"
                     android:text="Your Address"
                     android:textAlignment="center"
-                    android:textColor="@color/colorPrimaryDark"
+                    android:textColor="#C52F60"
                     android:textSize="16sp"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -78,7 +78,8 @@
             android:layout_marginLeft="15dp"
             android:layout_marginTop="30dp"
             android:layout_marginRight="15dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:padding="10dp">
 
             <Button
                 android:id="@+id/btt_picklocation"
@@ -90,7 +91,7 @@
                 android:elevation="10dp"
                 android:fontFamily="@font/oswald_light"
                 android:text="PICK LOCATION  "
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="#C52F60"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -105,7 +106,7 @@
                 android:fontFamily="@font/oswald_light"
                 android:onClick="onBackClick"
                 android:text="OK   "
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="#C52F60"
                 android:textSize="16sp"
                 android:textStyle="bold" />
         </LinearLayout>

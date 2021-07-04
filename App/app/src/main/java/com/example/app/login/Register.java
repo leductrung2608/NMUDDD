@@ -73,6 +73,7 @@ public class Register extends AppCompatActivity {
                     fAuth.createUserWithEmailAndPassword(email.getText().toString(), password.getText().toString()).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
                         @Override
                         public void onSuccess(AuthResult authResult) {
+                            Toast.makeText(getApplicationContext(), "Created Successfully", Toast.LENGTH_LONG).show();
                             FirebaseUser user = fAuth.getCurrentUser();
                             String userId = user.getUid ();
                             register ( userId );
@@ -210,7 +211,6 @@ public class Register extends AppCompatActivity {
             @Override
             protected void onPostExecute(String s) {
                 super.onPostExecute ( s );
-                Toast.makeText( Register.this, "Add product successfully!!", Toast.LENGTH_LONG).show();
             }
 
             @Override

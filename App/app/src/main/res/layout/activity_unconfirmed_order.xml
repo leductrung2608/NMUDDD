@@ -43,7 +43,7 @@
             android:fontFamily="@font/oswald_light"
             android:gravity="center"
             android:text="Unconfirmed order"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/ic_launcher_background"
             android:textSize="20sp"
             android:textStyle="bold" />
     </RelativeLayout>

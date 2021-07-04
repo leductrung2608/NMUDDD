@@ -64,7 +64,7 @@ public class UsersFragment extends Fragment {
 
         mUsers = new ArrayList<>();
 
-        readUsers();
+
 
         search_users = view.findViewById(R.id.search_users);
         search_users.addTextChangedListener(new TextWatcher() {
@@ -98,6 +98,7 @@ public class UsersFragment extends Fragment {
             }
         });
 
+        readUsers();
 
         return view;
     }
@@ -150,11 +151,11 @@ public class UsersFragment extends Fragment {
                     for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                         User user = snapshot.getValue(User.class);
 
-                            if (!user.getId().equals(userId)) {
-                                if (!user.getIsAdmin().equals(isAdmin)) {
-                                    mUsers.add(user);
-                                }
+                        if (!user.getId().equals(userId)) {
+                            if (!user.getIsAdmin().equals(isAdmin)) {
+                                mUsers.add(user);
                             }
+                        }
 
 
                     }

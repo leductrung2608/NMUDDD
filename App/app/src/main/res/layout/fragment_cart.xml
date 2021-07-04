@@ -241,7 +241,7 @@
             android:foregroundGravity="bottom"
             android:text="Ready to pay"
             android:textAlignment="gravity"
-            android:textColor="#FFFFFF"
+            android:textColor="#C52F60"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

@@ -43,7 +43,7 @@
             android:fontFamily="@font/oswald_light"
             android:gravity="center"
             android:text="Order detail"
-            android:textColor="#FFFFFF"
+            android:textColor="#C52F60"
             android:textSize="20sp"
             android:textStyle="bold" />
     </RelativeLayout>

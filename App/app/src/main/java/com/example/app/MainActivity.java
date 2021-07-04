@@ -58,7 +58,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        transparentStatusAndNavigation();
         setContentView(R.layout.activity_main);
 
         btt_chat = findViewById(R.id.btt_chatUser);
@@ -158,77 +157,4 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-
-
-
-
-  /*  public void register(String id) {
-        class RegisterUsers extends AsyncTask<String, Void, String> {
-            RegisterUserClass ruc = new RegisterUserClass ( );
-
-
-            @Override
-            protected void onPreExecute() {
-                super.onPreExecute ( );
-            }
-
-            @Override
-            protected void onPostExecute(String s) {
-                super.onPostExecute ( s );
-                //Toast.makeText( MyAppContext.getAppContext (), "Add product successfully!!", Toast.LENGTH_LONG).show();
-            }
-
-            @Override
-            protected String doInBackground(String... params) {
-
-                HashMap<String, String> data = new HashMap<String, String> ( );
-
-
-                data.put ( "IdUser", id );
-
-
-                String result = ruc.sendPostRequest ( "https://ibeautycosmetic.000webhostapp.com/getUser.php", data );
-
-                return result;
-            }
-        }
-
-        RegisterUsers ru = new RegisterUsers ( );
-        ru.execute ( id );
-
-    }
-*/
-    public void transparentStatusAndNavigation ()
-    {
-        //make full transparent statusBar
-        if (Build.VERSION.SDK_INT >= 19 && Build.VERSION.SDK_INT < 21) {
-            setWindowFlag(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS
-                    | WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION, true);
-        }
-        if (Build.VERSION.SDK_INT >= 19) {
-            getWindow().getDecorView().setSystemUiVisibility(
-                    View.SYSTEM_UI_FLAG_LAYOUT_STABLE
-                            | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
-                            | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
-            );
-        }
-        if (Build.VERSION.SDK_INT >= 21) {
-            setWindowFlag(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS
-                    | WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION, false);
-            getWindow().setStatusBarColor(Color.TRANSPARENT);
-            getWindow().setNavigationBarColor(Color.TRANSPARENT);
-        }
-
-    }
-
-    public void setWindowFlag ( final int bits, boolean on){
-        Window win = getWindow();
-        WindowManager.LayoutParams winParams = win.getAttributes();
-        if (on) {
-            winParams.flags |= bits;
-        } else {
-            winParams.flags &= ~bits;
-        }
-        win.setAttributes(winParams);
-    }
 }

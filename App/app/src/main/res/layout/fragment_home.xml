@@ -53,8 +53,8 @@ android:fitsSystemWindows="true">
                 android:fontFamily="@font/oswald_light"
                 android:hint="Search"
                 android:paddingLeft="10dp"
-                android:textColor="@color/colorPrimaryDark"
-                android:textColorHint="@color/darkTextColor" />
+                android:textColor="#C52F60"
+                android:textColorHint="#C52F60" />
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardView"

@@ -21,8 +21,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.App"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Test"></activity>
-        <activity android:name=".admin.OrderDetail"/>
+            <activity android:name=".admin.OrderDetail"/>
         <activity android:name=".admin.Detail" />
         <activity android:name=".admin.AddProduct" />
         <activity android:name=".admin.ConfirmedOrder" />

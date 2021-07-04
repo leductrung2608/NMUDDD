@@ -17,11 +17,11 @@
         android:layout_alignParentLeft="true"
         android:layout_centerInParent="true"
         android:paddingTop="20dp">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="20dp">
+            android:orientation="vertical">
 
             <RelativeLayout
                 android:layout_width="wrap_content"
@@ -62,7 +62,9 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/textInputEmail"
                 style="@style/parent"
+                android:layout_marginLeft="20dp"
                 android:layout_marginTop="40dp"
+                android:layout_marginRight="20dp"
                 android:hint="Email"
                 android:textColorHint="#e39caa"
                 app:hintEnabled="true">
@@ -79,7 +81,9 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/textInputPassword"
                 style="@style/parent"
+                android:layout_marginLeft="20dp"
                 android:layout_marginTop="@dimen/loginViewsMargin"
+                android:layout_marginRight="20dp"
                 android:hint="Password"
                 android:textColorHint="#e39caa"
                 app:hintEnabled="true"
@@ -106,7 +110,7 @@
                 android:layout_marginTop="@dimen/loginViewsMargin"
                 android:fontFamily="@font/oswald_light"
                 android:onClick="onLoginClick"
-                android:paddingRight="15dp"
+                android:paddingRight="35dp"
                 android:text="Forgot Password?"
                 android:textAlignment="viewEnd"
                 android:textColor="#e37b92"
@@ -144,7 +148,7 @@
                 android:textStyle="bold" />
 
             <LinearLayout
-                android:layout_width="371dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="30dp"
                 android:gravity="center"
@@ -153,7 +157,9 @@
                 <com.google.android.gms.common.SignInButton
                     android:id="@+id/gg"
                     android:layout_width="208dp"
-                    android:layout_height="58dp" />
+                    android:layout_height="58dp"
+                    android:layout_gravity="center"
+                    android:foregroundGravity="center" />
 
                 <com.facebook.login.widget.LoginButton
                     android:id="@+id/fb"
@@ -161,6 +167,7 @@
                     android:layout_height="37dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
+                    android:foregroundGravity="center"
                     android:paddingTop="18dp"
                     android:paddingBottom="20dp"
                     android:textSize="11sp" />

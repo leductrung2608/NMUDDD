@@ -14,10 +14,11 @@
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="15dp"
         android:background="@drawable/search_bar_bg"
+        android:fontFamily="@font/oswald_light"
         android:hint="Search..."
         android:paddingLeft="10dp"
-        android:textColor="#FFFDFD"
-        android:textColorHint="#F8F7F7" />
+        android:textColor="#C52F60"
+        android:textColorHint="#C52F60" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view"

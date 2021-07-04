@@ -17,13 +17,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="11dp"
         android:layout_marginLeft="11dp"
-        android:layout_marginTop="3dp"
         android:layout_toEndOf="@id/profile_image"
         android:layout_toRightOf="@id/profile_image"
-        android:fontFamily="@font/libre_baskerville"
+        android:fontFamily="@font/oswald_light"
         android:text="username"
         android:textColor="#dd5f7b"
-        android:textSize="14sp" />
+        android:textSize="16sp" />
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/img_on"
@@ -59,7 +58,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/username"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="3dp"
         android:layout_toRightOf="@id/profile_image"
         android:maxLines="1"
         android:paddingTop="5dp"

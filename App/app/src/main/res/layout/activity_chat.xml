@@ -38,7 +38,8 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginLeft="10dp"
                 android:fontFamily="@font/oswald_light"
-                android:textColor="#fff"
+                android:text="username"
+                android:textColor="#C52F60"
                 android:textSize="18sp" />
 
 

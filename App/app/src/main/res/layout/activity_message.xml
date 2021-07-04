@@ -32,7 +32,7 @@
                 android:layout_marginStart="25dp"
                 android:layout_marginLeft="25dp"
                 android:fontFamily="@font/oswald_light"
-                android:textColor="#fff"
+                android:textColor="#C52F60"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
