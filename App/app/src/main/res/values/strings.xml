@@ -6,8 +6,8 @@
     <string name="title_activity_maps">Map</string>
     <string name="map_key">AIzaSyB11P1m36N-CobRf2z59NEHIU-xQYAmuLc</string>
 
-    <string name="facebook_app_id">194715675858187</string>
-    <string name="fb_login_protocol_scheme">fb194715675858187</string>
+    <string name="facebook_app_id">3936466573131424</string>
+    <string name="fb_login_protocol_scheme">fb3936466573131424</string>
 
     <string name="tab_1">Home</string>
     <string name="tab_2">Cart</string>

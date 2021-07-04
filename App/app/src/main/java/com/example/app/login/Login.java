@@ -143,6 +143,7 @@ public class Login extends AppCompatActivity {
 
             @Override
             public void onError(FacebookException error) {
+                Toast.makeText(getApplicationContext(), error.getMessage(), Toast.LENGTH_LONG).show();
                 Log.d("TAG", "onError" + error);
             }
         });
@@ -158,7 +159,6 @@ public class Login extends AppCompatActivity {
 
     private  void handleFacebookToken(AccessToken token){
         Log.d("TAG", "handleFacebookToken" + token);
-
         AuthCredential credential = FacebookAuthProvider.getCredential((token.getToken()));
         fAuth.signInWithCredential(credential).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
             @Override
@@ -179,6 +179,11 @@ public class Login extends AppCompatActivity {
                 }else{
                     startActivity(new Intent(Login.this, MainActivity.class));
                 }
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull @NotNull Exception e) {
+                Toast.makeText(Login.this, e.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
     }

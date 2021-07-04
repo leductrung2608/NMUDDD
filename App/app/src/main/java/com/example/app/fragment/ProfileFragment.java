@@ -1,5 +1,6 @@
 package com.example.app.fragment;
 
+import android.app.Activity;
 import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -222,10 +223,15 @@ public class ProfileFragment extends Fragment {
     @Override
     public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == 1000){
-            Uri imageUri = data.getData();
 
-            uploadImageToFirebase(imageUri);
+        if (requestCode == 1000){
+            if (resultCode == Activity.RESULT_OK){
+                Uri imageUri = data.getData();
+                uploadImageToFirebase(imageUri);
+            }else {
+
+            }
+
         }
     }
 
