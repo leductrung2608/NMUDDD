@@ -50,7 +50,6 @@ public class PlacePicker extends AppCompatActivity {
         wifiManager= (WifiManager) this.getApplicationContext().getSystemService(Context.WIFI_SERVICE);
 
         wifiManager.setWifiEnabled(false);
-        openPlacePicker();
 
         btt_picklocation.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,13 +58,11 @@ public class PlacePicker extends AppCompatActivity {
             }
         });
 
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                PlacePicker.super.onBackPressed();
-            }
-        });
 
+    }
+
+    public void onBackClick(View view){
+        PlacePicker.super.onBackPressed();
     }
 
     private void openPlacePicker() {

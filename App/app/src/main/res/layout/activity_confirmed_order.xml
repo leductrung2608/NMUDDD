@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/backBttDetail"
+            android:id="@+id/backBttConfirm"
             android:layout_width="35dp"
             android:layout_height="match_parent"
             android:layout_alignParentTop="true"
@@ -31,18 +31,17 @@
             tools:ignore="VectorDrawableCompat" />
 
         <TextView
-            android:id="@+id/kindTextAdmin"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_alignParentBottom="true"
             android:layout_marginStart="17dp"
             android:layout_marginLeft="17dp"
             android:layout_marginBottom="0dp"
-            android:layout_toEndOf="@+id/backBttDetail"
-            android:layout_toRightOf="@+id/backBttDetail"
+            android:layout_toEndOf="@+id/backBttConfirm"
+            android:layout_toRightOf="@+id/backBttConfirm"
             android:fontFamily="@font/oswald_light"
             android:gravity="center"
-            android:text="Đơn hàng đã xác nhận"
+            android:text="Confirmed order"
             android:textColor="#FFFFFF"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -51,7 +50,7 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/confirmRcv"
         android:layout_width="match_parent"
-        android:layout_height="700dp"
+        android:layout_height="650dp"
         android:layout_marginTop="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

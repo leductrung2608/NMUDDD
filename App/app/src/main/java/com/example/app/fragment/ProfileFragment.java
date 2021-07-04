@@ -2,6 +2,7 @@ package com.example.app.fragment;
 
 import android.app.Dialog;
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -24,11 +25,17 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.app.PurchaseOrder;
 import com.example.app.R;
+import com.example.app.admin.ConfirmedOrder;
+import com.example.app.admin.OrderDetail;
+import com.example.app.admin.UnconfirmedOrder;
 import com.example.app.login.Login;
 import com.example.app.map.Address;
 import com.example.app.map.PlacePicker;
+import com.example.app.model.OrderModel;
 import com.facebook.login.LoginManager;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
@@ -52,6 +59,11 @@ import com.squareup.picasso.Picasso;
 
 import org.jetbrains.annotations.NotNull;
 
+import java.text.DecimalFormat;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.HashMap;
 
 import at.markushi.ui.CircleButton;
@@ -68,6 +80,9 @@ public class ProfileFragment extends Fragment {
     CircleButton btt_logout;
     TextView username, address, phoneNo, email, lb_username, lb_email;
 
+
+
+    Button bill;
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
     StorageReference storageReference;
@@ -116,7 +131,7 @@ public class ProfileFragment extends Fragment {
         btt_address = view.findViewById(R.id.btt_editaddress);
         btt_phoneNo = view.findViewById(R.id.btt_editphoneNo);
         btt_location = view.findViewById(R.id.btt_location);
-
+        bill = view.findViewById ( R.id.bill );
 
         //Get data user
         DocumentReference df = fStore.collection("Users").document(userId);
@@ -190,6 +205,16 @@ public class ProfileFragment extends Fragment {
                 startActivity(new Intent(getActivity(), PlacePicker.class));
             }
         });
+
+        bill.setOnClickListener ( new View.OnClickListener ( ) {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent ( getActivity ().getApplicationContext (), PurchaseOrder.class );
+                startActivity ( i );
+               // startActivity(new Intent(getActivity(), PurchaseOrder.class));
+
+            }
+        } );
 
         return view;
     }
@@ -363,4 +388,7 @@ public class ProfileFragment extends Fragment {
         EventBus.getDefault().unregister(this);
         super.onStop();
     }
+
+
+
 }

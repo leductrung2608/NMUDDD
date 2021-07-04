@@ -52,23 +52,16 @@ public class MessageActivity extends AppCompatActivity {
 
     FirebaseUser fuser;
     DatabaseReference reference;
-
     ImageButton btn_send;
     EditText text_send;
-
     MessageAdapter messageAdapter;
     List<Chat> mchat;
 
     RecyclerView recyclerView;
-
     Intent intent;
-
     ValueEventListener seenListener;
-
     String userid;
-
     StorageReference storageReference;
-
 
     APIService apiService;
 
@@ -241,7 +234,7 @@ public class MessageActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()){
                     Token token = snapshot.getValue(Token.class);
-                    Data data = new Data(fuser.getUid(), R.mipmap.ic_launcher, username+": "+message, "New Message",
+                    Data data = new Data(fuser.getUid(), R.drawable.profile_avatar, username+": "+message, "New Message",
                             userid);
 
                     Sender sender = new Sender(data, token.getToken());

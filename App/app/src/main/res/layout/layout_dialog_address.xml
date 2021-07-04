@@ -13,7 +13,7 @@
         android:gravity="center"
         android:padding="12dp"
         android:text="Your Address"
-        android:textColor="@color/whiteTextColor"
+        android:textColor="#AF4669"
         android:textSize="16sp" />
 
     <LinearLayout
@@ -43,7 +43,11 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@drawable/bg_pink_corner_btt"
-                android:text="DONE" />
+                android:fontFamily="@font/oswald_light"
+                android:text="DONE"
+                android:textColor="#AF4669"
+                android:textSize="18sp"
+                android:textStyle="bold" />
         </LinearLayout>
 
     </LinearLayout>

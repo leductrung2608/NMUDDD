@@ -23,6 +23,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.example.app.MainActivity;
@@ -30,13 +31,17 @@ import com.example.app.R;
 import com.example.app.RegisterUserClass;
 import com.example.app.adapter.CartAdapter;
 import com.example.app.map.Address;
+//import com.example.app.map.CurrentLocation;
+//import com.example.app.map.Map;
 import com.example.app.map.PlacePicker;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.FirebaseFirestoreException;
 
 import org.jetbrains.annotations.NotNull;
 import org.json.JSONArray;
@@ -81,8 +86,8 @@ public class CartFragment extends Fragment {
     static TextView tvTotal, tvGrandTotal, tvShipCharge;
     Button btnPay;
     CartAdapter cartAdapter;
-
     ImageView edit_phoneNo, edit_address;
+
     int sizeidbill;
 
     public CartFragment() {
@@ -101,31 +106,33 @@ public class CartFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        if (getArguments() != null) {
+            mParam1 = getArguments().getString(ARG_PARAM1);
+            mParam2 = getArguments().getString(ARG_PARAM2);
+        }
     }
 
     @Override
     public View onCreateView (LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view =  inflater.inflate(R.layout.fragment_cart, container, false);
+        View view =  inflater.inflate( R.layout.fragment_cart, container, false);
 
-        ImageView ggMap = view.findViewById(R.id.ggMap);
-        tvAddress = view.findViewById(R.id.tv_addressCart);
-        tvPhone = view.findViewById(R.id.tv_phoneCart);
-        tvUsername = view.findViewById(R.id.tv_nameCart);
-
+        ImageView ggMap = view.findViewById( R.id.ggMap);
+        tvAddress = view.findViewById( R.id.tv_addressCart);
+        tvPhone = view.findViewById( R.id.tv_phoneCart);
+        tvUsername = view.findViewById( R.id.tv_nameCart);
 
         fStore = FirebaseFirestore.getInstance();
         fAuth = FirebaseAuth.getInstance();
         String userId = fAuth.getCurrentUser().getUid();
 
-        lvCart = view.findViewById(R.id.listview_cart);
-        tvNotify = view.findViewById(R.id.tvNotify);
-        tvTotal = view.findViewById(R.id.total);
-        tvGrandTotal = view.findViewById(R.id.grand_total);
-        tvShipCharge = view.findViewById(R.id.ship_charge);
-        btnPay = view.findViewById(R.id.btnPay);
+        lvCart = view.findViewById( R.id.listview_cart);
+        tvNotify = view.findViewById( R.id.tvNotify);
+        tvTotal = view.findViewById( R.id.total);
+        tvGrandTotal = view.findViewById( R.id.grand_total);
+        tvShipCharge = view.findViewById( R.id.ship_charge);
+        btnPay = view.findViewById( R.id.btnPay);
         edit_address = view.findViewById(R.id.edit_address);
         edit_phoneNo = view.findViewById(R.id.edit_phoneNo);
 
@@ -148,8 +155,8 @@ public class CartFragment extends Fragment {
         ggMap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getActivity(), PlacePicker.class));
-            }
+               startActivity(new Intent(getActivity(), PlacePicker.class));
+          }
         });
 
         //Update info user
@@ -178,7 +185,9 @@ public class CartFragment extends Fragment {
         EvenUltil();
         Pay();
 
-        cartAdapter = new CartAdapter(getContext(), MainActivity.CartList);
+
+
+        cartAdapter = new CartAdapter( getContext(), MainActivity.CartList);
         lvCart.setAdapter(cartAdapter);
 
         return view;
@@ -190,9 +199,10 @@ public class CartFragment extends Fragment {
 
         @Override
         protected String doInBackground(String... strings) {
+            
 
             try {
-                URL url = new URL ( "https://ibeautycosmetic.000webhostapp.com/getBill.php" );
+                URL url = new URL ( "https://ibeautycosmetic.000webhostapp.com/getIdBill.php" );
                 httpURLConnection = (HttpURLConnection) url.openConnection ( );
                 httpURLConnection.connect ( );
 
@@ -244,7 +254,11 @@ public class CartFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 sizeidbill = mangidbill.size();
-                CreateDialog();
+                if (MainActivity.CartList.size() == 0) {
+                    Toast.makeText(getContext(), "Please add product to your cart", Toast.LENGTH_SHORT).show();
+                } else {
+                    CreateDialog();
+                }
             }
         });
     }
@@ -262,8 +276,8 @@ public class CartFragment extends Fragment {
                 String Mobile1 = tvPhone.getText().toString();
                 String Address1 = tvAddress.getText().toString();
                 String Total1 = tvTotal.getText().toString();
-                String Shippingcharges1= tvShipCharge.getText().toString();;
-                String GrandTotal1 = tvGrandTotal.getText().toString();;
+                String Shippingcharges1= tvShipCharge.getText().toString();
+                String GrandTotal1 = tvGrandTotal.getText().toString();
                 String IdUser1 = MainActivity.userId;
 
                 PushBill(Name1, Mobile1, Address1, Total1, Shippingcharges1, GrandTotal1, IdUser1);
@@ -437,22 +451,22 @@ public class CartFragment extends Fragment {
 
 
     public static void EvenUltil() {
-        long Total = 0;
+        int Total = 0;
         if(MainActivity.CartList.size() != 0){
             for(int i = 0 ; i < MainActivity.CartList.size() ; i++) {
                 Total += MainActivity.CartList.get(i).getCurrentPrice();
             }
             DecimalFormat decimalFormat = new DecimalFormat ( "###,###,###" );
             tvTotal.setText(decimalFormat.format(Total));
-            long ship_charge = 0;
+            int ship_charge = 0;
             if(Total >= 1000000) {
             }else if(Total == 0) {
             }else {
                 ship_charge = 30000;
             }
             tvShipCharge.setText(decimalFormat.format(ship_charge));
-            long Grand_Total = Total + ship_charge;
-            tvGrandTotal.setText(decimalFormat.format(Grand_Total));
+            int Grand_Total = Total + ship_charge;
+            tvGrandTotal.setText( ""+Grand_Total );
         }
 
     }

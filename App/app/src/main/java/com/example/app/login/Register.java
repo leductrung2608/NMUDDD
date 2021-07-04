@@ -1,6 +1,7 @@
 package com.example.app.login;
 
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Patterns;
@@ -8,12 +9,14 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.app.MainActivity;
 import com.example.app.R;
+import com.example.app.RegisterUserClass;
 import com.example.app.map.Address;
 import com.example.app.map.PlacePicker;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -72,7 +75,7 @@ public class Register extends AppCompatActivity {
                         public void onSuccess(AuthResult authResult) {
                             FirebaseUser user = fAuth.getCurrentUser();
                             String userId = user.getUid ();
-                            MainActivity.InsertData ( userId );
+                            register ( userId );
                             //idUser = userID;
 
 
@@ -194,5 +197,39 @@ public class Register extends AppCompatActivity {
         super.onStop();
     }
 
+    public void register(String id) {
+        class RegisterUsers extends AsyncTask<String, Void, String> {
+            RegisterUserClass ruc = new RegisterUserClass ( );
 
+
+            @Override
+            protected void onPreExecute() {
+                super.onPreExecute ( );
+            }
+
+            @Override
+            protected void onPostExecute(String s) {
+                super.onPostExecute ( s );
+                Toast.makeText( Register.this, "Add product successfully!!", Toast.LENGTH_LONG).show();
+            }
+
+            @Override
+            protected String doInBackground(String... params) {
+
+                HashMap<String, String> data = new HashMap<String, String> ( );
+
+
+                data.put ( "IdUser", id );
+
+
+                String result = ruc.sendPostRequest ( "https://ibeautycosmetic.000webhostapp.com/getUser.php", data );
+
+                return result;
+            }
+        }
+
+        RegisterUsers ru = new RegisterUsers ( );
+        ru.execute ( id );
+
+    }
 }

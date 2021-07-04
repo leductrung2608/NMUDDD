@@ -42,7 +42,7 @@
             android:layout_toRightOf="@+id/backBttDetail"
             android:fontFamily="@font/oswald_light"
             android:gravity="center"
-            android:text="Chi tiết đơn hàng"
+            android:text="Order detail"
             android:textColor="#FFFFFF"
             android:textSize="20sp"
             android:textStyle="bold" />

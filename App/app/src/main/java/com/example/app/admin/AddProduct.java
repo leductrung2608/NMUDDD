@@ -75,13 +75,13 @@ public class AddProduct extends AppCompatActivity {
 
 
                 if (Name.equals("")||Price.equals("")||Number.equals("")||Weight.equals("")||Description.equals("")){
-                    Toast.makeText(AddProduct.this, "Vui lòng nhập đầy đủ thông tin!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(AddProduct.this, "Please enter full infomation!", Toast.LENGTH_SHORT).show();
                 }
                 InsertData();
 
             }
         });
-
+        back = findViewById ( R.id.backBttAdd );
         ClickBack ();
         Spin();
 
@@ -118,9 +118,10 @@ public class AddProduct extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish();
-            }
-        });
+                        AddProduct.super.onBackPressed();
+                    }
+                });
+
     }
 
 
@@ -171,7 +172,7 @@ public class AddProduct extends AppCompatActivity {
         }
 
         if (Name.equals("")||Price.equals("")||Number.equals("")||Weight.equals("")||Description.equals("")){
-            Toast.makeText(AddProduct.this, "Vui lòng nhập đầy đủ thông tin!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(AddProduct.this, "Please enter full information!", Toast.LENGTH_SHORT).show();
         }
         else {
             register(Name, Price,Number,Weight,Description,encodedimage,Kind);
@@ -189,7 +190,7 @@ public class AddProduct extends AppCompatActivity {
                 super.onPreExecute();
                 mProgressDialog = new ProgressDialog(AddProduct.this);
                 mProgressDialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
-                mProgressDialog.setMessage("Vui lòng đợi một lát...");
+                mProgressDialog.setMessage("Please wait a moment...");
                 mProgressDialog.setIndeterminate(true);
                 mProgressDialog.setCancelable(false);
                 mProgressDialog.setProgress(0);
@@ -202,7 +203,7 @@ public class AddProduct extends AppCompatActivity {
             protected void onPostExecute(String s) {
                 super.onPostExecute(s);
                 mProgressDialog.dismiss();
-                Toast.makeText(getApplicationContext(), "Thêm sản phẩm mới thành công!", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "Add product successfully!!", Toast.LENGTH_LONG).show();
                 Intent intent = new Intent(AddProduct.this,AddProduct.class);
                 startActivity(intent);
             }

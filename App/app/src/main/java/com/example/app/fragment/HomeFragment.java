@@ -26,6 +26,7 @@ import com.example.app.R;
 import com.example.app.adapter.Category_RecyclerAdapter;
 import com.example.app.adapter.Home_AllItem_RecyclerAdapter;
 import com.example.app.adapter.ImageSliderAdapter;
+import com.example.app.admin.Detail;
 import com.example.app.model.AllProductModel;
 import com.example.app.model.Cart;
 import com.example.app.model.Category;
@@ -116,7 +117,6 @@ public class HomeFragment extends Fragment {
         cate = view.findViewById ( R.id.categoryTv );
         all = view.findViewById ( R.id.allItemsTv );
         cardView = view.findViewById ( R.id.cardView );
-        btt_chat = view.findViewById ( R.id.btt_chat );
 
         categoryRecyclerView = view.findViewById ( R.id.categoryRecycler );
         categoryRecyclerView.setHasFixedSize ( true );
@@ -153,12 +153,6 @@ public class HomeFragment extends Fragment {
             CheckConnection.ShowToast_Short(getApplicationContext(), "Please check the internet connection");
         }
 
-        btt_chat.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getActivity(), ChatActivity.class));
-            }
-        });
 
         return view;
     }
@@ -209,12 +203,10 @@ public class HomeFragment extends Fragment {
 
     ///tim kiem
     private void filter(String s) {
-        // creating a new array list to filter our data.
         filteredlist = new ArrayList<> (  );
 
-        // running a for loop to compare elements.
         for (AllProductModel item : mangsanpham) {
-            // checking if the entered string matched with any item of our recycler view.
+
             if (item.getName ().toLowerCase().contains(s.toLowerCase())) {
 
                 filteredlist.add(item);
@@ -224,14 +216,12 @@ public class HomeFragment extends Fragment {
 
             allItemRecyclerView.setVisibility ( View.GONE );
 
-            //notice.setVisibility ( View.VISIBLE );
-            // allItemRecyclerView.setVisibility ( View.INVISIBLE );
+
         } else {
-            // at last we are passing that filtered
-            // list to our adapter class.
+
             allItemRecyclerView.setVisibility ( View.VISIBLE );
             home_allItem_recyclerAdapter.filterList(filteredlist);
-           // notice.setVisibility ( View.GONE );
+
         }
 
 
@@ -244,20 +234,20 @@ public class HomeFragment extends Fragment {
 
 
         listener = (v, position) -> {
-            if(filteredlist == null  ) {
+            if(filteredlist == null ) {
                 //position = filteredlist.get ( position ).getIdGoods ();
-                Intent intent = new Intent ( getActivity ( ).getApplicationContext ( ), ProductDetail.class );
+                Intent intent = new Intent (getApplicationContext ( ), ProductDetail.class );
                 intent.putExtra ( "information", mangsanpham.get ( position ) );
                 startActivity ( intent );
             }else {
-                Intent intent = new Intent ( getActivity ( ).getApplicationContext ( ), ProductDetail.class );
+                Intent intent = new Intent (getApplicationContext ( ), ProductDetail.class );
                 intent.putExtra ( "information", filteredlist.get ( position ) );
                 startActivity ( intent );
             }
 
+
         };
     }
-
 
     public static int i;
 
@@ -467,6 +457,7 @@ public class HomeFragment extends Fragment {
                     String weight = child.getString ( "weight" );
                     int quantity = child.getInt ( "quantity" );
                     String image = child.getString ( "image" );
+                    int maxQuantity = child.getInt("maxQuantity");
                     String idUser = child.getString ( "idUser" );
 
                     if(idUser.equals(MainActivity.userId)) {
@@ -478,10 +469,10 @@ public class HomeFragment extends Fragment {
                                 }
                             }
                             if (exists == false) {
-                                MainActivity.CartList.add(new Cart(idGoods, name, price, weight, quantity, image, idUser));
+                                MainActivity.CartList.add(new Cart(idGoods, name, price, weight, quantity, image,maxQuantity, idUser));
                             }
                         } else {
-                            MainActivity.CartList.add(new Cart(idGoods, name, price, weight, quantity, image, idUser));
+                            MainActivity.CartList.add(new Cart(idGoods, name, price, weight, quantity, image, maxQuantity, idUser));
                         }
                     }
                     i++;

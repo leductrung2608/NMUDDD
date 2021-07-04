@@ -1,6 +1,7 @@
 package com.example.app.login;
 
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
@@ -8,6 +9,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -15,7 +17,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.app.MainActivity;
 import com.example.app.R;
+import com.example.app.RegisterUserClass;
 import com.example.app.admin.Admin;
+import com.example.app.util.MyAppContext;
 import com.facebook.AccessToken;
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
@@ -60,6 +64,7 @@ public class Login extends AppCompatActivity {
     CircularProgressButton btt_login;
     SignInButton gg;
     LoginButton fb;
+    TextView tv_forgot;
 
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
@@ -87,6 +92,8 @@ public class Login extends AppCompatActivity {
         btt_login = findViewById(R.id.cirLoginButton);
         gg = findViewById(R.id.gg);
         fb = findViewById(R.id.fb);
+        tv_forgot = findViewById(R.id.tv_forgotpass);
+
 
         btt_login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -139,6 +146,14 @@ public class Login extends AppCompatActivity {
                 Log.d("TAG", "onError" + error);
             }
         });
+
+        //Forgot Password
+        tv_forgot.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), ForgotPassword.class));
+            }
+        });
     }
 
     private  void handleFacebookToken(AccessToken token){
@@ -155,7 +170,7 @@ public class Login extends AppCompatActivity {
                     if (isNew){
                         createNewUser(user);
                         String userId = user.getUid ();
-                        MainActivity.InsertData ( userId );
+                        register ( userId );
                     }
 
                     startActivity(new Intent(Login.this, MainActivity.class));
@@ -301,7 +316,7 @@ public class Login extends AppCompatActivity {
                             if (isNew){
                                 createNewUser(user);
                                 String userId = user.getUid ();
-                                MainActivity.InsertData ( userId );
+                                register ( userId );
                             }
 
                             startActivity(new Intent(getApplicationContext(), MainActivity.class));
@@ -339,6 +354,7 @@ public class Login extends AppCompatActivity {
         hashMap.put("search", user.getDisplayName().toLowerCase());
         hashMap.put("imageURL", "default");
         hashMap.put("status", "offline");
+        hashMap.put("isAdmin", "0");
 
         reference.setValue(hashMap).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
@@ -349,6 +365,42 @@ public class Login extends AppCompatActivity {
                 }
             }
         });
+
+    }
+
+    public void register(String id) {
+        class RegisterUsers extends AsyncTask<String, Void, String> {
+            RegisterUserClass ruc = new RegisterUserClass ( );
+
+
+            @Override
+            protected void onPreExecute() {
+                super.onPreExecute ( );
+            }
+
+            @Override
+            protected void onPostExecute(String s) {
+                super.onPostExecute ( s );
+                Toast.makeText( Login.this, "Add product successfully!!", Toast.LENGTH_LONG).show();
+            }
+
+            @Override
+            protected String doInBackground(String... params) {
+
+                HashMap<String, String> data = new HashMap<String, String> ( );
+
+
+                data.put ( "IdUser", id );
+
+
+                String result = ruc.sendPostRequest ( "https://ibeautycosmetic.000webhostapp.com/getUser.php", data );
+
+                return result;
+            }
+        }
+
+        RegisterUsers ru = new RegisterUsers ( );
+        ru.execute ( id );
 
     }
 }

@@ -62,7 +62,7 @@ public class ConfirmedOrder extends AppCompatActivity {
 //        confirm.setVisibility ( View.GONE );
 
         recyclerView = findViewById ( R.id.confirmRcv );
-        button = findViewById ( R.id.backBttDetail);
+        button = findViewById ( R.id.backBttConfirm);
 
         recyclerView.setHasFixedSize ( true );
         recyclerView.setLayoutManager ( new LinearLayoutManager ( getApplicationContext (), LinearLayoutManager.VERTICAL, false ) );

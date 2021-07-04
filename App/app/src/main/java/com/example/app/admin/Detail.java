@@ -1,7 +1,14 @@
 package com.example.app.admin;
 
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+
 import android.Manifest;
+import android.app.AlertDialog;
 import android.app.ProgressDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
@@ -19,31 +26,29 @@ import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
-
 import com.example.app.R;
 import com.example.app.model.AllProductModel;
 import com.example.app.RegisterUserClass;
+import com.google.firebase.firestore.core.KeyFieldNotInFilter;
 import com.squareup.picasso.Picasso;
 
 import java.io.ByteArrayOutputStream;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
+import java.text.DecimalFormat;
 import java.util.HashMap;
 
 public class Detail extends AppCompatActivity {
 
     String arr[]={"LipStick", "Eyes", "Powder", "Foundation", "PinkPowder", "Mascara"};
-   // Spinner spin;
+    // Spinner spin;
     EditText id, name, price, quantity, weight, description;
     ImageView imageView;
     Button chooseImage1, upload, dalete;
     Spinner spinner;
     Bitmap bitmap;
-    String encodedimage;
+    //String encodedimage;
+    String check;
     ImageView back;
     //String updateSQL ="https://ibeautycosmetic.000webhostapp.com/updateInfo.php";
     ProgressDialog mProgressDialog;
@@ -57,13 +62,16 @@ public class Detail extends AppCompatActivity {
     int Kind = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+
         super.onCreate ( savedInstanceState );
         setContentView ( R.layout.activity_detail );
 
+        check = "0";
         AnhXa ();
         Spin ();
         GetInformation ();
-        ClickBack ();
+
         SelectImage ();
         upload.setOnClickListener ( new View.OnClickListener ( ) {
             @Override
@@ -74,7 +82,30 @@ public class Detail extends AppCompatActivity {
         dalete.setOnClickListener ( new View.OnClickListener ( ) {
             @Override
             public void onClick(View v) {
-                DeleteData ();
+                AlertDialog.Builder b = new AlertDialog.Builder( Detail.this);
+                b.setTitle("Delete product");
+                b.setMessage("You want to delete this product?");
+                b.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        DeleteData ();
+                        finish();
+                    }
+                });
+                b.setNegativeButton("No", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        dialog.cancel();
+                    }
+                });
+                AlertDialog al = b.create();
+                al.show();
+
+            }
+        } );
+        back.setOnClickListener ( new View.OnClickListener ( ) {
+            @Override
+            public void onClick(View v) {
+
+                finish();
             }
         } );
 
@@ -121,35 +152,28 @@ public class Detail extends AppCompatActivity {
         }
 
         Picasso.get().load(Image)
-                .placeholder( R.drawable.noimage)
-                .error( R.drawable.error)
+                .placeholder(R.drawable.noimage)
+                .error(R.drawable.error)
                 .into(imageView);
 
     }
 
-    private void ClickBack(){
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
-    }
+
 
     private void AnhXa(){
 
-       id = findViewById ( R.id.idGoodAM );
-       name = findViewById( R.id.nameGoodAM);
-       price = findViewById ( R.id.priceGoodAM );
-       quantity = findViewById ( R.id.numberGoodAM );
-       weight = findViewById( R.id.weightGoodAM);
-       description = findViewById( R.id.descriptionGoodAM);
-       imageView = findViewById( R.id.imageGoodAM);
-       spinner = findViewById ( R.id.kindGoodAM );
-       back = findViewById ( R.id.backBttDetail);
-       chooseImage1 = findViewById ( R.id.chooseImage1 );
-       upload= findViewById ( R.id.updateBtt );
-       dalete = findViewById ( R.id.deleteBtt );
+        id = findViewById ( R.id.idGoodAM );
+        name = findViewById(R.id.nameGoodAM);
+        price = findViewById ( R.id.priceGoodAM );
+        quantity = findViewById ( R.id.numberGoodAM );
+        weight = findViewById(R.id.weightGoodAM);
+        description = findViewById(R.id.descriptionGoodAM);
+        imageView = findViewById(R.id.imageGoodAM);
+        spinner = findViewById ( R.id.kindGoodAM );
+        back = findViewById ( R.id.backBttDetail );
+        chooseImage1 = findViewById ( R.id.chooseImage1 );
+        upload= findViewById ( R.id.updateBtt );
+        dalete = findViewById ( R.id.deleteBtt );
     }
 
 
@@ -159,6 +183,7 @@ public class Detail extends AppCompatActivity {
         chooseImage1.setOnClickListener ( new View.OnClickListener ( ) {
             @Override
             public void onClick(View v) {
+                check = "1";
                 if(ContextCompat.checkSelfPermission ( getApplicationContext (), Manifest.permission.READ_EXTERNAL_STORAGE )
                         != PackageManager.PERMISSION_GRANTED){
                     ActivityCompat.requestPermissions (
@@ -173,7 +198,7 @@ public class Detail extends AppCompatActivity {
         } );
     }
 
-    @Override
+
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         if( requestCode == 1 & resultCode == RESULT_OK && data != null){
 
@@ -200,12 +225,13 @@ public class Detail extends AppCompatActivity {
 
         byte[] imageBytes = stream.toByteArray ();
 
-        encodedimage = Base64.encodeToString ( imageBytes, Base64.DEFAULT);
+        Image = android.util.Base64.encodeToString ( imageBytes, Base64.DEFAULT);
 
     }
 
 
     private void UpdateData() {
+        Toast.makeText ( Detail.this, check, Toast.LENGTH_LONG ).show ();
 
         String IdG = id.getText().toString ();
         String NameG = name.getText().toString();
@@ -235,10 +261,10 @@ public class Detail extends AppCompatActivity {
         }
         else {
 
-            register(IdG, NameG, PriceG,NumberG,WeightG,DescriptionG,encodedimage, KindG);
+            register(IdG, NameG, PriceG,NumberG,WeightG,DescriptionG, Image, check,  KindG);
         }
     }
-    private void register(String IdR,String NameR, String PriceR, String NumberR, String WeightR,String DescriptionR,String ImageR, String KindR) {
+    private void register(String IdR,String NameR, String PriceR, String NumberR, String WeightR,String DescriptionR,String Image,String Check,  String KindR) {
         class RegisterUsers extends AsyncTask<String, Void, String> {
             ProgressDialog loading;
             RegisterUserClass ruc = new RegisterUserClass();
@@ -277,11 +303,10 @@ public class Detail extends AppCompatActivity {
                 data.put("Status",NumberR);
                 data.put("Weight",WeightR);
                 data.put("Description",DescriptionR);
-                data.put("Image",ImageR);
+                data.put("Image",Image);
+                //data.put("ImageNew",ImageRN);
+                data.put("Check",Check);
                 data.put("Id",KindR);
-
-
-
 
                 String result = ruc.sendPostRequest("https://ibeautycosmetic.000webhostapp.com/updateInfo.php", data);
 
@@ -290,7 +315,7 @@ public class Detail extends AppCompatActivity {
         }
 
         RegisterUsers ru = new RegisterUsers();
-        ru.execute (IdR, NameR,PriceR,NumberR,WeightR,DescriptionR,ImageR, KindR);
+        ru.execute (IdR, NameR,PriceR,NumberR,WeightR,DescriptionR,Image,Check ,KindR);
     }
 
 
@@ -307,8 +332,8 @@ public class Detail extends AppCompatActivity {
 
         String IdGoods = id.getText().toString();
 
-            register1(IdGoods);
-        }
+        register1(IdGoods);
+    }
 
 
     private void register1(String Id) {

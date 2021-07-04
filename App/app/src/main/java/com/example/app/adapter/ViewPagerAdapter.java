@@ -26,7 +26,7 @@ public class ViewPagerAdapter extends FragmentStatePagerAdapter {
             case 1:
                 return new ProfileFragment();
             case 2:
-                return new CartFragment();
+                return new CartFragment ();
 
             default:
                 return new HomeFragment();

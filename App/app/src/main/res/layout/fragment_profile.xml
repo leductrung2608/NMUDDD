@@ -257,6 +257,7 @@
                     </androidx.cardview.widget.CardView>
 
                     <Button
+                        android:id="@+id/bill"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:layout_marginTop="10dp"

@@ -89,12 +89,18 @@ public class CartAdapter extends BaseAdapter {
         IdGoods = cart.getIdGoods();
 
         int quantity = Integer.parseInt(viewHolder.edtQuantity.getText().toString());
-        if (quantity <=1 )
+
+        int MaxQuantity = MainActivity.CartList.get(position).getMaxQuantity();
+
+        if(quantity <= 1) {
             viewHolder.btnSubtract.setVisibility(View.INVISIBLE);
-        else{
+        }else  if(quantity >= MaxQuantity) {
+            viewHolder.btnAdd.setVisibility(View.INVISIBLE);
+        }else {
             viewHolder.btnSubtract.setVisibility(View.VISIBLE);
             viewHolder.btnAdd.setVisibility(View.VISIBLE);
         }
+
         ViewHolder finalViewHolder = viewHolder;
         viewHolder.btnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -108,9 +114,15 @@ public class CartAdapter extends BaseAdapter {
 
                 DecimalFormat decimalFormat = new DecimalFormat ( "###,###,###" );
                 finalViewHolder.tvPrice.setText(decimalFormat.format(giamoinhat)+" VNĐ");
-                finalViewHolder.btnSubtract.setVisibility(View.VISIBLE);
-                finalViewHolder.btnAdd.setVisibility(View.VISIBLE);
-                finalViewHolder.edtQuantity.setText(String.valueOf(slmoinhat));
+                if(slmoinhat >= MaxQuantity){
+                    finalViewHolder.btnSubtract.setVisibility(View.VISIBLE);
+                    finalViewHolder.btnAdd.setVisibility(View.INVISIBLE);
+                    finalViewHolder.edtQuantity.setText(String.valueOf(slmoinhat));
+                }else {
+                    finalViewHolder.btnSubtract.setVisibility(View.VISIBLE);
+                    finalViewHolder.btnAdd.setVisibility(View.VISIBLE);
+                    finalViewHolder.edtQuantity.setText(String.valueOf(slmoinhat));
+                }
                 CartFragment.EvenUltil();
             }
         });

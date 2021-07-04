@@ -9,12 +9,12 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="12dp"
-        android:textSize="16sp"
-        android:text="Your Phone Number"
-        android:textColor="@color/whiteTextColor"
         android:background="@drawable/bg_pink_corner"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="Your Phone Number"
+        android:textColor="#AF4669"
+        android:textSize="16sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -29,6 +29,7 @@
             android:background="@drawable/bg_white_corner_border"
             android:hint="Phone Number"
             android:inputType="number"
+            android:maxLength="11"
             android:padding="12dp"
             android:textColor="@color/colorPrimary" />
 
@@ -44,7 +45,11 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@drawable/bg_pink_corner_btt"
-                android:text="DONE" />
+                android:fontFamily="@font/oswald_light"
+                android:text="DONE"
+                android:textColor="#AF4669"
+                android:textSize="18sp"
+                android:textStyle="bold" />
         </LinearLayout>
 
     </LinearLayout>

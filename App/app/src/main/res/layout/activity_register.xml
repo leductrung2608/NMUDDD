@@ -61,9 +61,12 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
                 android:layout_marginTop="10dp"
+                android:layout_marginRight="7dp"
                 app:cardBackgroundColor="@color/whiteTextColor"
-                app:cardCornerRadius="20dp">
+                app:cardCornerRadius="20dp"
+                app:cardElevation="8dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -116,6 +119,7 @@
                             style="@style/modifiedEditText"
                             android:hint="Mobile Number"
                             android:inputType="phone"
+                            android:maxLength="11"
                             android:maxLines="1"
                             android:textColor="#dd5d79" />
                     </com.google.android.material.textfield.TextInputLayout>
@@ -177,6 +181,7 @@
                         android:background="@drawable/button_background_pay"
                         android:fontFamily="@font/oswald_light"
                         android:text="Register"
+                        android:textColor="#AF4669"
                         android:textSize="20sp"
                         app:initialCornerAngle="27dp"
                         app:spinning_bar_color="#FFF"

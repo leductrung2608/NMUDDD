@@ -101,9 +101,12 @@ public class Admin extends AppCompatActivity {
 
                 if (key_search.trim().equals("")) {
 
+                    recyclerView.setVisibility ( View.VISIBLE );
                     // JsonFetchAllProduct jsonFetchAllProduct = new JsonFetchAllProduct ();
                     //jsonFetchAllProduct.execute (  );
                     adminRcvAdapter = new Home_AllItem_RecyclerAdapter( mangsanpham, getApplicationContext ( ),listener );
+
+                    //Admin a = new Admin ();
 
                     recyclerView.setAdapter ( adminRcvAdapter );
 
@@ -140,7 +143,7 @@ public class Admin extends AppCompatActivity {
 
     private void SetOnClick() {
         listener = (v, position) -> {
-            if(filteredlist == null ) {
+            if(filteredlist == null || editText.getText ().equals ( "" )) {
                 //position = filteredlist.get ( position ).getIdGoods ();
                 Intent intent = new Intent (getApplicationContext ( ), Detail.class );
                 intent.putExtra ( "information", mangsanpham.get ( position ) );
@@ -170,9 +173,15 @@ public class Admin extends AppCompatActivity {
         }
         if (filteredlist.isEmpty()) {
 
+            recyclerView.setVisibility ( View.INVISIBLE );
+            btt_chat.setVisibility ( View.INVISIBLE );
+            btt_chat.setVisibility ( View.INVISIBLE );
+
         } else {
 
             adminRcvAdapter.filterList(filteredlist);
+            btt_chat.setVisibility ( View.VISIBLE );
+            btt_logout.setVisibility ( View.VISIBLE );
 
         }
 

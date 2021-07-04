@@ -36,7 +36,10 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.text.DecimalFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.HashMap;
 
 public class UnconfirmedOrder extends AppCompatActivity {
@@ -210,7 +213,16 @@ public class UnconfirmedOrder extends AppCompatActivity {
 //                    holder.address.setText ( currentData.getAddress ( ) );
 //                    holder.situasiton.setText ( currentData.getSituation () );
 
+                    String proceed = list.get ( position ).getGrandTotal ();
+
+                    Date currentTime = Calendar.getInstance().getTime();
+                    String month = currentTime.toString ();
+                    SimpleDateFormat sdf = new SimpleDateFormat ( "M");
+                    month = sdf.format(new Date());
+
                     register (a,b,"1");
+                    registerProceed (proceed,month);
+                    list.remove ( position );
                     //Toast.makeText ( getApplicationContext (), a+b+c ,Toast.LENGTH_LONG ).show ();
                 }
             } );
@@ -268,7 +280,7 @@ public class UnconfirmedOrder extends AppCompatActivity {
             @Override
             protected void onPostExecute(String s) {
                 super.onPostExecute(s);
-                Toast.makeText( getApplicationContext(), "UD sản phẩm mới thành công!", Toast.LENGTH_LONG).show();
+                Toast.makeText( getApplicationContext(), "Confirm order successfully!", Toast.LENGTH_LONG).show();
 
             }
 
@@ -289,5 +301,48 @@ public class UnconfirmedOrder extends AppCompatActivity {
 
         RegisterUsers ru = new RegisterUsers();
         ru.execute (IdR,AddressR ,SituationR);
+    }
+
+
+    private void registerProceed(String Proceed, String Month) {
+
+        Toast.makeText ( UnconfirmedOrder.this,Month+" , "+Proceed,Toast.LENGTH_LONG ).show ();
+
+        class RegisterUsers extends AsyncTask<String, Void, String> {
+            ProgressDialog loading;
+            RegisterUserClass ruc = new RegisterUserClass();
+
+
+            @Override
+            protected void onPreExecute() {
+
+                super.onPreExecute();
+            }
+
+
+            @Override
+            protected void onPostExecute(String s) {
+                super.onPostExecute(s);
+                //Toast.makeText( getApplicationContext(), "Cộng sản phẩm mới thành công!", Toast.LENGTH_LONG).show();
+
+            }
+
+            @Override
+            protected String doInBackground(String... params) {
+
+                HashMap<String, String> data = new HashMap<String, String>();
+
+                data.put("Proceed",Proceed);
+                data.put ("Month",Month);
+
+
+                String result = ruc.sendPostRequest("https://ibeautycosmetic.000webhostapp.com/updateProceeds.php", data);
+
+                return result;
+            }
+        }
+
+        RegisterUsers ru = new RegisterUsers();
+        ru.execute (Proceed,Month);
     }
 }

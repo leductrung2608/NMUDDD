@@ -78,8 +78,11 @@
         <activity android:name=".Kind_Product" />
         <activity android:name=".map.PlacePicker"/>
         <activity android:name=".ChatActivity"/>
+        <activity android:name=".login.ForgotPassword"/>
         <activity android:name=".MessageActivity"/>
+        <activity android:name=".PurchaseOrder"/>
         <activity android:name=".intro.IntroActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

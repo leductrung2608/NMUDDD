@@ -64,26 +64,26 @@ public class Kind_Product extends AppCompatActivity {
         ///do du lieu from data kind
         if(HomeFragment.i == 0) {
 
-            textView.setText ( "Son môi" );
+            textView.setText ( "Lipstick" );
             JsonFetchSon jsonFetchSon = new JsonFetchSon ();
             jsonFetchSon.execute (  );
 
         }else if (HomeFragment.i == 1) {
-            textView.setText ( "Trang điểm mắt" );
+            textView.setText ( "Eyes" );
             JsonFetchMat jsonFetchMat = new JsonFetchMat ();
             jsonFetchMat.execute (  );
 
         }else if (HomeFragment.i==2) {
-            textView.setText ( "Phấn" );
+            textView.setText ( "Blush" );
             JsonFetchPhan jsonFetchPhan = new JsonFetchPhan ();
             jsonFetchPhan.execute (  );
         }else if (HomeFragment.i==3) {
-            textView.setText ( "Kem nền" );
+            textView.setText ( "Foundation" );
             JsonFetchKemNen jsonFetchKemNen = new JsonFetchKemNen ();
             jsonFetchKemNen.execute (  );
 
         }else if (HomeFragment.i==4) {
-            textView.setText ( "Má hồng" );
+            textView.setText ( "Pink blush" );
             JsonFetchMaHong jsonFetchMaHong = new JsonFetchMaHong ();
             jsonFetchMaHong.execute (  );
 

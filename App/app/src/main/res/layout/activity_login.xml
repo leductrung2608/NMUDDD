@@ -32,9 +32,8 @@
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginLeft="2dp"
+                    android:layout_marginLeft="20dp"
                     android:layout_marginTop="41dp"
-                    android:layout_marginEnd="141dp"
                     android:layout_marginBottom="48dp"
                     android:fontFamily="@font/libre_baskerville"
                     android:text="Login"
@@ -99,6 +98,21 @@
 
             x
 
+            <TextView
+                android:id="@+id/tv_forgotpass"
+                style="@style/parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:fontFamily="@font/oswald_light"
+                android:onClick="onLoginClick"
+                android:paddingRight="15dp"
+                android:text="Forgot Password?"
+                android:textAlignment="viewEnd"
+                android:textColor="#e37b92"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
             <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
                 android:id="@+id/cirLoginButton"
                 style="@style/loginButton"
@@ -111,6 +125,7 @@
                 android:foregroundGravity="center"
                 android:gravity="center"
                 android:text="login  "
+                android:textColor="#AF4669"
                 android:textSize="20sp"
                 app:initialCornerAngle="27dp"
                 app:spinning_bar_color="#FFF"
@@ -129,41 +144,9 @@
                 android:textStyle="bold" />
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="60dp"
-                android:gravity="center"
-                android:weightSum="12">
-
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="1dp"
-                    android:layout_weight="3"
-                    android:background="#e37b92" />
-
-                <TextView
-                    style="@style/viewParent.headerText.NoMode"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="6"
-                    android:fontFamily="@font/oswald_light"
-                    android:text="Use other Methods"
-                    android:textAlignment="center"
-                    android:textColor="#dd5d79"
-                    android:textSize="12sp" />
-
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="1dp"
-                    android:layout_weight="3"
-                    android:background="#e37b92" />
-
-            </LinearLayout>
-
-            <LinearLayout
                 android:layout_width="371dp"
                 android:layout_height="match_parent"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="30dp"
                 android:gravity="center"
                 android:orientation="vertical">
 

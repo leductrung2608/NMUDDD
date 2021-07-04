@@ -50,6 +50,7 @@ public class ProductDetail extends AppCompatActivity{
     String Description;
     int Quantity;
     int Kind ;
+    int MaxQuantity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -85,6 +86,7 @@ public class ProductDetail extends AppCompatActivity{
         Image = productModel.getImage();
         Description = productModel.getDescription();
         Kind = productModel.getKind();
+        MaxQuantity = productModel.getStatus();
 
         name.setText(Name);
         weight.setText(Weight);
@@ -132,22 +134,30 @@ public class ProductDetail extends AppCompatActivity{
                             exists = true;
                         }
                     }
-                    if (exists == false) {
-                        int Quantity = Integer.parseInt(edtQuantity.getText().toString());
+                    if (!exists) {
+                        int Quantity = Integer.parseInt ( edtQuantity.getText ( ).toString ( ) );
                         CurrentPrice = Quantity * CurrentPrice;
-                        PushCart(id, Name, CurrentPrice, Weight, Quantity, Image, MainActivity.userId);
+                        if (Quantity > MaxQuantity) {
+                            Toast.makeText ( ProductDetail.this, "Max quantity of this product is " + MaxQuantity, Toast.LENGTH_SHORT ).show ( );
+                        } else {
+                            PushCart ( id, Name, CurrentPrice, Weight, Quantity, Image, MainActivity.userId, MaxQuantity );
                         }
+                    }
                 }else{
                     int Quantity = Integer.parseInt(edtQuantity.getText().toString());
                     CurrentPrice = Quantity * CurrentPrice;
-                    PushCart(id, Name, CurrentPrice, Weight, Quantity, Image, MainActivity.userId);
+                    if(Quantity > MaxQuantity) {
+                        Toast.makeText(ProductDetail.this, "Max quantity of this product is " + MaxQuantity, Toast.LENGTH_SHORT).show();
+                    } else {
+                        PushCart(id, Name, CurrentPrice, Weight, Quantity, Image, MainActivity.userId, MaxQuantity);
+                    }
                 }
 
             }
         });
     }
 
-    private void PushCart(int id, String name, int price, String weight, int quantity, String image, String iduser) {
+    private void PushCart(int id, String name, int price, String weight, int quantity, String image, String iduser, int maxQuantity) {
         String Id1 = String.valueOf(id);
         String Name1 = name;
         String Price1 = String.valueOf(price);
@@ -155,12 +165,13 @@ public class ProductDetail extends AppCompatActivity{
         String Quantity1= String.valueOf(quantity);
         String Image = image;
         String IdUser = iduser;
+        String MaxQuantity1 = String.valueOf(maxQuantity);
 
-        register(Id1, Name1, Price1, Weight1, Quantity1, Image, IdUser);
+        register(Id1, Name1, Price1, Weight1, Quantity1, Image, MaxQuantity1, IdUser);
 
     }
 
-    private void register(String id1, String name1, String price1, String weight1, String quantity1, String image, String idUser) {
+    private void register(String id1, String name1, String price1, String weight1, String quantity1, String image, String maxQuantity, String idUser) {
 
         class RegisterUsers extends AsyncTask<String, Void, String> {
             ProgressDialog loading;
@@ -189,8 +200,8 @@ public class ProductDetail extends AppCompatActivity{
                 data.put("Weight",params[3]);
                 data.put("Quantity",params[4]);
                 data.put("Image",params[5]);
-                data.put("IdUser",params[6]);
-
+                data.put("MaxQuantity", params[6]);
+                data.put("IdUser",params[7]);
 
                 String result = ruc.sendPostRequest(INSERTDATA_URL, data);
 
@@ -199,7 +210,7 @@ public class ProductDetail extends AppCompatActivity{
         }
 
         RegisterUsers ru = new RegisterUsers();
-        ru.execute(id1,name1,price1,weight1,quantity1,image,idUser);
+        ru.execute(id1,name1,price1,weight1,quantity1,image,maxQuantity,idUser);
 
         Toast.makeText(getApplicationContext(),"Successfully add to your Cart",Toast.LENGTH_SHORT).show();
 

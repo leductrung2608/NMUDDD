@@ -42,7 +42,7 @@
             android:layout_toRightOf="@+id/backBtt"
             android:fontFamily="@font/oswald_light"
             android:gravity="center"
-            android:text="Đơn hàng chưa xác nhận"
+            android:text="Unconfirmed order"
             android:textColor="#FFFFFF"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -50,8 +50,8 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/unconfirmRcv"
-        android:layout_width="match_parent"
-        android:layout_height="605dp"
+        android:layout_width="412dp"
+        android:layout_height="791dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"

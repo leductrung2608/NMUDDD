@@ -31,20 +31,12 @@ android:fitsSystemWindows="true">
 
                 <ImageView
                     android:id="@+id/imageView7"
-                    android:layout_width="318dp"
+                    android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="35dp"
                     android:layout_marginTop="5dp"
                     android:src="@drawable/logo" />
 
-                <ImageView
-                    android:id="@+id/btt_chat"
-                    android:layout_width="53dp"
-                    android:layout_height="37dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginRight="5dp"
-                    app:srcCompat="@drawable/ic_chat" />
             </LinearLayout>
 
             <EditText
@@ -58,11 +50,11 @@ android:fitsSystemWindows="true">
                 android:layout_marginRight="20dp"
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/search_bar_bg"
-                android:focusable="false"
+                android:fontFamily="@font/oswald_light"
                 android:hint="Search"
                 android:paddingLeft="10dp"
-                android:textColor="#FFFFFF"
-                android:textColorHint="#F8F8F8" />
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="@color/darkTextColor" />
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardView"

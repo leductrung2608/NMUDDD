@@ -5,8 +5,7 @@
     android:id="@+id/relative_discount"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="1dp"
-    android:background="@color/login_bk_color">
+    android:layout_margin="1dp">
 
     <androidx.cardview.widget.CardView
         android:layout_width="249dp"

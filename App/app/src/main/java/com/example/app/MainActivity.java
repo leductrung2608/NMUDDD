@@ -1,5 +1,6 @@
 package com.example.app;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Build;
@@ -7,8 +8,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 import androidx.viewpager.widget.ViewPager;
@@ -16,11 +19,20 @@ import androidx.viewpager.widget.ViewPager;
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigation;
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigationItem;
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigationViewPager;
+import com.aurelhubert.ahbottomnavigation.notification.AHNotification;
 import com.example.app.adapter.CartAdapter;
 import com.example.app.adapter.ViewPagerAdapter;
+import com.example.app.login.Login;
 import com.example.app.map.PlacePicker;
 import com.example.app.model.AllProductModel;
 import com.example.app.model.Cart;
+import com.example.app.model.Chat;
+import com.example.app.util.MyAppContext;
+import com.facebook.login.LoginManager;
+import com.google.android.gms.auth.api.signin.GoogleSignIn;
+import com.google.android.gms.auth.api.signin.GoogleSignInClient;
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.storage.FirebaseStorage;
@@ -36,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
     private ViewPagerAdapter viewPagerAdapter;
     private Fragment fragment = null;
     public static ArrayList<Cart> CartList;
+    FloatingActionButton btt_logout, btt_chat;
 
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
@@ -48,6 +61,9 @@ public class MainActivity extends AppCompatActivity {
         transparentStatusAndNavigation();
         setContentView(R.layout.activity_main);
 
+        btt_chat = findViewById(R.id.btt_chatUser);
+        btt_logout = findViewById(R.id.btt_logoutUser);
+
         storageReference = FirebaseStorage.getInstance().getReference();
         fAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
@@ -55,9 +71,44 @@ public class MainActivity extends AppCompatActivity {
         //InsertData ( userId );
         AnhXa();
         BottomNav();
+        //CountItemInCart(MainActivity.CartList.size ());
+
+       btt_logout.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+
+               GoogleSignInOptions gso = new GoogleSignInOptions.
+                       Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).
+                       build();
+               GoogleSignInClient googleSignInClient = GoogleSignIn.getClient(getApplicationContext(),gso);
+               googleSignInClient.signOut();
+
+               LoginManager.getInstance().logOut();
+
+               fAuth.signOut();
+               startActivity(new Intent(getApplicationContext(), Login.class));
+               finish();
+           }
+       });
+
+       btt_chat.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               startActivity(new Intent(getApplicationContext(), ChatActivity.class));
+           }
+       });
 
         CartList = new ArrayList<Cart>();
 
+    }
+
+    private void CountItemInCart(int count) {
+        AHNotification notification = new AHNotification.Builder()
+                .setText(String.valueOf(count))
+                .setBackgroundColor( ContextCompat.getColor( MainActivity.this, R.color.red))
+                .setTextColor(ContextCompat.getColor(MainActivity.this, R.color.whiteTextColor))
+                .build();
+        ahBottomNavigation.setNotification(notification, 2);
     }
 
     private void AnhXa() {
@@ -109,14 +160,10 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    public static void InsertData(String id) {
-        register ( id );
 
-    }
 
-    public static void register(String id) {
+  /*  public void register(String id) {
         class RegisterUsers extends AsyncTask<String, Void, String> {
-            // ProgressDialog loading;
             RegisterUserClass ruc = new RegisterUserClass ( );
 
 
@@ -128,6 +175,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             protected void onPostExecute(String s) {
                 super.onPostExecute ( s );
+                //Toast.makeText( MyAppContext.getAppContext (), "Add product successfully!!", Toast.LENGTH_LONG).show();
             }
 
             @Override
@@ -136,7 +184,7 @@ public class MainActivity extends AppCompatActivity {
                 HashMap<String, String> data = new HashMap<String, String> ( );
 
 
-                data.put ( "IdUser", params[0] );
+                data.put ( "IdUser", id );
 
 
                 String result = ruc.sendPostRequest ( "https://ibeautycosmetic.000webhostapp.com/getUser.php", data );
@@ -149,7 +197,7 @@ public class MainActivity extends AppCompatActivity {
         ru.execute ( id );
 
     }
-
+*/
     public void transparentStatusAndNavigation ()
     {
         //make full transparent statusBar

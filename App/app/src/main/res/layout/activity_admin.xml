@@ -41,7 +41,7 @@
             app:layout_constraintHorizontal_bias="0.954"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/searchAdmin"
-            app:layout_constraintVertical_bias="0.852"
+            app:layout_constraintVertical_bias="0.727"
             app:srcCompat="@drawable/ic_logout2" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -57,7 +57,7 @@
             app:layout_constraintHorizontal_bias="0.954"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/searchAdmin"
-            app:layout_constraintVertical_bias="0.726"
+            app:layout_constraintVertical_bias="0.604"
             app:srcCompat="@drawable/ic_chat2" />
 
         <LinearLayout
@@ -102,13 +102,16 @@
             android:layout_marginTop="20dp"
             android:layout_marginRight="20dp"
             android:background="@drawable/search_bar_bg"
+            android:drawableRight="@drawable/ic_search"
             android:focusable="true"
             android:focusableInTouchMode="true"
-            android:hint="Search"
+            android:fontFamily="@font/oswald_light"
+            android:hint="  Search"
             android:maxLines="1"
             android:paddingLeft="10dp"
-            android:textColor="#FFFEFE"
-            android:textColorHint="#FFFFFF"
+            android:paddingRight="5dp"
+            android:textColor="@color/contentTextColor"
+            android:textColorHint="@color/darkTextColor"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
@@ -116,7 +119,7 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/allProAdmin"
             android:layout_width="match_parent"
-            android:layout_height="625dp"
+            android:layout_height="704dp"
             android:layout_marginTop="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
