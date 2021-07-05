@@ -349,6 +349,7 @@ public class CartFragment extends Fragment {
 
         Intent intent = new Intent(getContext(),MainActivity.class);
         startActivity(intent);
+        getActivity().finish();
     }
 
     private void PushBillDetails(String idGoods, String idBill, String name, String price, String weight, String quantity, String image) {

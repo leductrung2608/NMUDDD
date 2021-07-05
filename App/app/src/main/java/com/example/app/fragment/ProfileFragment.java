@@ -204,6 +204,7 @@ public class ProfileFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getActivity(), PlacePicker.class));
+
             }
         });
 
@@ -212,7 +213,6 @@ public class ProfileFragment extends Fragment {
             public void onClick(View v) {
                 Intent i = new Intent ( getActivity ().getApplicationContext (), PurchaseOrder.class );
                 startActivity ( i );
-               // startActivity(new Intent(getActivity(), PurchaseOrder.class));
 
             }
         } );
@@ -386,7 +386,9 @@ public class ProfileFragment extends Fragment {
     }
 
     public void onEventMainThread(Address event) {
+
         address.setText(event.getAddress());
+        fStore.collection("Users").document(userId).update("Address", address.getText());
     }
 
     @Override

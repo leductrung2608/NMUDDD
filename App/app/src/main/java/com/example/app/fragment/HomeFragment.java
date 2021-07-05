@@ -232,19 +232,18 @@ public class HomeFragment extends Fragment {
     private void setOnClickListener() {
 
 
-
         listener = (v, position) -> {
             if(filteredlist == null ) {
                 //position = filteredlist.get ( position ).getIdGoods ();
                 Intent intent = new Intent (getApplicationContext ( ), ProductDetail.class );
                 intent.putExtra ( "information", mangsanpham.get ( position ) );
                 startActivity ( intent );
+
             }else {
                 Intent intent = new Intent (getApplicationContext ( ), ProductDetail.class );
                 intent.putExtra ( "information", filteredlist.get ( position ) );
                 startActivity ( intent );
             }
-
 
         };
     }

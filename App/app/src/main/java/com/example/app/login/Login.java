@@ -235,6 +235,7 @@ public class Login extends AppCompatActivity {
 
     public void onLoginClick(View View){
         startActivity(new Intent(this, Register.class));
+        finish();
         overridePendingTransition(R.anim.slide_in_right,R.anim.stay);
 
     }
@@ -321,14 +322,14 @@ public class Login extends AppCompatActivity {
                             if (isNew){
                                 createNewUser(user);
                                 String userId = user.getUid ();
+
                                 register ( userId );
                             }
 
                             startActivity(new Intent(getApplicationContext(), MainActivity.class));
                             finish();
                         } else {
-                            // If sign in fails, display a message to the user.
-                            Toast.makeText(Login.this, (CharSequence) task.getException(), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(Login.this, "Please check your internet.", Toast.LENGTH_SHORT).show();
                         }
                     }
                 });

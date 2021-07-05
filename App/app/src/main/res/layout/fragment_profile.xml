@@ -38,8 +38,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
                     android:fontFamily="@font/oswald_light"
-                    android:text="Lion Fischer "
-                    android:textColor="#FFFFFF"
+                    android:text="username "
+                    android:textColor="#AF4669"
                     android:textSize="25dp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -52,8 +52,8 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/oswald_light"
 
-                    android:text="lionfischer@gmail.com"
-                    android:textColor="#FFFFFF"
+                    android:text="@gmail.com"
+                    android:textColor="#AF4669"
                     android:textSize="20dp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -119,7 +119,7 @@
                                 android:fontFamily="@font/oswald_light"
                                 android:gravity="center_vertical"
                                 android:text="Username"
-                                android:textColor="#e995a8" />
+                                android:textColor="#AF4669" />
                         </LinearLayout>
 
                     </androidx.cardview.widget.CardView>
@@ -157,7 +157,7 @@
                                 android:fontFamily="@font/oswald_light"
                                 android:gravity="center_vertical"
                                 android:text="Email"
-                                android:textColor="#e995a8" />
+                                android:textColor="#AF4669" />
 
                         </LinearLayout>
 
@@ -195,7 +195,7 @@
                                 android:fontFamily="@font/oswald_light"
                                 android:gravity="center_vertical"
                                 android:text="Phone Number"
-                                android:textColor="#e995a8" />
+                                android:textColor="#AF4669" />
 
                             <ImageView
                                 android:id="@+id/btt_editphoneNo"
@@ -243,7 +243,7 @@
                                 android:fontFamily="@font/oswald_light"
                                 android:gravity="center_vertical"
                                 android:text="Address"
-                                android:textColor="#e995a8" />
+                                android:textColor="#AF4669" />
 
                             <ImageView
                                 android:id="@+id/btt_editaddress"
@@ -271,7 +271,7 @@
                         android:paddingRight="15dp"
                         android:text="Thông tin đơn hàng"
                         android:textAllCaps="false"
-                        android:textColor="#e995a8"
+                        android:textColor="#AF4669"
                         android:textSize="22sp" />
 
                     <at.markushi.ui.CircleButton

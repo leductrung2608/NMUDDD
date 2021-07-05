@@ -32,7 +32,7 @@
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginLeft="20dp"
+                    android:layout_marginLeft="50dp"
                     android:layout_marginTop="41dp"
                     android:layout_marginBottom="48dp"
                     android:fontFamily="@font/libre_baskerville"
