@@ -383,7 +383,6 @@ public class Login extends AppCompatActivity {
             @Override
             protected void onPostExecute(String s) {
                 super.onPostExecute ( s );
-                Toast.makeText( Login.this, "Add product successfully!!", Toast.LENGTH_LONG).show();
             }
 
             @Override
