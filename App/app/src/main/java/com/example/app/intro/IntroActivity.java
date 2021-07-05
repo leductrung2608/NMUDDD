@@ -62,15 +62,15 @@ public class IntroActivity extends AppCompatActivity {
         btnNext = findViewById(R.id.btn_next);
         btnGetStarted = findViewById(R.id.btn_get_started);
         tabIndicator = findViewById(R.id.tab_indicator);
-        btnAnim = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.button_animation);
+        btnAnim = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.button_animation);
         tvSkip = findViewById(R.id.tv_skip);
 
         // fill list screen
 
         final List<ScreenItem> mList = new ArrayList<>();
-        mList.add(new ScreenItem("Welcome to iBeauty!","Beauty has a purpose, and purpose is you. The beauty is not luxurious imagination.",R.drawable.img3));
-        mList.add(new ScreenItem("Skin care","Care for your Skin, care for your beauty!",R.drawable.img2));
-        mList.add(new ScreenItem("Make up","Life isn’t Perfect, But your Make Up can be.",R.drawable.img1));
+        mList.add(new ScreenItem("Welcome to iBeauty!","Beauty has a purpose, and purpose is you. The beauty is not luxurious imagination.", R.drawable.img3));
+        mList.add(new ScreenItem("Skin care","Care for your Skin, care for your beauty!", R.drawable.img2));
+        mList.add(new ScreenItem("Make up","Life isn’t Perfect, But your Make Up can be.", R.drawable.img1));
 
         // setup viewpager
         screenPager =findViewById(R.id.screen_viewpager);

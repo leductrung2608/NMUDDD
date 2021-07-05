@@ -20,8 +20,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.app.R;
-import com.example.app.model.OrderModel;
 import com.example.app.RegisterUserClass;
+import com.example.app.model.OrderModel;
 
 import org.jetbrains.annotations.NotNull;
 import org.json.JSONArray;

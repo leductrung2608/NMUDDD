@@ -94,7 +94,7 @@
                     android:layout_marginEnd="28dp"
                     android:fontFamily="@font/oswald_light"
                     android:text="Missha  Magic Cushion "
-                    android:textColor="#de637e"
+                    android:textColor="#AE3A53"
                     android:textSize="20sp"
                     android:textStyle="bold"
                     tools:ignore="HardcodedText" />
@@ -109,7 +109,7 @@
                     android:layout_marginEnd="16dp"
                     android:fontFamily="@font/oswald_light"
                     android:text="15gr"
-                    android:textColor="#ff8882"
+                    android:textColor="#BC261F"
                     android:textSize="16sp"
                     tools:ignore="HardcodedText" />
 
@@ -124,7 +124,7 @@
                     android:layout_marginBottom="15dp"
                     android:fontFamily="@font/oswald_light"
                     android:text="GIÁ:"
-                    android:textColor="#ff8882"
+                    android:textColor="#BC261F"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     tools:ignore="HardcodedText" />
@@ -141,7 +141,7 @@
                     android:layout_toEndOf="@id/cost"
                     android:fontFamily="@font/oswald_light"
                     android:text="$23"
-                    android:textColor="#ff8882"
+                    android:textColor="#BC261F"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     tools:ignore="HardcodedText" />
@@ -181,7 +181,7 @@
                     android:layout_marginBottom="10dp"
                     android:fontFamily="@font/oswald_light"
                     android:text="Product Description"
-                    android:textColor="#de637e"
+                    android:textColor="#AE3A53"
                     android:textSize="20sp"
                     tools:ignore="HardcodedText" />
 
@@ -200,7 +200,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="16dp"
                     android:fontFamily="@font/oswald_light"
-                    android:textColor="#ff8882"
+                    android:textColor="#AE3A53"
                     android:textSize="16sp"
                     app:trimCollapsedText="Thu gọn"
                     app:trimExpandedText="Xem thêm"
@@ -246,10 +246,10 @@
             android:layout_alignParentBottom="true"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="12dp"
-            android:background="@drawable/button_background_pay"
+            android:background="@drawable/admin_button"
             android:fontFamily="@font/oswald_light"
             android:text="ADD TO CART"
-            android:textColor="#C52F60"
+            android:textColor="#8E2A40"
             android:textSize="24sp" />
 
 

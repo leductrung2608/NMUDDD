@@ -16,7 +16,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorAccent"
+            android:background="#f5c9cf"
             android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar">
 
             <de.hdodenhof.circleimageview.CircleImageView
@@ -31,7 +31,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="25dp"
                 android:layout_marginLeft="25dp"
-                android:fontFamily="@font/oswald_light"
                 android:textColor="#C52F60"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -63,9 +62,9 @@
             android:layout_marginLeft="10dp"
             android:layout_toLeftOf="@id/btn_send"
             android:background="@android:color/transparent"
-            android:fontFamily="@font/oswald_light"
             android:hint="Type a message..."
-            android:textColor="#de637e" />
+            android:textColor="#AE3A53"
+            android:textColorHint="#8E8585" />
 
         <ImageButton
             android:id="@+id/btn_send"

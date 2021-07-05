@@ -31,11 +31,22 @@ android:fitsSystemWindows="true">
 
                 <ImageView
                     android:id="@+id/imageView7"
-                    android:layout_width="match_parent"
+                    android:layout_width="302dp"
                     android:layout_height="60dp"
                     android:layout_gravity="center"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"
                     android:src="@drawable/logo" />
+
+                <Button
+                    android:id="@+id/btt_chatUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="43dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_chat2" />
 
             </LinearLayout>
 
@@ -43,18 +54,21 @@ android:fitsSystemWindows="true">
                 android:id="@+id/searchBar"
                 style="@android:style/Widget.Material.Light.SearchView"
                 android:layout_width="366dp"
-                android:layout_height="34dp"
+                android:layout_height="38dp"
                 android:layout_above="@+id/cardView"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginBottom="10dp"
-                android:background="@drawable/search_bar_bg"
-                android:fontFamily="@font/oswald_light"
+                android:background="@drawable/admin_button"
+                android:drawableRight="@drawable/a"
+                android:fontFamily="@font/libre_baskerville"
                 android:hint="Search"
                 android:paddingLeft="10dp"
-                android:textColor="#C52F60"
-                android:textColorHint="#C52F60" />
+                android:paddingRight="7dp"
+                android:textColor="#8E2A40"
+                android:textColorHint="#8E2A40"
+                android:textSize="16sp" />
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardView"
@@ -65,7 +79,7 @@ android:fitsSystemWindows="true">
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
-                app:cardBackgroundColor="#f5c8ce"
+                app:cardBackgroundColor="#AE3A53"
                 app:cardCornerRadius="20dp">
 
                 <com.smarteist.autoimageslider.SliderView
@@ -90,13 +104,13 @@ android:fitsSystemWindows="true">
 
             <TextView
                 android:id="@+id/categoryTv"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
                 android:layout_marginTop="24dp"
-                android:fontFamily="@font/oswald_light"
-                android:text="Categories"
-                android:textColor="#dd5f7b"
+                android:fontFamily="@font/libre_baskerville"
+                android:gravity="center"
+                android:text="   Categories"
+                android:textColor="#8E2A40"
                 android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/discountedRecycler" />
@@ -114,13 +128,13 @@ android:fitsSystemWindows="true">
                 android:id="@+id/allItemsTv"
                 android:layout_width="match_parent"
                 android:layout_height="47dp"
-                android:layout_marginTop="35dp"
-                android:fontFamily="@font/oswald_light"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/libre_baskerville"
 
                 android:gravity="center"
-                android:text="All Products"
-                android:textColor="#dd5f7b"
-                android:textSize="20sp" />
+                android:text="   All Products"
+                android:textColor="#8E2A40"
+                android:textSize="16sp" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recycleViewDiscount"

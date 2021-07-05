@@ -25,7 +25,7 @@
         <ImageView
 
             android:id="@+id/sale_image_view"
-            android:layout_width="200dp"
+            android:layout_width="match_parent"
             android:layout_height="200dp"
 
             android:layout_gravity="center_horizontal"
@@ -45,7 +45,7 @@
             android:fontFamily="@font/libre_baskerville"
             android:maxLines="2"
             android:text="TextView"
-            android:textColor="#dd5f7b"
+            android:textColor="#CD4B67"
             android:textSize="12sp"
             tools:ignore="NotSibling" />
 
@@ -60,7 +60,7 @@
             android:fontFamily="@font/libre_baskerville"
             android:gravity="center|right"
             android:text="Price"
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="#333030"
             android:textSize="12sp" />
 
     </androidx.cardview.widget.CardView>

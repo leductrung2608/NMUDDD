@@ -9,8 +9,8 @@
 
     <com.github.mikephil.charting.charts.BarChart
         android:id="@+id/barChart"
-        android:layout_width="353dp"
-        android:layout_height="760dp"
+        android:layout_width="354dp"
+        android:layout_height="597dp"
         android:contextClickable="false"
 
         app:layout_constraintBottom_toBottomOf="parent"

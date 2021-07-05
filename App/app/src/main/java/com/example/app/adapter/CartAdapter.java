@@ -14,10 +14,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.app.fragment.CartFragment;
 import com.example.app.MainActivity;
 import com.example.app.R;
 import com.example.app.RegisterUserClass;
+import com.example.app.fragment.CartFragment;
 import com.example.app.model.Cart;
 import com.squareup.picasso.Picasso;
 

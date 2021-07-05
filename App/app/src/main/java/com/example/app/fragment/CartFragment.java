@@ -23,7 +23,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.example.app.MainActivity;
@@ -31,17 +30,13 @@ import com.example.app.R;
 import com.example.app.RegisterUserClass;
 import com.example.app.adapter.CartAdapter;
 import com.example.app.map.Address;
-//import com.example.app.map.CurrentLocation;
-//import com.example.app.map.Map;
 import com.example.app.map.PlacePicker;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
-import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.firestore.FirebaseFirestoreException;
 
 import org.jetbrains.annotations.NotNull;
 import org.json.JSONArray;

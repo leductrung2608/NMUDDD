@@ -12,7 +12,7 @@
         android:layout_height="55dp"
 
 
-        android:background="#f5c8ce"
+        android:background="#f5c9cf"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -24,7 +24,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginTop="0dp"
             android:layout_marginBottom="0dp"
-            app:srcCompat="@drawable/abc_vector_test"
+            app:srcCompat="@drawable/pick_back"
             tools:ignore="VectorDrawableCompat" />
 
         <TextView
@@ -36,210 +36,194 @@
             android:layout_marginBottom="0dp"
             android:layout_toEndOf="@+id/backBttAdd"
             android:layout_toRightOf="@+id/backBttAdd"
-            android:fontFamily="@font/oswald_light"
+            android:fontFamily="@font/libre_baskerville"
             android:gravity="center"
             android:text="Add new product"
-            android:textColor="#FFFFFF"
+            android:textColor="#8E2A40"
             android:textSize="20sp"
             android:textStyle="bold" />
     </RelativeLayout>
 
-    <ScrollView
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="684dp"
-        android:layout_marginBottom="20dp"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        app:layout_constraintVertical_bias="0.0">
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_payment"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
 
-        <LinearLayout
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="10dp"
+            android:layout_height="684dp"
             android:layout_marginBottom="20dp"
-            android:orientation="vertical">
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            app:layout_constraintVertical_bias="0.0">
 
-            <TextView
-                android:id="@+id/textView2"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/oswald_light"
-                android:paddingLeft="20dp"
-                android:text="Name"
-                android:textColor="#de637e"
-                android:textSize="14sp" />
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
 
-            <EditText
-                android:id="@+id/name"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                android:ems="10"
-                android:fontFamily="@font/oswald_light"
-                android:inputType="textPersonName"
-                android:textColor="#dd5d79"
-                android:textSize="14sp" />
 
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/oswald_light"
-                android:paddingLeft="20dp"
-                android:text="Price"
-                android:textColor="#de637e"
-                android:textSize="14sp" />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputEmail"
+                    style="@style/parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:hint="Name"
+                    android:textColorHint="#AE3A53"
+                    app:hintEnabled="true">
 
-            <EditText
-                android:id="@+id/price"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                android:ems="10"
-                android:fontFamily="@font/oswald_light"
-                android:inputType="number"
-                android:textColor="#dd5d79"
-                android:textSize="14sp" />
+                    <EditText
+                        android:id="@+id/name"
+                        style="@style/modifiedEditText"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:textColor="#AE3A53"
+                        android:textSize="15dp" />
+                </com.google.android.material.textfield.TextInputLayout>
 
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/oswald_light"
-                android:paddingLeft="20dp"
-                android:text="Number"
-                android:textColor="#de637e"
-                android:textSize="14sp" />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textView3"
+                    style="@style/parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:hint="Price"
+                    android:textColorHint="#AE3A53"
+                    app:hintEnabled="true">
 
-            <EditText
-                android:id="@+id/number"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                android:ems="10"
-                android:fontFamily="@font/oswald_light"
-                android:inputType="number"
-                android:textColor="#dd5d79"
-                android:textSize="14sp" />
+                    <EditText
+                        android:id="@+id/price"
+                        style="@style/modifiedEditText"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:textColor="#AE3A53"
+                        android:textSize="15dp" />
+                </com.google.android.material.textfield.TextInputLayout>
 
-            <TextView
-                android:id="@+id/textView5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/oswald_light"
-                android:paddingLeft="20dp"
-                android:text="Weight"
-                android:textColor="#de637e"
-                android:textSize="14sp" />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textView4"
+                    style="@style/parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:hint="Number"
+                    android:textColorHint="#AE3A53"
+                    app:hintEnabled="true">
 
-            <EditText
-                android:id="@+id/weight"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                android:ems="10"
-                android:fontFamily="@font/oswald_light"
-                android:inputType="textPersonName"
-                android:textColor="#dd5d79"
-                android:textSize="14sp" />
+                    <EditText
+                        android:id="@+id/number"
+                        style="@style/modifiedEditText"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:textColor="#AE3A53"
+                        android:textSize="15dp" />
+                </com.google.android.material.textfield.TextInputLayout>
 
-            <TextView
-                android:id="@+id/textView6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/oswald_light"
-                android:paddingLeft="20dp"
-                android:text="Description"
-                android:textColor="#de637e"
-                android:textSize="14sp" />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textView5"
+                    style="@style/parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:hint="Weight"
+                    android:textColorHint="#AE3A53"
+                    app:hintEnabled="true">
 
-            <EditText
-                android:id="@+id/description"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                android:ems="10"
-                android:fontFamily="@font/oswald_light"
-                android:inputType="textPersonName"
-                android:textColor="#dd5d79"
-                android:textSize="14sp" />
+                    <EditText
+                        android:id="@+id/weight"
+                        style="@style/modifiedEditText"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:textColor="#AE3A53"
+                        android:textSize="15dp" />
+                </com.google.android.material.textfield.TextInputLayout>
 
-            <TextView
-                android:id="@+id/textView7"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/oswald_light"
-                android:paddingLeft="20dp"
-                android:text="Image"
-                android:textColor="#de637e"
-                android:textSize="14sp" />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textView6"
+                    style="@style/parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:hint="Description"
+                    android:textColorHint="#AE3A53"
+                    app:hintEnabled="true">
 
-            <ImageView
-                android:id="@+id/image"
-                android:layout_width="200dp"
-                android:layout_height="200dp"
-                android:layout_gravity="center"
-                android:layout_margin="10dp"
-                android:ems="10"
-                android:inputType="textPersonName" />
+                    <EditText
+                        android:id="@+id/description"
+                        style="@style/modifiedEditText"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:textColor="#AE3A53"
+                        android:textSize="15dp" />
+                </com.google.android.material.textfield.TextInputLayout>
 
-            <Button
-                android:id="@+id/chooseImage"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:background="@drawable/ic_baseline_add_box_24"
-                android:fontFamily="@font/oswald_light"
-                android:textAllCaps="false"
-                android:textColor="@color/ic_launcher_background"
-                android:textSize="18sp"
-                android:textStyle="bold" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/oswald_light"
-                android:paddingLeft="20dp"
-                android:text="Kind"
-                android:textColor="#de637e"
-                android:textSize="14sp" />
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
 
-            <Spinner
-                android:id="@+id/kind"
-                android:layout_width="381dp"
-                android:layout_height="57dp"
-                android:layout_marginLeft="0dp"
-                android:layout_marginRight="15dp"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:padding="15dp"
-                android:spinnerMode="dropdown" />
+                    android:layout_marginTop="20dp"
+                    android:paddingLeft="20dp"
+                    android:text=" Image"
+                    android:textColor="#AE3A53"
+                    android:textSize="15dp" />
 
-            <Button
-                android:id="@+id/addBtt"
-                android:layout_width="210dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="100dp"
-                android:background="@drawable/button_background_pay"
-                android:fontFamily="@font/oswald_light"
-                android:text=" Add product"
-                android:textAllCaps="false"
-                android:textColor="@color/ic_launcher_background"
-                android:textSize="24sp"
-                android:textStyle="bold" />
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
 
-        </LinearLayout>
-    </ScrollView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:paddingLeft="20dp"
+                    android:text="  Kind"
+                    android:textColor="#AE3A53"
+                    android:textSize="15dp" />
+
+                <Spinner
+                    android:id="@+id/kind"
+                    android:layout_width="381dp"
+                    android:layout_height="57dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="15dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:padding="15dp"
+                    android:spinnerMode="dropdown" />
+
+                <Button
+                    android:id="@+id/addBtt"
+                    android:layout_width="170dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="100dp"
+                    android:background="@drawable/admin_button"
+                    android:fontFamily="@font/libre_baskerville"
+                    android:text=" Add product"
+                    android:textAllCaps="false"
+                    android:textColor="#8E2A40"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -42,9 +42,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="52dp"
                         android:layout_marginTop="6dp"
-                        android:fontFamily="@font/oswald_light"
                         android:text="vnmp"
-                        android:textColor="#de637e" />
+                        android:textColor="#C52F60" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -61,14 +60,13 @@
 
                     <TextView
                         android:id="@+id/tv_phoneCart"
-                        android:layout_width="305dp"
+                        android:layout_width="280dp"
                         android:layout_height="36dp"
                         android:layout_marginLeft="8dp"
                         android:layout_marginBottom="1dp"
-                        android:fontFamily="@font/oswald_light"
                         android:gravity="center_vertical"
                         android:text="0857725554"
-                        android:textColor="#de637e" />
+                        android:textColor="#C52F60" />
 
                     <ImageView
                         android:id="@+id/edit_phoneNo"
@@ -95,13 +93,12 @@
 
                     <TextView
                         android:id="@+id/tv_addressCart"
-                        android:layout_width="306dp"
+                        android:layout_width="280dp"
                         android:layout_height="match_parent"
                         android:layout_marginLeft="8dp"
-                        android:fontFamily="@font/oswald_light"
                         android:gravity="center_vertical"
                         android:text="3/177c ấp Nhị Tân, Hóc Môn"
-                        android:textColor="#de637e" />
+                        android:textColor="#C52F60" />
 
                     <ImageView
                         android:id="@+id/edit_address"
@@ -134,11 +131,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:fontFamily="@font/oswald_light"
+        android:fontFamily="@font/libre_baskerville"
         android:gravity="center"
         android:text="Empty Cart"
-        android:textColor="@color/whiteTextColor"
-        android:textSize="34sp"
+        android:textColor="#AA3650"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
         app:layout_constraintEnd_toEndOf="@+id/listview_cart"
         app:layout_constraintStart_toStartOf="parent"
@@ -160,9 +157,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="20dp"
-            android:fontFamily="@font/oswald_light"
             android:text="VNĐ"
-            android:textColor="#dd5f7b"
+            android:textColor="#C52F60"
             android:textSize="14sp"
             app:layout_constraintBottom_toTopOf="@id/grand_total"
             app:layout_constraintEnd_toEndOf="@id/imageView6"
@@ -173,25 +169,23 @@
             android:id="@+id/total"
             android:layout_width="wrap_content"
             android:layout_height="24dp"
-            android:layout_marginEnd="10dp"
-            android:fontFamily="@font/oswald_light"
+            android:layout_marginEnd="7dp"
             android:text="0"
-            android:textColor="#dd5f7b"
+            android:textColor="#C52F60"
             android:textSize="14sp"
             app:layout_constraintBottom_toTopOf="@id/grand_total"
             app:layout_constraintEnd_toStartOf="@+id/textView8"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.231" />
+            app:layout_constraintVertical_bias="0.216" />
 
         <TextView
             android:id="@+id/textView7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
-            android:layout_marginBottom="4dp"
-            android:fontFamily="@font/oswald_light"
+            android:layout_marginBottom="8dp"
             android:text="Grand Total:"
-            android:textColor="#de637e"
+            android:textColor="#C82549"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@id/btnPay"
@@ -201,17 +195,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="2dp"
-            android:fontFamily="@font/oswald_light"
             android:text="VNĐ"
-            android:textColor="#de637e"
+            android:textColor="#C82549"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@id/btnPay"
             app:layout_constraintEnd_toEndOf="@id/imageView6"
-            app:layout_constraintHorizontal_bias="0.914"
+            app:layout_constraintHorizontal_bias="0.9"
             app:layout_constraintStart_toEndOf="@id/textView5"
             app:layout_constraintTop_toTopOf="@id/imageView6"
-            app:layout_constraintVertical_bias="0.703" />
+            app:layout_constraintVertical_bias="0.72" />
 
         <TextView
             android:id="@+id/grand_total"
@@ -219,17 +212,16 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="33dp"
             android:layout_marginBottom="2dp"
-            android:fontFamily="@font/oswald_light"
             android:text="0"
-            android:textColor="#de637e"
+            android:textColor="#C82549"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@id/btnPay"
             app:layout_constraintEnd_toEndOf="@id/imageView6"
-            app:layout_constraintHorizontal_bias="0.894"
+            app:layout_constraintHorizontal_bias="0.805"
             app:layout_constraintStart_toEndOf="@id/textView5"
             app:layout_constraintTop_toTopOf="@id/imageView6"
-            app:layout_constraintVertical_bias="0.694" />
+            app:layout_constraintVertical_bias="0.72" />
 
         <Button
             android:id="@+id/btnPay"
@@ -237,12 +229,12 @@
             android:layout_height="38dp"
             android:layout_marginTop="2dp"
             android:background="@drawable/button_background_pay"
-            android:fontFamily="@font/oswald_light"
+            android:fontFamily="@font/libre_baskerville"
             android:foregroundGravity="bottom"
             android:text="Ready to pay"
             android:textAlignment="gravity"
-            android:textColor="#C52F60"
-            android:textSize="20sp"
+            android:textColor="#C82549"
+            android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -267,9 +259,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="28dp"
             android:layout_marginTop="16dp"
-            android:fontFamily="@font/oswald_light"
             android:text="Total:"
-            android:textColor="#dd5f7b"
+            android:textColor="#C52F60"
             android:textSize="16sp"
             app:layout_constraintEnd_toStartOf="@id/total"
             app:layout_constraintHorizontal_bias="0.014"
@@ -282,9 +273,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
             android:layout_marginBottom="4dp"
-            android:fontFamily="@font/oswald_light"
             android:text="Shipping Charges:"
-            android:textColor="#dd5f7b"
+            android:textColor="#C52F60"
             android:textSize="16sp"
             app:layout_constraintBottom_toTopOf="@id/imageView6"
             app:layout_constraintStart_toStartOf="parent" />
@@ -292,13 +282,12 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:fontFamily="@font/oswald_light"
+            android:layout_marginTop="24dp"
             android:text="VNĐ"
-            android:textColor="#dd5f7b"
+            android:textColor="#C52F60"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="@id/imageView6"
-            app:layout_constraintHorizontal_bias="0.916"
+            app:layout_constraintHorizontal_bias="0.9"
             app:layout_constraintStart_toEndOf="@id/textView5"
             app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
@@ -306,14 +295,12 @@
             android:id="@+id/ship_charge"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="25dp"
-            android:fontFamily="@font/oswald_light"
+            android:layout_marginTop="24dp"
             android:text="0"
-            android:textColor="#dd5f7b"
+            android:textColor="#C52F60"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="@id/imageView6"
-            app:layout_constraintHorizontal_bias="0.886"
+            app:layout_constraintHorizontal_bias="0.751"
             app:layout_constraintStart_toEndOf="@id/textView5"
             app:layout_constraintTop_toBottomOf="@+id/textView8" />
 

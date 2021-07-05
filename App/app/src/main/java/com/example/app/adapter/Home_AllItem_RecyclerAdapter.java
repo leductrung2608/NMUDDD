@@ -1,7 +1,6 @@
 package com.example.app.adapter;
 
 import android.content.Context;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,8 +9,6 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.app.MainActivity;
-import com.example.app.ProductDetail;
 import com.example.app.R;
 import com.example.app.model.AllProductModel;
 import com.squareup.picasso.Picasso;

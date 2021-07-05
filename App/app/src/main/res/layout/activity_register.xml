@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".login.Register"
-    android:background="@color/register_bk_color"
+    android:layout_gravity="center"
+    android:background="#f5c9cf"
     android:focusableInTouchMode="true"
     android:gravity="center"
-    android:layout_gravity="center">
+    tools:context=".login.Register">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -34,7 +33,7 @@
                     android:layout_marginBottom="40dp"
                     android:fontFamily="@font/libre_baskerville"
                     android:text="Register"
-                    android:textColor="@color/whiteTextColor"
+                    android:textColor="#8E2A40"
                     android:textStyle="bold" />
 
                 <com.airbnb.lottie.LottieAnimationView
@@ -66,7 +65,7 @@
                 android:layout_marginRight="7dp"
                 app:cardBackgroundColor="@color/whiteTextColor"
                 app:cardCornerRadius="20dp"
-                app:cardElevation="8dp">
+                app:cardElevation="10dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -79,7 +78,7 @@
                         style="@style/parent"
                         android:layout_marginTop="@dimen/loginViewsMargin"
                         android:hint="Username"
-                        android:textColorHint="#e39caa"
+                        android:textColorHint="#AE3A53"
                         app:hintEnabled="true">
 
                         <EditText
@@ -88,7 +87,7 @@
                             android:hint="Username"
                             android:inputType="textPersonName"
                             android:maxLines="1"
-                            android:textColor="#dd5d79" />
+                            android:textColor="#AE3A53" />
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
@@ -96,7 +95,7 @@
                         style="@style/parent"
                         android:layout_marginTop="@dimen/loginViewsMargin"
                         android:hint="Email"
-                        android:textColorHint="#e39caa">
+                        android:textColorHint="#AE3A53">
 
                         <EditText
                             android:id="@+id/editTextEmail"
@@ -104,7 +103,7 @@
                             android:hint="Email"
                             android:inputType="textEmailAddress"
                             android:maxLines="1"
-                            android:textColor="#dd5d79" />
+                            android:textColor="#AE3A53" />
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
@@ -112,7 +111,7 @@
                         style="@style/parent"
                         android:layout_marginTop="@dimen/loginViewsMargin"
                         android:hint="Mobile Number"
-                        android:textColorHint="#e39caa">
+                        android:textColorHint="#AE3A53">
 
                         <EditText
                             android:id="@+id/editTextMobile"
@@ -121,7 +120,7 @@
                             android:inputType="phone"
                             android:maxLength="11"
                             android:maxLines="1"
-                            android:textColor="#dd5d79" />
+                            android:textColor="#AE3A53" />
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
@@ -129,7 +128,7 @@
                         style="@style/parent"
                         android:layout_marginTop="@dimen/loginViewsMargin"
                         android:hint="Password"
-                        android:textColorHint="#e39caa"
+                        android:textColorHint="#AE3A53"
                         app:passwordToggleEnabled="true"
                         app:passwordToggleTint="#e37b92">
 
@@ -139,7 +138,7 @@
                             android:hint="Password"
                             android:inputType="textPassword"
                             android:maxLines="1"
-                            android:textColor="#dd5d79" />
+                            android:textColor="#AE3A53" />
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
@@ -147,7 +146,7 @@
                         style="@style/parent"
                         android:layout_marginTop="@dimen/loginViewsMargin"
                         android:hint="Address"
-                        android:textColorHint="#e39caa">
+                        android:textColorHint="#AE3A53">
 
                         <EditText
                             android:id="@+id/editTextAddress"
@@ -156,7 +155,7 @@
                             android:layout_height="58dp"
                             android:hint="Password"
                             android:maxLines="3"
-                            android:textColor="#dd5d79" />
+                            android:textColor="#AE3A53" />
 
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -179,10 +178,10 @@
                         android:layout_gravity="center_horizontal"
                         android:layout_marginTop="@dimen/loginViewsMargin"
                         android:background="@drawable/button_background_pay"
-                        android:fontFamily="@font/oswald_light"
-                        android:text="Register"
-                        android:textColor="#AF4669"
-                        android:textSize="20sp"
+                        android:fontFamily="@font/libre_baskerville"
+                        android:text="Register  "
+                        android:textColor="#8E2A40"
+                        android:textSize="14sp"
                         app:initialCornerAngle="27dp"
                         app:spinning_bar_color="#FFF"
                         app:spinning_bar_padding="6dp"
@@ -192,12 +191,12 @@
                         style="@style/parent"
                         android:layout_marginTop="@dimen/loginViewsMargin"
                         android:layout_marginBottom="3dp"
-                        android:fontFamily="@font/oswald_light"
+                        android:fontFamily="@font/libre_baskerville"
                         android:onClick="onLoginClick"
                         android:text="Already have an account?"
                         android:textAlignment="center"
-                        android:textColor="#e39caa"
-                        android:textSize="17sp"
+                        android:textColor="#AE3A53"
+                        android:textSize="16sp"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -207,13 +206,14 @@
 
         </LinearLayout>
     </ScrollView>
+
     <View
-        android:layout_marginTop="20dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
         android:layout_width="11dp"
         android:layout_height="match_parent"
-        android:background="@drawable/ic_side_bg"/>
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_side_bg" />
 
     <ImageView
         android:layout_width="wrap_content"

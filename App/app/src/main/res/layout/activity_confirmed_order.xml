@@ -13,7 +13,7 @@
         android:layout_height="60dp"
 
 
-        android:background="#f5c8ce"
+        android:background="#f5c9cf"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -27,10 +27,11 @@
             android:layout_marginLeft="10dp"
             android:layout_marginTop="0dp"
             android:layout_marginBottom="0dp"
-            app:srcCompat="@drawable/abc_vector_test"
+            app:srcCompat="@drawable/pick_back"
             tools:ignore="VectorDrawableCompat" />
 
         <TextView
+            android:id="@+id/confirmTv"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_alignParentBottom="true"
@@ -39,10 +40,10 @@
             android:layout_marginBottom="0dp"
             android:layout_toEndOf="@+id/backBttConfirm"
             android:layout_toRightOf="@+id/backBttConfirm"
-            android:fontFamily="@font/oswald_light"
+            android:fontFamily="@font/libre_baskerville"
             android:gravity="center"
             android:text="Confirmed order"
-            android:textColor="@color/ic_launcher_background"
+            android:textColor="#8E2A40"
             android:textSize="20sp"
             android:textStyle="bold" />
     </RelativeLayout>

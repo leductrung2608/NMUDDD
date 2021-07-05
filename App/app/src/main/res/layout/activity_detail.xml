@@ -12,8 +12,7 @@
         android:layout_height="55dp"
 
 
-        android:background="#f5c8ce"
-        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        android:background="#f5c9cf"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -23,9 +22,8 @@
             android:layout_width="35dp"
             android:layout_height="match_parent"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="0dp"
             android:layout_marginBottom="0dp"
-            app:srcCompat="@drawable/abc_vector_test"
+            app:srcCompat="@drawable/pick_back"
             tools:ignore="VectorDrawableCompat" />
 
         <TextView
@@ -37,27 +35,26 @@
             android:layout_marginBottom="0dp"
             android:layout_toEndOf="@+id/backBttDetail"
             android:layout_toRightOf="@+id/backBttDetail"
-            android:fontFamily="@font/oswald_light"
+            android:fontFamily="@font/libre_baskerville"
             android:gravity="center"
             android:text="Detail product"
-            android:textColor="#FFFFFF"
+            android:textColor="#8E2A40"
             android:textSize="20sp"
             android:textStyle="bold" />
     </RelativeLayout>
 
     <ScrollView
-        android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="684dp"
+        android:layout_marginTop="10dp"
         android:layout_marginBottom="20dp"
         android:paddingLeft="10dp"
-        android:paddingRight="2dp"
+        android:paddingRight="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        app:layout_constraintVertical_bias="0.925">
+        app:layout_constraintVertical_bias="0.0">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -77,11 +74,11 @@
                     android:layout_width="50dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:fontFamily="@font/oswald_light"
+
                     android:gravity="center_vertical"
-                    android:text="  Id: "
-                    android:textColor="#de637e"
-                    android:textSize="16dp"
+                    android:text="Id: "
+                    android:textColor="#AE3A53"
+                    android:textSize="16sp"
                     android:textStyle="bold" />
 
                 <EditText
@@ -95,7 +92,7 @@
                     android:editable="false"
                     android:ems="10"
                     android:fontFamily="@font/oswald_light"
-                    android:textColor="#de637e"
+                    android:textColor="#AE3A53"
                     android:textSize="16sp" />
             </LinearLayout>
 
@@ -110,10 +107,10 @@
                     android:layout_width="50dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:fontFamily="@font/oswald_light"
+
                     android:gravity="center_vertical"
-                    android:text="  Name:"
-                    android:textColor="#de637e"
+                    android:text="Name:"
+                    android:textColor="#AE3A53"
                     android:textSize="16dp"
                     android:textStyle="bold" />
 
@@ -126,7 +123,7 @@
                     android:ems="10"
                     android:fontFamily="@font/oswald_light"
                     android:inputType="textPersonName"
-                    android:textColor="#de637e"
+                    android:textColor="#AE3A53"
                     android:textSize="16sp" />
             </LinearLayout>
 
@@ -141,10 +138,10 @@
                     android:layout_width="50dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:fontFamily="@font/oswald_light"
+
                     android:gravity="center_vertical"
-                    android:text="  Price: "
-                    android:textColor="#de637e"
+                    android:text="Price: "
+                    android:textColor="#AE3A53"
                     android:textSize="16dp"
                     android:textStyle="bold" />
 
@@ -157,7 +154,7 @@
                     android:ems="10"
                     android:fontFamily="@font/oswald_light"
                     android:inputType="number"
-                    android:textColor="#de637e"
+                    android:textColor="#AE3A53"
                     android:textSize="16sp" />
             </LinearLayout>
 
@@ -172,10 +169,10 @@
                     android:layout_width="50dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:fontFamily="@font/oswald_light"
+
                     android:gravity="center_vertical"
-                    android:text="  Number:"
-                    android:textColor="#de637e"
+                    android:text="Number:"
+                    android:textColor="#AE3A53"
                     android:textSize="16dp"
                     android:textStyle="bold" />
 
@@ -188,7 +185,7 @@
                     android:ems="10"
                     android:fontFamily="@font/oswald_light"
                     android:inputType="number"
-                    android:textColor="#de637e"
+                    android:textColor="#AE3A53"
                     android:textSize="16sp" />
             </LinearLayout>
 
@@ -203,10 +200,10 @@
                     android:layout_width="50dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:fontFamily="@font/oswald_light"
+
                     android:gravity="center_vertical"
-                    android:text="  Weight:"
-                    android:textColor="#de637e"
+                    android:text="Weight:"
+                    android:textColor="#AE3A53"
                     android:textSize="16dp"
                     android:textStyle="bold" />
 
@@ -219,7 +216,7 @@
                     android:ems="10"
                     android:fontFamily="@font/oswald_light"
                     android:inputType="textPersonName"
-                    android:textColor="#de637e"
+                    android:textColor="#AE3A53"
                     android:textSize="16sp" />
             </LinearLayout>
 
@@ -234,23 +231,23 @@
                     android:layout_width="50dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:fontFamily="@font/oswald_light"
+
                     android:gravity="center_vertical"
-                    android:text="  Description:"
-                    android:textColor="#de637e"
+                    android:text="Description:"
+                    android:textColor="#AE3A53"
                     android:textSize="16dp"
                     android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/descriptionGoodAM"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_marginRight="3dp"
                     android:layout_weight="1"
                     android:ems="10"
                     android:fontFamily="@font/oswald_light"
                     android:inputType="textPersonName"
-                    android:textColor="#de637e"
+                    android:textColor="#AE3A53"
                     android:textSize="16sp" />
             </LinearLayout>
 
@@ -262,13 +259,13 @@
 
                 <TextView
                     android:id="@+id/textView24"
-                    android:layout_width="50dp"
+                    android:layout_width="80dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:fontFamily="@font/oswald_light"
+
                     android:gravity="center_vertical"
-                    android:text="  Image:"
-                    android:textColor="#de637e"
+                    android:text="Image:"
+                    android:textColor="#AE3A53"
                     android:textSize="16dp"
                     android:textStyle="bold" />
 
@@ -281,19 +278,6 @@
                     android:ems="10" />
             </LinearLayout>
 
-            <Button
-                android:id="@+id/chooseImage1"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/ic_baseline_add_box_24"
-                android:fontFamily="@font/oswald_light"
-                android:textAllCaps="false"
-                android:textColor="#FFFEFE"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
@@ -305,10 +289,10 @@
                     android:layout_width="50dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:fontFamily="@font/oswald_light"
+
                     android:gravity="center_vertical"
-                    android:text="  Kind: "
-                    android:textColor="#de637e"
+                    android:text="Kind: "
+                    android:textColor="#AE3A53"
                     android:textSize="16dp"
                     android:textStyle="bold" />
 
@@ -336,12 +320,12 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:layout_marginBottom="20dp"
-                    android:background="@drawable/button_background_pay"
-                    android:fontFamily="@font/oswald_light"
+                    android:background="@drawable/admin_button"
+                    android:fontFamily="@font/libre_baskerville"
                     android:text="Update"
                     android:textAllCaps="false"
-                    android:textColor="#FFFFFF"
-                    android:textSize="20sp"
+                    android:textColor="#8E2A40"
+                    android:textSize="18sp"
                     android:textStyle="bold" />
 
                 <Button
@@ -350,12 +334,12 @@
                     android:layout_height="match_parent"
                     android:layout_marginRight="10dp"
                     android:layout_marginBottom="20dp"
-                    android:background="@drawable/button_background_pay"
-                    android:fontFamily="@font/oswald_light"
+                    android:background="@drawable/admin_button"
+                    android:fontFamily="@font/libre_baskerville"
                     android:text="Delete"
                     android:textAllCaps="false"
-                    android:textColor="#FFFFFF"
-                    android:textSize="20sp"
+                    android:textColor="#8E2A40"
+                    android:textSize="18sp"
                     android:textStyle="bold" />
             </LinearLayout>
         </LinearLayout>

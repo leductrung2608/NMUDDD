@@ -37,7 +37,7 @@
                     android:layout_marginBottom="48dp"
                     android:fontFamily="@font/libre_baskerville"
                     android:text="Login"
-                    android:textColor="#dd5d79" />
+                    android:textColor="#AE3A53" />
 
                 <com.airbnb.lottie.LottieAnimationView
                     android:layout_width="127dp"
@@ -66,7 +66,7 @@
                 android:layout_marginTop="40dp"
                 android:layout_marginRight="20dp"
                 android:hint="Email"
-                android:textColorHint="#e39caa"
+                android:textColorHint="#AE3A53"
                 app:hintEnabled="true">
 
                 <EditText
@@ -75,7 +75,8 @@
                     android:hint="Email"
                     android:inputType="textEmailAddress"
                     android:maxLines="1"
-                    android:textColor="#dd5d79" />
+                    android:textColor="#AE3A53"
+                    android:textSize="14sp" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -85,7 +86,7 @@
                 android:layout_marginTop="@dimen/loginViewsMargin"
                 android:layout_marginRight="20dp"
                 android:hint="Password"
-                android:textColorHint="#e39caa"
+                android:textColorHint="#AE3A53"
                 app:hintEnabled="true"
                 app:passwordToggleEnabled="true"
                 app:passwordToggleTint="#e37b92">
@@ -96,7 +97,8 @@
                     android:hint="@string/login_password_hint"
                     android:inputType="textPassword"
                     android:maxLines="1"
-                    android:textColor="#dd5d79" />
+                    android:textColor="#AE3A53"
+                    android:textSize="14sp" />
             </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -108,29 +110,28 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/loginViewsMargin"
-                android:fontFamily="@font/oswald_light"
                 android:onClick="onLoginClick"
                 android:paddingRight="35dp"
                 android:text="Forgot Password?"
                 android:textAlignment="viewEnd"
-                android:textColor="#e37b92"
-                android:textSize="14sp"
+                android:textColor="#CD4B67"
+                android:textSize="16sp"
                 android:textStyle="bold" />
 
             <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
                 android:id="@+id/cirLoginButton"
                 style="@style/loginButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="126dp"
+                android:layout_height="51dp"
                 android:layout_gravity="center|center_horizontal"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/button_background_pay"
-                android:fontFamily="@font/oswald_light"
+                android:fontFamily="@font/libre_baskerville"
                 android:foregroundGravity="center"
                 android:gravity="center"
                 android:text="login  "
-                android:textColor="#AF4669"
-                android:textSize="20sp"
+                android:textColor="#8E2A40"
+                android:textSize="14sp"
                 app:initialCornerAngle="27dp"
                 app:spinning_bar_color="#FFF"
                 app:spinning_bar_padding="6dp"
@@ -139,12 +140,11 @@
             <TextView
                 style="@style/parent"
                 android:layout_marginTop="@dimen/loginViewsMargin"
-                android:fontFamily="@font/oswald_light"
                 android:onClick="onLoginClick"
                 android:text="New user? Register Now"
                 android:textAlignment="center"
-                android:textColor="#e37b92"
-                android:textSize="17sp"
+                android:textColor="#CD4B67"
+                android:textSize="16sp"
                 android:textStyle="bold" />
 
             <LinearLayout

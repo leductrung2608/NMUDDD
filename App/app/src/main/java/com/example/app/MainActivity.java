@@ -1,14 +1,6 @@
 package com.example.app;
 
-import android.content.Intent;
-import android.graphics.Color;
-import android.os.AsyncTask;
-import android.os.Build;
 import android.os.Bundle;
-import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
@@ -20,18 +12,8 @@ import com.aurelhubert.ahbottomnavigation.AHBottomNavigation;
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigationItem;
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigationViewPager;
 import com.aurelhubert.ahbottomnavigation.notification.AHNotification;
-import com.example.app.adapter.CartAdapter;
 import com.example.app.adapter.ViewPagerAdapter;
-import com.example.app.login.Login;
-import com.example.app.map.PlacePicker;
-import com.example.app.model.AllProductModel;
 import com.example.app.model.Cart;
-import com.example.app.model.Chat;
-import com.example.app.util.MyAppContext;
-import com.facebook.login.LoginManager;
-import com.google.android.gms.auth.api.signin.GoogleSignIn;
-import com.google.android.gms.auth.api.signin.GoogleSignInClient;
-import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -39,7 +21,6 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -60,8 +41,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btt_chat = findViewById(R.id.btt_chatUser);
-        btt_logout = findViewById(R.id.btt_logoutUser);
 
         storageReference = FirebaseStorage.getInstance().getReference();
         fAuth = FirebaseAuth.getInstance();
@@ -72,30 +51,6 @@ public class MainActivity extends AppCompatActivity {
         BottomNav();
         //CountItemInCart(MainActivity.CartList.size ());
 
-       btt_logout.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View v) {
-
-               GoogleSignInOptions gso = new GoogleSignInOptions.
-                       Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).
-                       build();
-               GoogleSignInClient googleSignInClient = GoogleSignIn.getClient(getApplicationContext(),gso);
-               googleSignInClient.signOut();
-
-               LoginManager.getInstance().logOut();
-
-               fAuth.signOut();
-               startActivity(new Intent(getApplicationContext(), Login.class));
-               finish();
-           }
-       });
-
-       btt_chat.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View v) {
-               startActivity(new Intent(getApplicationContext(), ChatActivity.class));
-           }
-       });
 
         CartList = new ArrayList<Cart>();
 

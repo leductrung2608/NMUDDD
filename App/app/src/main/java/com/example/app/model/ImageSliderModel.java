@@ -1,9 +1,9 @@
 package com.example.app.model;
 
 public class ImageSliderModel {
-    int image;
+    String image;
 
-    public ImageSliderModel(int image) {
+    public ImageSliderModel(String image) {
         this.image = image;
     }
 
@@ -12,11 +12,11 @@ public class ImageSliderModel {
 
     }
 
-    public int getImage() {
+    public String getImage() {
         return image;
     }
 
-    public void setImage(int image) {
+    public void setImage(String image) {
         this.image = image;
     }
 //    public ImageSliderModel(int image) {

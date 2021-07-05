@@ -3,7 +3,6 @@ package com.example.app.fragment;
 import android.app.Activity;
 import android.app.Dialog;
 import android.app.ProgressDialog;
-import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -26,17 +25,12 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.app.PurchaseOrder;
 import com.example.app.R;
-import com.example.app.admin.ConfirmedOrder;
-import com.example.app.admin.OrderDetail;
-import com.example.app.admin.UnconfirmedOrder;
 import com.example.app.login.Login;
 import com.example.app.map.Address;
 import com.example.app.map.PlacePicker;
-import com.example.app.model.OrderModel;
 import com.facebook.login.LoginManager;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
@@ -60,11 +54,6 @@ import com.squareup.picasso.Picasso;
 
 import org.jetbrains.annotations.NotNull;
 
-import java.text.DecimalFormat;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
 import java.util.HashMap;
 
 import at.markushi.ui.CircleButton;
@@ -91,6 +80,7 @@ public class ProfileFragment extends Fragment {
     ImageView imageProfile, btt_address, btt_phoneNo, btt_location;
     StorageTask uploadTask;
 
+    TextView textView;
     CardView cv_phoneNo, cv_address;
 
     public ProfileFragment() { }

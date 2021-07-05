@@ -39,9 +39,8 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="11dp"
                 android:layout_marginTop="5dp"
-                android:fontFamily="@font/oswald_light"
                 android:text="Product: "
-                android:textColor="#de637e"
+                android:textColor="#AE3A53"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -53,9 +52,8 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="11dp"
                 android:layout_marginTop="40dp"
-                android:fontFamily="@font/oswald_light"
                 android:text="Quantity: "
-                android:textColor="#de637e"
+                android:textColor="#AE3A53"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -114,9 +112,8 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="11dp"
                 android:layout_marginTop="75dp"
-                android:fontFamily="@font/oswald_light"
                 android:text="Price:"
-                android:textColor="#de637e"
+                android:textColor="#AE3A53"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 

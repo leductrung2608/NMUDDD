@@ -18,9 +18,9 @@
         android:layout_marginLeft="5dp"
         android:layout_toRightOf="@id/profile_image"
         android:background="@drawable/background_left"
-        android:fontFamily="@font/oswald_light"
         android:padding="8dp"
         android:text="hello"
+        android:textColor="#AE3A53"
         android:textSize="18sp" />
 
     <TextView

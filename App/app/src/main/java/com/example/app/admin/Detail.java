@@ -1,10 +1,5 @@
 package com.example.app.admin;
 
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
-
 import android.Manifest;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
@@ -26,16 +21,19 @@ import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+
 import com.example.app.R;
-import com.example.app.model.AllProductModel;
 import com.example.app.RegisterUserClass;
-import com.google.firebase.firestore.core.KeyFieldNotInFilter;
+import com.example.app.model.AllProductModel;
 import com.squareup.picasso.Picasso;
 
 import java.io.ByteArrayOutputStream;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
-import java.text.DecimalFormat;
 import java.util.HashMap;
 
 public class Detail extends AppCompatActivity {
@@ -44,7 +42,7 @@ public class Detail extends AppCompatActivity {
     // Spinner spin;
     EditText id, name, price, quantity, weight, description;
     ImageView imageView;
-    Button chooseImage1, upload, dalete;
+    Button  upload, dalete;
     Spinner spinner;
     Bitmap bitmap;
     //String encodedimage;
@@ -77,6 +75,8 @@ public class Detail extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 UpdateData ();
+                Intent i = new Intent ( Detail.this, Admin.class );
+                startActivity ( i );
             }
         } );
         dalete.setOnClickListener ( new View.OnClickListener ( ) {
@@ -88,6 +88,8 @@ public class Detail extends AppCompatActivity {
                 b.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
                         DeleteData ();
+                        Intent i = new Intent ( Detail.this, Admin.class );
+                        startActivity ( i );
                         finish();
                     }
                 });
@@ -105,6 +107,8 @@ public class Detail extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                Intent i = new Intent ( Detail.this, Admin.class );
+                startActivity ( i );
                 finish();
             }
         } );
@@ -171,7 +175,7 @@ public class Detail extends AppCompatActivity {
         imageView = findViewById(R.id.imageGoodAM);
         spinner = findViewById ( R.id.kindGoodAM );
         back = findViewById ( R.id.backBttDetail );
-        chooseImage1 = findViewById ( R.id.chooseImage1 );
+        //chooseImage1 = findViewById ( R.id.chooseImage1 );
         upload= findViewById ( R.id.updateBtt );
         dalete = findViewById ( R.id.deleteBtt );
     }
@@ -180,7 +184,7 @@ public class Detail extends AppCompatActivity {
 
     private void SelectImage() {
 
-        chooseImage1.setOnClickListener ( new View.OnClickListener ( ) {
+        imageView.setOnClickListener ( new View.OnClickListener ( ) {
             @Override
             public void onClick(View v) {
                 check = "1";
@@ -222,17 +226,13 @@ public class Detail extends AppCompatActivity {
     private void imageStore(Bitmap bitmap) {
         ByteArrayOutputStream stream = new ByteArrayOutputStream (  );
         bitmap.compress ( Bitmap.CompressFormat.JPEG,100,stream );
-
         byte[] imageBytes = stream.toByteArray ();
-
-        Image = android.util.Base64.encodeToString ( imageBytes, Base64.DEFAULT);
+        Image = Base64.encodeToString ( imageBytes, Base64.DEFAULT);
 
     }
 
 
     private void UpdateData() {
-        Toast.makeText ( Detail.this, check, Toast.LENGTH_LONG ).show ();
-
         String IdG = id.getText().toString ();
         String NameG = name.getText().toString();
         String PriceG = price.getText().toString();
@@ -257,7 +257,7 @@ public class Detail extends AppCompatActivity {
         }
 
         if (NameG.equals("")||PriceG.equals("")||NumberG.equals("")||WeightG.equals("")||DescriptionG.equals("")){
-            Toast.makeText(Detail.this, "Vui lòng nhập đầy đủ thông tin!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(Detail.this, "Please enter full infomation!", Toast.LENGTH_SHORT).show();
         }
         else {
 
@@ -275,7 +275,7 @@ public class Detail extends AppCompatActivity {
                 super.onPreExecute();
                 mProgressDialog = new ProgressDialog(Detail.this);
                 mProgressDialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
-                mProgressDialog.setMessage("Vui lòng đợi một lát...");
+                mProgressDialog.setMessage("Please wait a moment...");
                 mProgressDialog.setIndeterminate(true);
                 mProgressDialog.setCancelable(false);
                 mProgressDialog.setProgress(0);
@@ -288,7 +288,7 @@ public class Detail extends AppCompatActivity {
             protected void onPostExecute(String s) {
                 super.onPostExecute(s);
                 mProgressDialog.dismiss();
-                Toast.makeText( getApplicationContext(), "CN sản phẩm mới thành công!", Toast.LENGTH_LONG).show();
+                Toast.makeText( getApplicationContext(), "Update product successfully!", Toast.LENGTH_LONG).show();
 
             }
 
@@ -347,7 +347,7 @@ public class Detail extends AppCompatActivity {
                 super.onPreExecute();
                 mProgressDialog = new ProgressDialog(Detail.this);
                 mProgressDialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
-                mProgressDialog.setMessage("Vui lòng đợi một lát...");
+                mProgressDialog.setMessage("Please wait a moment...");
                 mProgressDialog.setIndeterminate(true);
                 mProgressDialog.setCancelable(false);
                 mProgressDialog.setProgress(0);
@@ -360,7 +360,7 @@ public class Detail extends AppCompatActivity {
             protected void onPostExecute(String s) {
                 super.onPostExecute(s);
                 mProgressDialog.dismiss();
-                Toast.makeText(getApplicationContext(),  " xóa sản phẩm thành công!", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(),  "Delete product successfully!", Toast.LENGTH_LONG).show();
 
             }
 

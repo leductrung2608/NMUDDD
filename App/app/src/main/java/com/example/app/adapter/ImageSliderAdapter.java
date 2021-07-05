@@ -6,9 +6,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import com.example.app.model.ImageSliderModel;
 import com.example.app.R;
+import com.example.app.model.ImageSliderModel;
 import com.smarteist.autoimageslider.SliderViewAdapter;
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -31,7 +32,11 @@ public class ImageSliderAdapter extends SliderViewAdapter<SlideViewHolder> {
 
     @Override
     public void onBindViewHolder(SlideViewHolder viewHolder, int position) {
-        viewHolder.sliderImageView.setImageResource(imageSliderModelList.get(position).getImage());
+        Picasso.get ().load ( imageSliderModelList.get( position).getImage() )
+                .placeholder(R.drawable.noimage)
+                .error(R.drawable.error)
+                .into(viewHolder.sliderImageView );
+        //viewHolder.sliderImageView.setImageResource(imageSliderModelList.get(position).getImage());
     }
 
     @Override

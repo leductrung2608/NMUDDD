@@ -8,17 +8,18 @@
     <EditText
         android:id="@+id/search_users"
         android:layout_width="406dp"
-        android:layout_height="34dp"
+        android:layout_height="38dp"
         android:layout_marginStart="15dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="15dp"
-        android:background="@drawable/search_bar_bg"
-        android:fontFamily="@font/oswald_light"
+        android:background="@drawable/admin_button"
+        android:fontFamily="@font/libre_baskerville"
         android:hint="Search..."
         android:paddingLeft="10dp"
-        android:textColor="#C52F60"
-        android:textColorHint="#C52F60" />
+        android:textColor="#8E2A40"
+        android:textColorHint="#8E2A40"
+        android:textSize="16sp" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view"

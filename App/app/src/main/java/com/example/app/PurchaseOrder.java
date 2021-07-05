@@ -18,10 +18,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.app.R;
 import com.example.app.admin.OrderDetail;
 import com.example.app.model.OrderModel;
-import com.example.app.RegisterUserClass;
 
 import org.jetbrains.annotations.NotNull;
 import org.json.JSONArray;

@@ -15,9 +15,9 @@
         android:layout_gravity="center|start"
         android:background="#f5c9cf"
         app:headerLayout="@layout/header_navigation"
-        app:itemIconTint="@color/ic_launcher_background"
+        app:itemIconTint="#8E2A40"
         app:itemShapeFillColor="@color/colorPrimaryDark"
-        app:itemTextColor="#FFFFFF"
+        app:itemTextColor="#8E2A40"
         app:menu="@menu/menu_navigation" />
 
     <ScrollView
@@ -57,7 +57,7 @@
             app:layout_constraintHorizontal_bias="0.954"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/searchAdmin"
-            app:layout_constraintVertical_bias="0.604"
+            app:layout_constraintVertical_bias="0.631"
             app:srcCompat="@drawable/ic_chat2" />
 
         <LinearLayout
@@ -97,21 +97,22 @@
             android:id="@+id/searchAdmin"
             style="@android:style/Widget.Material.Light.SearchView"
             android:layout_width="369dp"
-            android:layout_height="37dp"
+            android:layout_height="38dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
             android:layout_marginRight="20dp"
-            android:background="@drawable/search_bar_bg"
-            android:drawableRight="@drawable/ic_search"
+            android:background="@drawable/admin_button"
+            android:drawableRight="@drawable/a"
             android:focusable="true"
             android:focusableInTouchMode="true"
-            android:fontFamily="@font/oswald_light"
+            android:fontFamily="@font/libre_baskerville"
             android:hint="  Search"
             android:maxLines="1"
             android:paddingLeft="10dp"
             android:paddingRight="5dp"
-            android:textColor="#C52F60"
-            android:textColorHint="#C52F60"
+            android:textColor="#8E2A40"
+            android:textColorHint="#8E2A40"
+            android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />

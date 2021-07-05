@@ -37,10 +37,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
-                    android:fontFamily="@font/oswald_light"
+                    android:fontFamily="@font/libre_baskerville"
                     android:text="username "
-                    android:textColor="#AF4669"
-                    android:textSize="25dp"
+                    android:textColor="#8E2A40"
+                    android:textSize="20sp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -50,11 +50,11 @@
                     android:id="@+id/lb_email"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/oswald_light"
+                    android:fontFamily="@font/libre_baskerville"
 
                     android:text="@gmail.com"
-                    android:textColor="#AF4669"
-                    android:textSize="20dp"
+                    android:textColor="#8E2A40"
+                    android:textSize="20sp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -116,10 +116,9 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_marginLeft="7dp"
-                                android:fontFamily="@font/oswald_light"
                                 android:gravity="center_vertical"
                                 android:text="Username"
-                                android:textColor="#AF4669" />
+                                android:textColor="#8E2A40" />
                         </LinearLayout>
 
                     </androidx.cardview.widget.CardView>
@@ -154,10 +153,9 @@
                                 android:layout_height="match_parent"
                                 android:layout_marginLeft="7dp"
                                 android:layout_weight="1"
-                                android:fontFamily="@font/oswald_light"
                                 android:gravity="center_vertical"
                                 android:text="Email"
-                                android:textColor="#AF4669" />
+                                android:textColor="#8E2A40" />
 
                         </LinearLayout>
 
@@ -192,10 +190,9 @@
                                 android:layout_height="match_parent"
                                 android:layout_marginLeft="7dp"
                                 android:layout_weight="1"
-                                android:fontFamily="@font/oswald_light"
                                 android:gravity="center_vertical"
                                 android:text="Phone Number"
-                                android:textColor="#AF4669" />
+                                android:textColor="#8E2A40" />
 
                             <ImageView
                                 android:id="@+id/btt_editphoneNo"
@@ -240,10 +237,9 @@
                                 android:layout_height="match_parent"
                                 android:layout_marginLeft="16dp"
                                 android:layout_weight="1"
-                                android:fontFamily="@font/oswald_light"
                                 android:gravity="center_vertical"
                                 android:text="Address"
-                                android:textColor="#AF4669" />
+                                android:textColor="#8E2A40" />
 
                             <ImageView
                                 android:id="@+id/btt_editaddress"
@@ -267,12 +263,12 @@
                         android:drawableRight="@drawable/ic_right_arrow"
                         android:drawablePadding="20dp"
                         android:elevation="5dp"
-                        android:fontFamily="@font/oswald_light"
+                        android:fontFamily="@font/libre_baskerville"
                         android:paddingRight="15dp"
-                        android:text="Thông tin đơn hàng"
+                        android:text="My order"
                         android:textAllCaps="false"
                         android:textColor="#AF4669"
-                        android:textSize="22sp" />
+                        android:textSize="20sp" />
 
                     <at.markushi.ui.CircleButton
                         android:id="@+id/btt_logout"

@@ -6,7 +6,7 @@
         <item
             android:id="@+id/nav_add"
             android:icon="@drawable/ic_add"
-            android:title="Thêm sản phẩm" />
+            android:title="Add New Products" />
     </group>
 
     <group android:checkableBehavior="single">
@@ -14,7 +14,7 @@
         <item
             android:id="@+id/nav_money"
             android:icon="@drawable/ic_income"
-            android:title="Doanh thu" />
+            android:title="Income" />
     </group>
 
     <group android:checkableBehavior="single">
@@ -22,7 +22,7 @@
         <item
             android:id="@+id/nav_unconfirmed"
             android:icon="@drawable/ic_unconfirm"
-            android:title="Đơn hàng chưa xác nhận" />
+            android:title="Unconfirmed Orders" />
     </group>
 
     <group android:checkableBehavior="single">
@@ -30,7 +30,7 @@
         <item
             android:id="@+id/nav_confirmed"
             android:icon="@drawable/ic_confirm"
-            android:title="Đơn hàng đã xác nhận" />
+            android:title="Confirmed Orders" />
     </group>
 
     <group android:checkableBehavior="single">
@@ -38,7 +38,7 @@
         <item
             android:id="@+id/nav_sigout"
             android:icon="@drawable/ic_logout"
-            android:title="Đăng xuất" />
+            android:title="Logout" />
     </group>
 </menu>
 

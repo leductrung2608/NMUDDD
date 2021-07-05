@@ -1,11 +1,10 @@
 package com.example.app.admin;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.app.R;
 import com.github.mikephil.charting.charts.BarChart;

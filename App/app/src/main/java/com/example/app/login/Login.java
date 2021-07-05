@@ -19,7 +19,6 @@ import com.example.app.MainActivity;
 import com.example.app.R;
 import com.example.app.RegisterUserClass;
 import com.example.app.admin.Admin;
-import com.example.app.util.MyAppContext;
 import com.facebook.AccessToken;
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
@@ -236,7 +235,7 @@ public class Login extends AppCompatActivity {
     public void onLoginClick(View View){
         startActivity(new Intent(this, Register.class));
         finish();
-        overridePendingTransition(R.anim.slide_in_right,R.anim.stay);
+        overridePendingTransition(R.anim.slide_in_right, R.anim.stay);
 
     }
 

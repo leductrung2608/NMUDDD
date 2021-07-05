@@ -48,9 +48,8 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="0dp"
                 android:layout_marginTop="16dp"
-                android:fontFamily="@font/oswald_light"
                 android:text="Name: "
-                android:textColor="#de637e" />
+                android:textColor="#AE3A53" />
 
             <TextView
                 android:id="@+id/textView"
@@ -59,9 +58,8 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginTop="116dp"
-                android:fontFamily="@font/oswald_light"
                 android:text="Address: "
-                android:textColor="#de637e" />
+                android:textColor="#AE3A53" />
 
             <TextView
                 android:id="@+id/textView27"
@@ -71,9 +69,8 @@
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="16dp"
                 android:layout_toEndOf="@+id/namebillTv"
-                android:fontFamily="@font/oswald_light"
                 android:text="Phone: "
-                android:textColor="#de637e" />
+                android:textColor="#AE3A53" />
 
             <TextView
                 android:id="@+id/namebillTv"
@@ -86,7 +83,7 @@
                 android:ems="10"
                 android:fontFamily="@font/oswald_light"
                 android:inputType="textPersonName"
-                android:textColor="#de637e"
+                android:textColor="#AE3A53"
                 android:textSize="14sp" />
 
             <TextView
@@ -102,7 +99,7 @@
                 android:ems="10"
                 android:fontFamily="@font/oswald_light"
                 android:inputType="textPersonName"
-                android:textColor="#de637e"
+                android:textColor="#AE3A53"
                 android:textSize="14sp" />
 
             <EditText
@@ -116,7 +113,7 @@
                 android:ems="10"
                 android:fontFamily="@font/oswald_light"
                 android:inputType="textPersonName"
-                android:textColor="#de637e"
+                android:textColor="#AE3A53"
                 android:textSize="14sp" />
 
             <TextView
@@ -132,7 +129,7 @@
                 android:ems="10"
                 android:fontFamily="@font/oswald_light"
                 android:inputType="textPersonName"
-                android:textColor="#de637e"
+                android:textColor="#AE3A53"
                 android:textSize="14sp" />
 
             <TextView
@@ -142,9 +139,8 @@
                 android:layout_below="@+id/namebillTv"
                 android:layout_alignParentStart="true"
                 android:layout_marginTop="28dp"
-                android:fontFamily="@font/oswald_light"
                 android:text="Total: "
-                android:textColor="#de637e" />
+                android:textColor="#AE3A53" />
 
             <Button
                 android:id="@+id/showBillBtt"
@@ -154,12 +150,12 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="161dp"
-                android:background="@drawable/button_background_pay"
+                android:background="@drawable/admin_button"
                 android:fontFamily="@font/oswald_light"
                 android:gravity="center"
                 android:text="Show order detail  "
                 android:textAllCaps="false"
-                android:textColor="#AF4669"
+                android:textColor="#8E2A40"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -173,12 +169,12 @@
                 android:layout_marginStart="110dp"
                 android:layout_marginTop="161dp"
                 android:layout_marginEnd="84dp"
-                android:background="@drawable/button_background_pay"
+                android:background="@drawable/admin_button"
                 android:fontFamily="@font/oswald_light"
                 android:gravity="center"
                 android:text="Show order detail  "
                 android:textAllCaps="false"
-                android:textColor="#AF4669"
+                android:textColor="#8E2A40"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -191,12 +187,12 @@
                 android:layout_marginTop="161dp"
                 android:layout_marginEnd="7dp"
                 android:layout_toEndOf="@+id/showBillBtt"
-                android:background="@drawable/button_background_pay"
+                android:background="@drawable/admin_button"
                 android:fontFamily="@font/oswald_light"
                 android:gravity="center"
                 android:text="Confirm order"
                 android:textAllCaps="false"
-                android:textColor="#AF4669"
+                android:textColor="#8E2A40"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 android:visibility="visible" />

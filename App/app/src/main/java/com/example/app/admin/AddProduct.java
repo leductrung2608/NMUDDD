@@ -45,7 +45,7 @@ public class AddProduct extends AppCompatActivity {
     };
     EditText name,price,number,weight,description;
     Spinner spin;
-    Button insertdata, chooseImage;
+    Button insertdata;
     ImageView back;
     ImageView imageView;
     ProgressDialog mProgressDialog;
@@ -89,7 +89,7 @@ public class AddProduct extends AppCompatActivity {
 
     private void SelectImage() {
 
-        chooseImage.setOnClickListener ( new View.OnClickListener ( ) {
+        imageView.setOnClickListener ( new View.OnClickListener ( ) {
             @Override
             public void onClick(View v) {
                 if(ContextCompat.checkSelfPermission ( getApplicationContext (), Manifest.permission.READ_EXTERNAL_STORAGE )
@@ -118,7 +118,8 @@ public class AddProduct extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                        AddProduct.super.onBackPressed();
+                Intent i = new Intent ( AddProduct.this, Admin.class );
+                startActivity ( i );
                     }
                 });
 
@@ -137,7 +138,7 @@ public class AddProduct extends AppCompatActivity {
         spin= findViewById( R.id.kind);
         insertdata = findViewById ( R.id.addBtt );
         back = findViewById ( R.id.backBttDetail);
-        chooseImage = findViewById ( R.id.chooseImage );
+        //chooseImage = findViewById ( R.id.chooseImage );
 
 
 

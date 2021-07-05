@@ -8,8 +8,8 @@ import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.cardview.widget.CardView;
@@ -26,7 +26,6 @@ import com.example.app.R;
 import com.example.app.adapter.Category_RecyclerAdapter;
 import com.example.app.adapter.Home_AllItem_RecyclerAdapter;
 import com.example.app.adapter.ImageSliderAdapter;
-import com.example.app.admin.Detail;
 import com.example.app.model.AllProductModel;
 import com.example.app.model.Cart;
 import com.example.app.model.Category;
@@ -66,7 +65,8 @@ public class HomeFragment extends Fragment {
     EditText editText;
     TextView cate, all;
     CardView cardView;
-    ImageView btt_chat;
+    Button btt_chat;
+
 
     ArrayList<AllProductModel> filteredlist;
     RecyclerView categoryRecyclerView,allItemRecyclerView;//recyclerView
@@ -88,12 +88,12 @@ public class HomeFragment extends Fragment {
 
     public void setSliderView() {
         imageSliderModelList = new ArrayList<>();
-        imageSliderModelList.add(new ImageSliderModel(R.drawable.n0));
-        imageSliderModelList.add(new ImageSliderModel(R.drawable.n1));
-        imageSliderModelList.add(new ImageSliderModel(R.drawable.n2));
-        imageSliderModelList.add(new ImageSliderModel(R.drawable.n3));
-        imageSliderModelList.add(new ImageSliderModel(R.drawable.n4));
+        imageSliderModelList.add(new ImageSliderModel("https://ibeautycosmetic.000webhostapp.com/RemotePHP/1.jpg"));
+        imageSliderModelList.add(new ImageSliderModel("https://ibeautycosmetic.000webhostapp.com/RemotePHP/2.jpg"));
+        imageSliderModelList.add(new ImageSliderModel("https://ibeautycosmetic.000webhostapp.com/RemotePHP/3.jpg"));
+        imageSliderModelList.add(new ImageSliderModel("https://ibeautycosmetic.000webhostapp.com/RemotePHP/4.jpg"));
         sliderView.setSliderAdapter(new ImageSliderAdapter(getActivity(),imageSliderModelList));
+        sliderView.setScrollTimeInSec(3);
         sliderView.startAutoCycle();
     }
 
@@ -117,6 +117,7 @@ public class HomeFragment extends Fragment {
         cate = view.findViewById ( R.id.categoryTv );
         all = view.findViewById ( R.id.allItemsTv );
         cardView = view.findViewById ( R.id.cardView );
+        btt_chat = view.findViewById(R.id.btt_chatUser);
 
         categoryRecyclerView = view.findViewById ( R.id.categoryRecycler );
         categoryRecyclerView.setHasFixedSize ( true );
@@ -153,7 +154,12 @@ public class HomeFragment extends Fragment {
             CheckConnection.ShowToast_Short(getApplicationContext(), "Please check the internet connection");
         }
 
-
+        btt_chat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), ChatActivity.class));
+            }
+        });
         return view;
     }
 
