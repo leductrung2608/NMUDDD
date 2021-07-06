@@ -463,8 +463,11 @@ public class CartFragment extends Fragment {
             tvShipCharge.setText(decimalFormat.format(ship_charge));
             int Grand_Total = Total + ship_charge;
             tvGrandTotal.setText( ""+Grand_Total );
-        }
-
+        } else {
+        tvTotal.setText("0");
+        tvShipCharge.setText("0");
+        tvGrandTotal.setText("0");
+    }
     }
 
     private void CheckData() {
